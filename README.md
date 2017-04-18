@@ -1,13 +1,6 @@
 
 Code and data for testing different factuality models across different testsets.
 
-# Testsets
-
-## UW Factuality
-
-* [Paper](papers/lacz-emnlp.2015.pdf)
-* [Data](data/uw/factuality-data/)
-
 ### Converting the Data to CoNLL Format
 
 #### UW
