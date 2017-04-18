@@ -3,7 +3,6 @@ Code and data for testing different factuality models across different testsets.
 
 ### TODO:
 
-Things to add:
 
 #### Unified corpus:
    1. Download external script to get all of the datasets
