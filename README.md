@@ -8,7 +8,7 @@ Code and data for testing different factuality models across different testsets.
    1. Download external script to get all of the datasets
    2. Requirements pip file to download all needed python dependencies
 
-#### Practical factuality annotataor:
+#### Practical factuality annotator:
    1. End-to-end pipeline: Raw text -> annotation (will apply dependency parsing)
    2. Dep trees -> factuality. Will provide the ability to experiment with other dep parsers.
    3. Client - server - Will load all models once.
