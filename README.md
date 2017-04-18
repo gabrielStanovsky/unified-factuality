@@ -67,12 +67,6 @@ This will create the factbank [train](data/factbank_v1/train.conll), [dev](data/
 Run:
 
     src> python  ./evaluate.py  --pred=./test.tt.conll  --gold=../data/uw/factuality-data/test.conll --default=3
-This replaces the above "DEFAULT" label with the given value (3 in this case) and prints the [evaluation metrics](./results/tt_uw.txt):
-
-    DEBUG:root:869 factuality annotations
-    INFO:root:MAE:  0.719907940161
-    INFO:root:MSE:  1.72234752589
-    INFO:root:r:    (0.44085026418824996, 1.262350625096216e-42)
 
 ### Other Evaluations
 
