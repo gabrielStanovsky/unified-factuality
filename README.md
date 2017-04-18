@@ -6,8 +6,8 @@ Code and data for testing different factuality models across different testsets.
 Things to add:
 
 1 Unified corpus:
-    1. Download external script to get all of the datasets
-    2. Requirements pip file to download all needed python dependencies
+   1. Download external script to get all of the datasets
+   2. Requirements pip file to download all needed python dependencies
 
 2. Practical factuality annotataor:
    1. End-to-end pipeline: Raw text -> annotation (will apply dependency parsing)
