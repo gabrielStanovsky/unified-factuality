@@ -11,7 +11,7 @@ Code and data for testing different factuality models across different testsets.
 #### Practical factuality annotator:
    1. End-to-end pipeline: Raw text -> annotation (will apply dependency parsing)
    2. Dep trees -> factuality. Will provide the ability to experiment with other dep parsers.
-   3. Client - server - Will load all models once.
+   3. Client - server architecture. Will load all heavy models once (Spacy, Truthteller, etc.)
    4. Using the previous module - create an online demo.
 
 
