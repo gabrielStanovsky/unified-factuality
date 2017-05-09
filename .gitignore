@@ -90,3 +90,5 @@ ENV/
 
 # Project specific
 gdrive
+*#*
+*.zip
