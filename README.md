@@ -13,7 +13,9 @@ address   = {Vancouver, Canada}
 }
 ```
 
-## Getting started:
+## Online Demo
+
+## Getting started
 
 From ```src``` run:
 
@@ -36,6 +38,12 @@ TODO
 
 
 ## Running the automatic annotator
+
+### Batch Mode
+
+### Interactive mode
+
+### Server Mode
 
 ## OLD:
 
