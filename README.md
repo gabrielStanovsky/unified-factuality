@@ -1,7 +1,11 @@
 
 Code and data for testing different factuality models across different testsets.
 
-This is the code and dataset reported in [Integrating Deep Linguistic Features in Factuality Prediction over Unified Datasets](https://gabrielstanovsky.github.io/assets/papers/acl17/paper.pdf), Gabriel Stanovsky, Judith Eckle-Kohler, Yevgeniy Puzikov, Ido Dagan and Iryna Gurevych, ACL 2017.
+This is the code and dataset reported in 
+
+[Integrating Deep Linguistic Features in Factuality Prediction over Unified Datasets](https://gabrielstanovsky.github.io/assets/papers/acl17/paper.pdf), 
+
+Gabriel Stanovsky, Judith Eckle-Kohler, Yevgeniy Puzikov, Ido Dagan and Iryna Gurevych, ACL 2017.
 
 If you use this data set or provided tools, make sure to cite the following paper:
 
