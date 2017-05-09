@@ -16,7 +16,7 @@ This will perform the following steps (each of which can also be run separately)
 3. [Convert to unified factuality](./src/scripts/convert.sh)
 
 The converted unified corpus should be created in the [unified directory](data/unified).
-
+There's also a static aggregated version of the corpus in the [snapshot folder](data/unified/snapshot).
 
 ## OLD:
 
