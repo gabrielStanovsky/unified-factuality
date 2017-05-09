@@ -3,7 +3,7 @@ Code and data for testing different factuality models across different testsets.
 
 ## Getting started:
 
-From ```src`` run:
+From ```src``` run:
 
 ```
 ./scripts/install.sh
