@@ -15,7 +15,10 @@ This will perform the following steps (each of which can also be run separately)
 2. [Download external resources](./src/scripts/download_external.sh).
 3. [Convert to unified factuality](./src/scripts/convert.sh)
 
-If everything went fine, the converted unified corpus should be created in the [unified directory](data/unified).
+The converted unified corpus should be created in the [unified directory](data/unified).
+
+
+## OLD:
 
 ### TODO:
 

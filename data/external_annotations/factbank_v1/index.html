@@ -1,0 +1,111 @@
+<html>
+
+<head>
+  <title>FactBank 1.0</title>
+  <meta name="description" content="Documentation for NAME OF PUBLICATION">
+  <meta name="keywords" content="Linguistic Data Consortium LDC Documentation for NAME OF PUBLICATION">
+</head>
+
+<body bgcolor="#ffffff" LINK="#990000" ALINK="#990000" VLINK="#990000" TEXT="#000000" >
+
+    
+<h1 align="center"><font color="#990000"> FactBank 1.0</font></h1>
+
+    
+
+    <h3>Introduction</h3> 
+
+    
+<p> FactBank 1.0, Linguistic Data Consortium (LDC) catalog number LDC2009T23 and 
+  isbn 1-58563-522-7, consists of 208 documents (over 77,000 tokens) from newswire 
+  and broadcast news reports in which event mentions are annotated with their 
+  degree of factuality, that is, the degree to which they correspond to those 
+  events. FactBank 1.0 was built on top of <a href="http://www.ldc.upenn.edu/Catalog/CatalogEntry.jsp?catalogId=LDC2006T08">TimeBank 
+  1.2</a> and a fragment of the <a href="http://www.timeml.org/site/timebank/timebank.html">AQUAINT 
+  TimeML Corpus</a>, both of which used the TimeML specification language. This 
+  resulted in a double-layered annotation of event factuality. TimeBank 1.2 and 
+  AQUAINT TimeML encode most of the basic structural elements expressing factuality 
+  information while FactBank 1.0 represents the resulting factuality interpretation. 
+  The combination of the factuality values in FactBank with the structural information 
+  in TimeML-annotated corpora facilitates the development of tools aimed at automatically 
+  identifying the factuality values of events, a component fundamental in tasks 
+  requiring some degree of text understanding, such as Textual Entailment, Question 
+  Answering, or Narrative Understanding. 
+<p>FactBank annotations indicate whether the event mention describes actual situations 
+  in the world, situations that have not happened, or situations of uncertain 
+  interpretation. Event factuality is not an inherent feature of events but a 
+  matter of perspective. Different discourse participants may present divergent 
+  views about the factuality of the very same event. Consequently, in FactBank, 
+  the factuality degree of events is assigned relative to the relevant sources 
+  at play. In this way, it can adequately reflect the divergence of opinions regarding 
+  the factual status of events, as is common in news reports. 
+<p>
+  The annotation language is grounded on established linguistic analyses of the 
+  phenomenon, which facilitated the creation of a battery of discriminatory tests 
+  for distinguishing between factuality values. Furthermore, the annotation procedure 
+  was carefully designed and divided into basic, sequential annotation tasks. 
+  This made it possible for hard tasks to be built on top of simpler ones, while 
+  at the same time allowing annotators to become incrementally familiar with the 
+  complexity of the problem. As a result, FactBank annotation achieved a relatively 
+  high interannotation agreement, kappa=0.81, a positive result when considered 
+  against similar annotation efforts. 
+
+<h3>Data</h3>
+
+    
+<p>All FactBank markup is standoff and is represented through a set of 20 tables 
+  which can be easily loaded into a database. Each table resides in an independent 
+  text file, where fields are separated by three consecutive bars (i.e., |||). 
+  The data in fields of string type are presented between simple quotations ('). 
+<p>Because FactBank 1.0 was built on top of TimeBank 1.2 and AQUAINT TimeML, both 
+  of which are marked up with inline XML-based annotation, this release contains 
+  the TimeBank 1.2 and AQUAINT TimeML annotation in standoff, table-based format 
+  as well. 
+<p>Please see <a href="docs/file.tbl"
+    style="text-decoration:none">file.tbl</a> for the directory structure of this 
+  publication, as well as a complete list of files. 
+<p>Please go to <a href="data/"
+    style="text-decoration:none">data</a> for a listing of data files.</p>
+
+    <p>Other documentation files are:
+    
+<ul>
+  <li><a href="docs/annotationGuidelines.pdf" STYLE="text-decoration:none">Annotation 
+    Guidelines </a></li>
+  <li><a href="docs/readme.pdf" STYLE="text-decoration:none">Readme</a></li>
+</ul>
+
+    
+<h3>&nbsp;</h3>   
+
+    <h3>Updates</h3>   
+
+    
+<p>Additional information, updates, bug fixes may be available in the LDC catalog 
+  entry for this corpus at <a
+    href="http://www.ldc.upenn.edu/Catalog/CatalogEntry.jsp?catalogId=LDC2009T23"
+    style="text-decoration:none">LDC2009T23</a>. 
+<h3>Content Copyright</h3>   
+    
+<p>Portions &copy; 1998 American Broadcating Corporation, &copy; 1998 The Associated 
+  Press, &copy; 1998 Cable News Network, LP, LLLP, &copy; 1987-1989 Dow Jones 
+  &amp; Company, Inc., &copy; 1998 New York Times, &copy; 1998 Public Radio International, 
+  &copy; 1998, 1999 Xinhua News Agency, &copy; 2002-2009 Brandeis University, 
+  &copy; 2009 Trustees of the University of Pennsylvania
+<p>The World is a co-production of Public Radio International and the British 
+  Broadcasting Corporation and is produced at WGBH Boston.
+<p>&nbsp;
+<hr>
+
+    <font size="-1">
+    Contact: <a href="mailto:ldc@ldc.upenn.edu" style="text-decoration:none">
+
+    <b>ldc@ldc.upenn.edu</b></a><br>
+&copy; 2009<A
+    HREF="http://www.ldc.upenn.edu" STYLE="text-decoration:none"> <b>Linguistic 
+Data Consortium</b></a>, <a href="http://www.upenn.edu" style="text-decoration:none"> 
+<b>Trustees of the University of Pennsylvania</b></a>. All Rights Reserved. </font> 
+</body>
+
+</html>
+

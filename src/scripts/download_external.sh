@@ -28,5 +28,8 @@ mkdir -p ../data/external_annotations/meantime
 unzip ../data/external_annotations/meantime/meantime_newsreader_english_oct15.zip -d ../data/external_annotations/meantime/
 unzip ../data/external_annotations/meantime/meantime_newsreader_english_raw_NAF.zip -d ../data/external_annotations/meantime/
 
+# Download FactBank
+echo "Please login to LDC, download FactBank (https://catalog.ldc.upenn.edu/ldc2009t23), and the directory factbank_v1 under /data/external_annotations/"
+
 #DONE
 echo "SUCCESSFULY DOWNLOADED ALL CORPORA"

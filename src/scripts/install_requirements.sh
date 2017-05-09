@@ -12,4 +12,4 @@ python -m spacy download en
 echo "Downloading gdrive"
 wget "https://docs.google.com/uc?id=0B3X9GlR6EmbnWksyTEtCM0VfaFE&export=downl" -O ./scripts/gdrive
 chmod +x ./scripts/gdrive
-echo "SUCCESSFULY DOWNLODED GDRRIVE"
+echo "SUCCESSFULY DOWNLODED GDrive"
