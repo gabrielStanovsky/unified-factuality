@@ -92,3 +92,5 @@ ENV/
 gdrive
 *#*
 *.zip
+data/unified
+data/external_annotations/

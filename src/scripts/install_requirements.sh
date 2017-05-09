@@ -3,7 +3,7 @@
 set -e
 
 # Install python packages
-pip install -r ./scripts/requirements
+pip install -r ./scripts/requirements.txt
 
 # Install spacy
 python -m spacy download en
