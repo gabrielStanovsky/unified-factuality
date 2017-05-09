@@ -1,6 +1,22 @@
 
 Code and data for testing different factuality models across different testsets.
 
+## Getting started:
+
+From ```src`` run:
+
+```
+./scripts/install.sh
+```
+
+This will perform the following steps (each of which can also be run separately):
+
+1. [Install required packages](./src/scripts/install_requirements.sh).
+2. [Download external resources](./src/scripts/download_external.sh).
+3. [Convert to unified factuality](./src/scripts/convert.sh)
+
+If everything went fine, the converted unified corpus should be created in the [unified directory](data/unified).
+
 ### TODO:
 
 
