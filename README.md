@@ -18,6 +18,13 @@ This will perform the following steps (each of which can also be run separately)
 The converted unified corpus should be created in the [unified directory](data/unified).
 There's also a static aggregated version of the corpus in the [snapshot folder](data/unified/snapshot).
 
+## Format
+
+TODO
+
+
+## Running the automatic annotator
+
 ## OLD:
 
 ### TODO:
