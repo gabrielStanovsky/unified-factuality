@@ -15,7 +15,16 @@ address   = {Vancouver, Canada}
 
 ## Online Demo
 
-## Getting started
+## Local Installation
+
+This repository provides:
+
+1. A unified factuality dataset
+
+2. Automatic factuality annotator
+
+The following describes the installtion and format of both of these.
+
 
 ### Unified dataset
 
@@ -48,10 +57,8 @@ TODO
 
 ### Installation
 
-From ```src``, run: <br>
+From ```src```, run: <br>
 ```
-
-
 
 ### Running the automatic annotator
 
