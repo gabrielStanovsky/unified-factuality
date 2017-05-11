@@ -59,6 +59,8 @@ TODO
 
 From ```src```, run: <br>
 ```
+./scripts/install_annotator.sh
+```
 
 ### Running the automatic annotator
 
