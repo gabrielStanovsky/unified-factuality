@@ -6,6 +6,12 @@
 ## NOTE: This will delete and replace all files in the ,./data/external_annotations/
 set -e
 
+# install GDRIVE
+echo "Downloading gdrive"
+wget "https://docs.google.com/uc?id=0B3X9GlR6EmbnWksyTEtCM0VfaFE&export=downl" -O ./scripts/gdrive
+chmod +x ./scripts/gdrive
+echo "SUCCESSFULY DOWNLODED GDrive"
+
 # Download UW
 echo "Downloading UW corpus to ../data/external_annotations/uw/ ..."
 rm -fr ../data/external_annotations/uw
@@ -29,7 +35,7 @@ unzip ../data/external_annotations/meantime/meantime_newsreader_english_oct15.zi
 unzip ../data/external_annotations/meantime/meantime_newsreader_english_raw_NAF.zip -d ../data/external_annotations/meantime/
 
 # Download FactBank
-echo "Please login to LDC, download FactBank (https://catalog.ldc.upenn.edu/ldc2009t23), and the directory factbank_v1 under /data/external_annotations/"
+echo "Please login to LDC, download FactBank (https://catalog.ldc.upenn.edu/ldc2009t23), to the directory factbank_v1 under /data/external_annotations/"
 
 #DONE
 echo "SUCCESSFULY DOWNLOADED ALL CORPORA"

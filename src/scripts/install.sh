@@ -3,10 +3,10 @@
 set -e
 
 # Install prerequisites
-./scripts/install_requirements.sh
+./scripts/install_annotator.sh
 
 # Download external resources
-./scripts/download_external.sh
+./scripts/download_external_corpora.sh
 
 # Convert raw annotations
-./scripts/convert.sh
+./scripts/convert_corpora.sh

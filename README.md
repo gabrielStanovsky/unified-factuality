@@ -17,33 +17,49 @@ address   = {Vancouver, Canada}
 
 ## Getting started
 
-From ```src``` run:
+### Unified dataset
 
+You can find a static aggregated version of the corpus in the [snapshot folder](data/unified/snapshot).
+
+### Downloading manually
+
+From ```src``:
+
+1. Download external corpora: <br>
 ```
-./scripts/install.sh
+./scripts/download_external_corpora.sh
 ```
 
-This will perform the following steps (each of which can also be run separately):
+**NOTE**: FactBank should be downloaded separately. Please login to LDC, [download the corpus](https://catalog.ldc.upenn.edu/ldc2009t23), and place it in the directory ```factbank_v1``` under ```/data/external_annotations/```.
 
-1. [Install required packages](./src/scripts/install_requirements.sh).
-2. [Download external resources](./src/scripts/download_external.sh).
-3. [Convert to unified factuality](./src/scripts/convert.sh)
+
+2. Convert to a unified representation:<br>
+```
+./scripts/convert_corpora.sh
+```
 
 The converted unified corpus should be created in the [unified directory](data/unified).
-There's also a static aggregated version of the corpus in the [snapshot folder](data/unified/snapshot).
 
-## Format
+### Format
 
 TODO
 
+## Automatic annotator:
 
-## Running the automatic annotator
+### Installation
 
-### Batch Mode
+From ```src``, run: <br>
+```
 
-### Interactive mode
 
-### Server Mode
+
+### Running the automatic annotator
+
+#### Batch Mode
+
+#### Interactive mode
+
+#### Server Mode
 
 ## OLD:
 
