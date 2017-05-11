@@ -32,7 +32,7 @@ You can find a static aggregated version of the corpus in the [snapshot folder](
 
 ### Downloading manually
 
-From ```src``:
+From ```src```:
 
 1. Download external corpora: <br>
 ```
