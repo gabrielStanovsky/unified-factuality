@@ -1,0 +1,345 @@
+"""
+dependency labeler working in the EasyFirst principle
+"""
+import sys
+import time
+
+from labelfeatures import AnEdgeLabelFeatureExtractor, AnEdgeLabelFeatureExtractor2, AnEdgeLabelFeatureExtractor3, AnEdgeLabelFeatureExtractor4, AnEdgeLabelFeatureExtractor5, AnEdgeLabelFeatureExtractor6, AnEdgeLabelFeatureExtractor6Lex, AnEdgeLabelFeatureExtractor6Prels, AnEdgeLabelFeatureExtractor6SG
+
+sys.path.append("../shared")
+from pio import io
+import guidesio
+
+from ml.ml import MulticlassModel, MultitronParameters 
+from common import ROOT
+
+from collections import defaultdict
+import itertools
+
+class Labeler: #{{{
+   def __init__(self, model,labelmap):
+      self.model=model
+      self._labelmap = labelmap 
+
+   @classmethod
+   def load(cls,fname):
+      model = MulticlassModel(fname)
+      labelmap = []
+      for i,line in enumerate(file(fname+".lmap")):
+         label = line.strip()
+         labelmap.append(label)
+      return cls(model, labelmap)
+
+   def get_label(self, features, cls, real_label):
+      '''
+      cls is not used / reserved
+      '''
+      #features = ["%s_%s" % (cls,f) for f in features]
+      pred,_ = self.model.predict(features)
+      return self._labelmap[pred]
+#}}}
+class LabelerTrainer: #{{{
+   def __init__(self, labels):
+      self._num2label = labels
+      self._label2num = dict([(l,n) for n,l in enumerate(labels)])
+      self._params    = MultitronParameters(len(labels))
+
+   def get_label(self, features, cls, real_label):
+      '''
+      cls: reserved for future / compatibility
+      '''
+      real_num = self._label2num[real_label]
+      #features = ["%s_%s" % (cls,f) for f in features]
+      for x in xrange(10): # perform up to 10 updates toward real label
+                           # usually much less should be enough
+         pred = self._params.update(real_num, features)
+         if pred == real_num: break
+      return self._num2label[pred]
+
+   def save(self, fname):
+      self._params.dump_fin(file(fname,"w"))
+      fout = file(fname+".lmap","w")
+      for label in self._num2label:
+         fout.write("%s\n" % label)
+      fout.close()
+#}}}
+def build_guide_info(guides):
+   '''
+   guides is a dictionary:
+   {'parser_name': parsed_sentence}
+   where parsed_sentence is a list of tok, with tok['id'] and tok['parent'] fields
+   '''
+   res = defaultdict(list)
+   pps = defaultdict(list)
+   for parser, parsed in guides.iteritems():
+      for tok in parsed:
+         pair = (tok['parent'],tok['id'])
+         res[pair].append("predby_%s_%s" % (parser,tok['prel']))
+         pps[(pair,tok['prel'])].append(parser)
+   for (pair,lab),parsers in pps.iteritems():
+      res[pair].append("predbyC_%s_%s" % ('-'.join(sorted(parsers)),lab))
+   return res
+
+class SimpleSentenceLabeler:
+   def __init__(self,labeler,fext):
+      self.labeler=labeler
+      self.fext=fext
+
+   def label(self,sent,par="pparent",prelout="pprel",prel="prel",sent_guides=None):
+      '''
+      sent as read by io.conll_to_sent
+      assuming parents are known, and are in tok[parent]
+      when trainig, assuming real label is given in tok[prel]
+      result will be in tok[prelout]
+      '''
+      sent = [ROOT]+sent
+      ROOT[par]=-1
+      fext = self.fext.extract
+      get_label = self.labeler.get_label
+      sent_guides = build_guide_info(sent_guides) if sent_guides else None
+      for child in sent[1:]:
+         parent = sent[child[par]]
+         if sent_guides:
+            fs = fext(child,parent,sent,par=par,prel=prel,guides=sent_guides)
+         else:
+            fs = fext(child,parent,sent,par=par,prel=prel)
+         #label = get_label(fs,None,child[prel]) 
+         label = get_label(fs,None,None)
+         child[prelout]=label
+
+class BottomupSimpleSentenceLabeler:
+   def __init__(self,labeler,fext):
+      self.labeler=labeler
+      self.fext=fext
+      self._cache = {}
+
+   @classmethod
+   def sort(cls, tokens):
+      '''
+      sort tokens so that the bottom ones are enumerated first
+      '''
+      ids = [t['id'] for t in tokens]
+      children = dict([(n,set()) for n in ids])
+      nodes = {}
+      for t in tokens:
+         nodes[t['id']]=t
+         if t['parent']==0: continue
+         children[t['parent']].add(t['id'])
+      # start with no-children nodes
+      while children:
+         removed=set()
+         for n,chlds in children.items():
+            #print n, len(chlds)
+            if len(chlds)==0:
+               yield nodes[n]
+               del children[n]
+               removed.add(n)
+         for n,childs in children.items():
+            childs -= removed
+
+   def label(self,sent,par="pparent",prelout="pprel",prel="prel"):
+      '''
+      sent as read by io.conll_to_sent
+      assuming parents are known, and are in tok[parent]
+      when trainig, assuming real label is given in tok[prel]
+      result will be in tok[prelout]
+      features may depend on tok[prelout] of previous decisions, as we are working bottom-up
+      '''
+      sent = [ROOT]+sent
+      fext = self.fext.extract
+      get_label = self.labeler.get_label
+      sorted_sent = list(BottomupSimpleSentenceLabeler.sort(sent[1:]))
+      assert(len(sorted_sent)==len(sent[1:]))
+      for child in sorted_sent:
+         parent = sent[child[par]]
+         fs = fext(child,parent,sent,par=par,prel=prelout)
+         label = get_label(fs,None,child[prel])
+         child[prelout]=label
+
+def _dummyguides():
+   while True: yield None
+
+def train_simple_labeler(sents,fnameout,fext=AnEdgeLabelFeatureExtractor(),niters=20,guides=_dummyguides()):
+   print >> sys.stderr, "collecting labels"
+   labels = set()
+   for s in sents:
+      for t in s:
+         labels.add(t['prel'])
+   print >> sys.stderr, "found",len(labels),"labels. starting to train."
+   labeler_trainer = LabelerTrainer(list(labels))
+   labeler = SimpleSentenceLabeler(labeler_trainer,fext)
+   for ITER in xrange(niters):
+      print >> sys.stderr, "iter",ITER,"["
+      for sid,(sent,sguide) in enumerate(zip(sents,guides)):
+         labeler.label(sent,par='parent',prel='prel',sent_guides=sguide)
+         if sid % 1000 == 0:
+            print >> sys.stderr, sid,
+      print >> sys.stderr, "]"
+      # save each iter
+      labeler_trainer.save(fnameout + "." + str(ITER))
+   print >> sys.stderr, "saving labeler model"
+   labeler_trainer.save(fnameout)
+
+def train_bu_simple_labeler(sents,fnameout,fext=AnEdgeLabelFeatureExtractor(),niters=20):
+   print >> sys.stderr, "collecting labels"
+   labels = set()
+   for s in sents:
+      for t in s:
+         labels.add(t['prel'])
+   print >> sys.stderr, "found",len(labels),"labels. starting to train."
+   labeler_trainer = LabelerTrainer(list(labels))
+   labeler = BottomupSimpleSentenceLabeler(labeler_trainer,fext)
+   for ITER in xrange(niters):
+      print >> sys.stderr, "iter",ITER,"["
+      for sid,sent in enumerate(sents):
+         labeler.label(sent,par='parent',prel='prel',prelout='pprel')
+         if sid % 1000 == 0:
+            print >> sys.stderr, sid,
+      print >> sys.stderr, "]"
+      # save each iter
+      labeler_trainer.save(fnameout + "." + str(ITER))
+   print >> sys.stderr, "saving labeler model"
+   labeler_trainer.save(fnameout)
+
+def test_labeler(fname,sents,fext=AnEdgeLabelFeatureExtractor(),guides=_dummyguides()):
+   labeler = SimpleSentenceLabeler(Labeler.load(fname),fext)
+   stime = time.time()
+   for sent,sguide in zip(sents,guides):
+      labeler.label(sent,par='parent',prelout='pprel',sent_guides=sguide)
+      io.out_conll(sent,prel='pprel')
+   print >> sys.stderr, "time:",time.time()-stime
+
+def test_bu_labeler(fname,sents,fext=AnEdgeLabelFeatureExtractor()):
+   labeler = BottomupSimpleSentenceLabeler(Labeler.load(fname),fext)
+   stime=time.time()
+   for sent in sents:
+      labeler.label(sent,par='parent',prelout='pprel')
+      io.out_conll(sent,prel='pprel')
+   print >> sys.stderr, time.time()-stime
+
+def eval_labeler(fname,devfile,fext=None,guides=_dummyguides()):
+   '''
+   just labeling accuracy
+   '''
+   devsents = io.conll_to_sents(file(devfile))
+   labeler = SimpleSentenceLabeler(Labeler.load(fname),fext)
+   good=0.0
+   bad=0.0
+   for i,(sent,sguide) in enumerate(zip(devsents,guides)):
+      if i % 100 == 0:
+         print i,
+      labeler.label(sent,par='parent',prelout='pprel',sent_guides=sguide)
+      for tok in sent:
+         if tok['prel']==tok['pprel']: good+=1
+         else: bad+=1
+   print
+   print >> sys.stderr,"labaling acc:",good/(good+bad)
+        
+
+class SentenceLabeler: #{{{ NOT WORKING YET
+   def __init__(self, sent,par='parent'):
+      '''
+      sent: a list of tok, as returned by io.conll_to_sents
+      parent: the indicator of a parent. (usually 'parent' or 'pparent')
+      '''
+      self.sent = sent
+      self._parent = par
+
+   def label(self):
+      possible_actions = []
+      #sent = ...
+      while possible_actions:
+         scores=[]
+         for (child,parent),label in possible_actions:
+            features = fext(child,parent,sent,par=par,prel=prel)
+            scores.append((scorer(features),features,child,parent,label))
+         s,f,c,p,l = max(scores)
+         set_label(c,p,l)
+         possible_actions = [((c_,p_),l_) for (c_,p_),l_ in possible_actions if c is not c_ and p is not p_]
+
+   def train(self,sent):
+      possible_actions = []
+      updates=0
+      while possible_actions:
+         scores=[]
+         for (child,parent),label in possible_actions:
+            features = fext(child,parent,sent,prel='prel',par='parent')
+            scores.append((scorer(features),features,child,parent,label))
+         s,f,c,p,l = max(scores)
+         if allowed(c,p,l):
+            set_label(c,p,l)
+            possible_actions = [((c_,p_),l_) for (c_,p_),l_ in possible_actions if c is not c_ and p is not p_]
+         else:
+            scores = sorted(scores,key=lambda scr:-scr[0])
+            for gs,gf,gc,gp,gl in scores:
+               if allowed(gc,gp,gl): break
+            add_weights(gf,1)
+            add_weights(f,-1)
+            updates+=1
+            if updates>200:
+               print "stuck!"
+               break
+#}}}
+
+
+
+if __name__=='__main__':
+   TRAIN=True if 'train' in sys.argv else False
+   TEST =True if 'test' in sys.argv else False
+   EVAL =True if 'eval' in sys.argv else False
+   fext = AnEdgeLabelFeatureExtractor2() if 'f2' in sys.argv else \
+         AnEdgeLabelFeatureExtractor()
+   if 'f3' in sys.argv: fext=AnEdgeLabelFeatureExtractor3()
+   if 'f4' in sys.argv: fext=AnEdgeLabelFeatureExtractor4()
+   if 'f5' in sys.argv: fext=AnEdgeLabelFeatureExtractor5()
+   if 'f6' in sys.argv: fext=AnEdgeLabelFeatureExtractor6()  # use this one!
+   if 'f6l' in sys.argv: fext=AnEdgeLabelFeatureExtractor6Lex()
+   if 'f6r' in sys.argv: fext=AnEdgeLabelFeatureExtractor6Prels()
+   if 'f6sg' in sys.argv: fext=AnEdgeLabelFeatureExtractor6SG()
+
+   if '-g' in sys.argv:
+      guidesuffs = sys.argv[sys.argv.index('-g')+1].split(":")
+   else:
+      guidesuffs = None
+   guide_sents=None
+
+   BOTTOMUP = True if 'bu' in sys.argv else False  # useless..
+
+   DEVFILE=sys.argv[1]
+   
+   if not (TRAIN or TEST or EVAL): sys.exit(1)
+
+   if not EVAL:
+      sents = list(io.conll_to_sents(file(sys.argv[1])))
+      guide_sents = list(guidesio.read_guides(sys.argv[1],guidesuffs)) if guidesuffs else None
+   if TRAIN:
+      if BOTTOMUP:
+         train_bu_simple_labeler(sents,sys.argv[2],fext=fext)#,fext=AnEdgeLabelFeaturePlusSuffixesExtractor())
+      else:
+         if guide_sents:
+            train_simple_labeler(sents,sys.argv[2],fext=fext,guides=guide_sents)#,fext=AnEdgeLabelFeaturePlusSuffixesExtractor())
+         else:
+            train_simple_labeler(sents,sys.argv[2],fext=fext)#,fext=AnEdgeLabelFeaturePlusSuffixesExtractor())
+
+   if TEST:
+      if BOTTOMUP:
+         test_bu_labeler(sys.argv[2],sents,fext=fext)#,fext=AnEdgeLabelFeaturePlusSuffixesExtractor())
+      else:
+         if guide_sents:
+            test_labeler(sys.argv[2],sents,fext=fext,guides=guide_sents)#,fext=AnEdgeLabelFeaturePlusSuffixesExtractor())
+         else:
+            test_labeler(sys.argv[2],sents,fext=fext)#,fext=AnEdgeLabelFeaturePlusSuffixesExtractor())
+
+   if EVAL:
+      if guide_sents:
+         eval_labeler(sys.argv[2],DEVFILE,fext=fext,guides=sent_guides)
+      else:
+         eval_labeler(sys.argv[2],DEVFILE,fext=fext)
+
+
+
+
+
+
+
+

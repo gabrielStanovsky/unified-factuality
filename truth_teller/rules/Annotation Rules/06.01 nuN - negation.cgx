@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<conceptualgraph editor="CharGer" version="3.6" created="Jul 22, 2012 2:50:19 AM" user="Amnon">
+<graph id="220717716721" owner="0">
+    <type>
+        <label>Proposition</label>
+    </type>
+    <layout>
+        <rectangle x="5.0" y="5.0" width="900.0" height="750.0"/>
+        <color foreground="0,0,175" background="0,0,175"/>
+    </layout>
+    <relation id="278018446973" owner="220717716721">
+        <type>
+            <label>Joe_didn&apos;t_dance_{POSITIVE}_at_all___&gt;_Joe_didn&apos;t_dance_{NEGATIVE}_at_all</label>
+        </type>
+        <layout>
+            <rectangle x="370.0" y="111.25" width="556.0" height="69.5"/>
+            <color foreground="0,0,0" background="255,231,100"/>
+        </layout>
+    </relation>
+    <concept id="250611351062" owner="220717716721">
+        <type>
+            <label>rel=&quot;*&quot;_tag=&quot;ADVERB&quot;_lemma=&quot;no\not\n&apos;t\never\almost\nearly&quot;</label>
+        </type>
+        <layout>
+            <rectangle x="29.0" y="617.375" width="650.0" height="81.25"/>
+            <color foreground="255,255,255" background="0,0,175"/>
+        </layout>
+    </concept>
+    <concept id="250367415902" owner="220717716721">
+        <type>
+            <label>ruleType=ANNOTATION</label>
+        </type>
+        <layout>
+            <rectangle x="501.5" y="415.1875" width="269.0" height="33.625"/>
+            <color foreground="255,255,255" background="0,0,175"/>
+        </layout>
+    </concept>
+    <actor id="250367416489" owner="220717716721">
+        <type>
+            <label>copy</label>
+        </type>
+        <layout>
+            <rectangle x="659.0" y="530.7" width="52.0" height="28.6"/>
+            <color foreground="0,0,0" background="255,255,255"/>
+        </layout>
+    </actor>
+    <concept id="250367416490" owner="220717716721">
+        <type>
+            <label>nu=&quot;flip&quot;</label>
+        </type>
+        <layout>
+            <rectangle x="817.5" y="524.3125" width="235.0" height="29.375"/>
+            <color foreground="255,255,255" background="0,0,175"/>
+        </layout>
+    </concept>
+    <relation id="250611355813" owner="220717716721">
+        <type>
+            <label>&quot;nothing\nowhere&quot;_doesn&apos;t_fit_in_here__e_g__&quot;Joe_writes_nothing_but_novels&quot;</label>
+        </type>
+        <layout>
+            <rectangle x="30.0" y="185.375" width="586.0" height="73.25"/>
+            <color foreground="0,0,0" background="255,231,100"/>
+        </layout>
+    </relation>
+    <relation id="283200983145" owner="220717716721">
+        <type>
+            <label>the_&quot;flip_values&quot;_func_flips_the_values_the_appear_on_RHS_nodes</label>
+        </type>
+        <layout>
+            <rectangle x="372.0" y="262.875" width="498.0" height="62.25"/>
+            <color foreground="0,0,0" background="255,231,100"/>
+        </layout>
+    </relation>
+    <concept id="220717717606" owner="220717716721">
+        <type>
+            <label>LHS</label>
+        </type>
+        <layout>
+            <rectangle x="313.0" y="432.0" width="40.0" height="26.0"/>
+            <color foreground="255,255,255" background="0,0,175"/>
+        </layout>
+    </concept>
+    <relation id="278018446987" owner="220717716721">
+        <type>
+            <label>3_3_9_1__Mark_negated_predicates_as_NEGATED</label>
+        </type>
+        <layout>
+            <rectangle x="359.0" y="61.25" width="364.0" height="45.5"/>
+            <color foreground="0,0,0" background="255,231,100"/>
+        </layout>
+    </relation>
+    <relation id="283200976286" owner="220717716721">
+        <type>
+            <label>use_&quot;FLIP_NEGATION&quot;_for_double_negation_effect_of_&quot;almost_none_of_X&quot;</label>
+        </type>
+        <layout>
+            <rectangle x="658.5" y="319.9375" width="545.0" height="68.125"/>
+            <color foreground="0,0,0" background="255,231,100"/>
+        </layout>
+    </relation>
+    <concept id="246804263650" owner="220717716721">
+        <type>
+            <label>tag=&quot;*&quot;</label>
+        </type>
+        <layout>
+            <rectangle x="51.0" y="507.75" width="564.0" height="70.5"/>
+            <color foreground="255,255,255" background="0,0,175"/>
+        </layout>
+    </concept>
+    <arrow id="250367416493" owner="220717716721" label="-" from="250367416489" to="250367416490">
+        <layout>
+            <rectangle x="760.9453" y="540.6173" width="6.0" height="6.0"/>
+            <color foreground="0,0,0" background="255,255,255"/>
+        </layout>
+    </arrow>
+    <arrow id="283200983155" owner="220717716721" label="-" from="283200983145" to="250367415902">
+        <layout>
+            <rectangle x="626.73114" y="367.22656" width="6.0" height="6.0"/>
+            <color foreground="0,0,0" background="255,255,255"/>
+        </layout>
+    </arrow>
+    <coref id="250611351071" owner="220717716721" label="-" from="246804263650" to="250611351062">
+        <layout>
+            <rectangle x="340.50925" y="595.3125" width="6.0" height="6.0"/>
+            <color foreground="0,0,175" background="0,0,0"/>
+        </layout>
+    </coref>
+    <arrow id="250367416505" owner="220717716721" label="-" from="246804263650" to="250367416489">
+        <layout>
+            <rectangle x="634.9375" y="542.22974" width="6.0" height="6.0"/>
+            <color foreground="0,0,0" background="255,255,255"/>
+        </layout>
+    </arrow>
+    <arrow id="283200976293" owner="220717716721" label="-" from="283200976286" to="250367416490">
+        <layout>
+            <rectangle x="930.69763" y="453.13867" width="6.0" height="6.0"/>
+            <color foreground="0,0,0" background="255,255,255"/>
+        </layout>
+    </arrow>
+    <coref id="246804263695" owner="220717716721" label="-" from="220717717606" to="246804263650">
+        <layout>
+            <rectangle x="330.5" y="480.375" width="6.0" height="6.0"/>
+            <color foreground="0,0,175" background="0,0,0"/>
+        </layout>
+    </coref>
+</graph>
+
+</conceptualgraph>
+

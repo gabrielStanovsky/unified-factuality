@@ -1,0 +1,12 @@
+1	was	be	VERB	VBD	_	0	ROOT	_	_	+/-	P	P	P
+2	Don	don	NOUN	NNP	_	1	nsubj	_	_	_	P	_	_
+3	dishonest	dishonest	ADJECTIVE	JJ	_	1	acomp	_	_	_	P	_	_
+4	said	say	VERB	VBD	_	1	advcl	_	_	+/?Fin	P	P	P
+5	when	when	ADVERB	WRB	_	4	advmod	_	_	_	_	_	_
+6	he	-pron-	PRONOUN	PRP	_	4	nsubj	_	_	_	_	_	_
+7	paid	pay	VERB	VBD	_	4	ccomp	_	_	?/-	P	P	P
+8	that	that	PREPOSITION	IN	_	7	mark	_	_	_	_	_	_
+9	he	-pron-	PRONOUN	PRP	_	7	nsubj	_	_	_	_	_	_
+10	taxes	tax	NOUN	NNS	_	7	dobj	_	_	_	P	_	_
+11	his	-pron-	PRONOUN	PRP$	_	10	poss	_	_	_	_	_	_
+

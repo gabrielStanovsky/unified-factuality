@@ -1,0 +1,25 @@
+1	were	be	VERB	VBD	_	0	ROOT	_	_	+/-	P	P	P
+2	"	"	PUNCTUATION	``	_	1	punct	_	_	_	_	_	_
+3	We	we	PRONOUN	PRP	_	1	nsubj	_	_	_	_	_	_
+4	pleased	pleased	ADJECTIVE	JJ	_	1	acomp	_	_	+/?Fin	P	P	P
+5	knew	know	VERB	VBD	_	4	ccomp	_	_	+/+Fin	P	P	P
+6	that	that	PREPOSITION	IN	_	5	mark	_	_	_	_	_	_
+7	England	england	NOUN	NNP	_	5	nsubj	_	_	_	P	_	_
+8	and	and	PREPOSITION	CC	_	7	cc	_	_	_	_	_	_
+9	Zealand	zealand	NOUN	NNP	_	7	conj	_	_	_	P	_	_
+10	New	new	NOUN	NNP	_	9	nn	_	_	_	P	_	_
+11	about	about	PREPOSITION	IN	_	5	prep	_	_	_	_	_	_
+12	it	it	PRONOUN	PRP	_	11	pobj	_	_	_	_	_	_
+13	,	,	PUNCTUATION	,	_	5	punct	_	_	_	_	_	_
+14	and	and	PREPOSITION	CC	_	5	cc	_	_	_	_	_	_
+15	thought	think	VERB	VBD	_	5	conj	_	_	?/-	P	P	P
+16	we	we	PRONOUN	PRP	_	15	nsubj	_	_	_	_	_	_
+17	's	'	VERB	VBZ	_	15	ccomp	_	_	+/?Fin	P	U	U
+18	that	that	DETERMINER	DT	_	17	nsubj	_	_	_	_	_	_
+19	stop	stop	VERB	VB	_	17	ccomp	_	_	+/+Fin	P	P	P
+20	where	where	ADVERB	WRB	_	19	advmod	_	_	_	_	_	_
+21	it	it	PRONOUN	PRP	_	19	nsubj	_	_	_	_	_	_
+22	would	would	VERB	MD	_	19	aux	_	_	+/?Fin	P	P	P
+23	.	.	PUNCTUATION	.	_	15	punct	_	_	_	_	_	_
+24	"	"	PUNCTUATION	''	_	1	punct	_	_	_	_	_	_
+

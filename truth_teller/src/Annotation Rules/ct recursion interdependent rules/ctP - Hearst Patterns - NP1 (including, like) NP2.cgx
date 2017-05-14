@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<conceptualgraph editor="CharGer" version="3.6" created="Jul 10, 2012 12:56:21 PM" user="Amnon">
+<graph id="220717716721" owner="0">
+    <type>
+        <label>Proposition</label>
+    </type>
+    <layout>
+        <rectangle x="5.0" y="5.0" width="900.0" height="750.0"/>
+        <color foreground="0,0,175" background="0,0,175"/>
+    </layout>
+    <concept id="252554233965" owner="220717716721">
+        <type>
+            <label>rel=&quot;nsubj&quot;_tag=&quot;NOUN&quot;_ct=&quot;U&quot;</label>
+        </type>
+        <layout>
+            <rectangle x="100.5" y="495.3125" width="331.0" height="41.375"/>
+            <color foreground="255,255,255" background="0,0,175"/>
+        </layout>
+    </concept>
+    <actor id="246804263739" owner="220717716721">
+        <type>
+            <label>copy_ct</label>
+        </type>
+        <layout>
+            <rectangle x="508.4" y="353.27" width="83.2" height="31.460001"/>
+            <color foreground="0,0,0" background="255,255,255"/>
+        </layout>
+    </actor>
+    <actor id="247166293780" owner="220717716721">
+        <type>
+            <label>copy</label>
+        </type>
+        <layout>
+            <rectangle x="540.0" y="500.7" width="52.0" height="28.6"/>
+            <color foreground="0,0,0" background="255,255,255"/>
+        </layout>
+    </actor>
+    <concept id="252554233630" owner="220717716721">
+        <type>
+            <label>ruleType=annotation</label>
+        </type>
+        <layout>
+            <rectangle x="472.0" y="303.0" width="154.0" height="26.0"/>
+            <color foreground="255,255,255" background="0,0,175"/>
+        </layout>
+    </concept>
+    <relation id="284668966000" owner="220717716721">
+        <type>
+            <label>NP1_including_NP2</label>
+        </type>
+        <layout>
+            <rectangle x="474.5" y="40.5" width="145.0" height="25.0"/>
+            <color foreground="0,0,0" background="255,231,100"/>
+        </layout>
+    </relation>
+    <relation id="284668966258" owner="220717716721">
+        <type>
+            <label>change_only_ct?</label>
+        </type>
+        <layout>
+            <rectangle x="48.5" y="425.5" width="129.0" height="25.0"/>
+            <color foreground="0,0,0" background="255,231,100"/>
+        </layout>
+    </relation>
+    <concept id="220717717708" owner="220717716721">
+        <type>
+            <label>LHS</label>
+        </type>
+        <layout>
+            <rectangle x="244.0" y="299.0" width="40.0" height="26.0"/>
+            <color foreground="255,255,255" background="0,0,175"/>
+        </layout>
+    </concept>
+    <concept id="247166293032" owner="220717716721">
+        <type>
+            <label>null</label>
+        </type>
+        <layout>
+            <rectangle x="711.0" y="502.0" width="84.0" height="26.0"/>
+            <color foreground="255,255,255" background="0,0,175"/>
+        </layout>
+    </concept>
+    <relation id="284668965988" owner="220717716721">
+        <type>
+            <label>he&apos;d_better_search_for_compelling_evidence_including_blood_stains___&gt;_blood_stains_are_(an)_evidence</label>
+        </type>
+        <layout>
+            <rectangle x="148.5" y="91.5625" width="775.0" height="96.875"/>
+            <color foreground="0,0,0" background="255,231,100"/>
+        </layout>
+    </relation>
+    <concept id="246804263654" owner="220717716721">
+        <type>
+            <label>tag=&quot;NOUN&quot;_ct=&quot;P\N&quot;</label>
+        </type>
+        <layout>
+            <rectangle x="125.5" y="351.4375" width="281.0" height="35.125"/>
+            <color foreground="255,255,255" background="0,0,175"/>
+        </layout>
+    </concept>
+    <concept id="252554234086" owner="220717716721">
+        <type>
+            <label>rel=&quot;prep&quot;_tag=&quot;VERB\PREPOSITION&quot;_lemma=&quot;include\like&quot;</label>
+        </type>
+        <layout>
+            <rectangle x="52.0" y="571.25" width="428.0" height="53.5"/>
+            <color foreground="255,255,255" background="0,0,175"/>
+        </layout>
+    </concept>
+    <arrow id="252554234888" owner="220717716721" label="-" from="247166293780" to="247166293032">
+        <layout>
+            <rectangle x="648.64844" y="512.5" width="6.0" height="6.0"/>
+            <color foreground="0,0,0" background="255,255,255"/>
+        </layout>
+    </arrow>
+    <coref id="246804263701" owner="220717716721" label="-" from="220717717708" to="246804263654">
+        <layout>
+            <rectangle x="262.41998" y="335.71875" width="6.0" height="6.0"/>
+            <color foreground="0,0,175" background="0,0,0"/>
+        </layout>
+    </coref>
+    <coref id="252554234089" owner="220717716721" label="-" from="252554233965" to="252554234086">
+        <layout>
+            <rectangle x="263.5" y="551.46875" width="6.0" height="6.0"/>
+            <color foreground="0,0,175" background="0,0,0"/>
+        </layout>
+    </coref>
+    <coref id="252554234308" owner="220717716721" label="-" from="246804263654" to="252554233965">
+        <layout>
+            <rectangle x="263.5" y="438.4375" width="6.0" height="6.0"/>
+            <color foreground="0,0,175" background="0,0,0"/>
+        </layout>
+    </coref>
+    <arrow id="284668966310" owner="220717716721" label="-" from="246804263739" to="247166293032">
+        <layout>
+            <rectangle x="646.8003" y="437.91797" width="6.0" height="6.0"/>
+            <color foreground="0,0,0" background="255,255,255"/>
+        </layout>
+    </arrow>
+    <arrow id="284668966263" owner="220717716721" label="-" from="284668966258" to="252554233965">
+        <layout>
+            <rectangle x="177.38387" y="469.59766" width="6.0" height="6.0"/>
+            <color foreground="0,0,0" background="255,255,255"/>
+        </layout>
+    </arrow>
+    <arrow id="252554234875" owner="220717716721" label="-" from="252554233965" to="247166293780">
+        <layout>
+            <rectangle x="483.5664" y="512.7665" width="6.0" height="6.0"/>
+            <color foreground="0,0,0" background="255,255,255"/>
+        </layout>
+    </arrow>
+    <arrow id="247166293083" owner="220717716721" label="-" from="246804263654" to="246804263739">
+        <layout>
+            <rectangle x="455.44922" y="366.5" width="6.0" height="6.0"/>
+            <color foreground="0,0,0" background="255,255,255"/>
+        </layout>
+    </arrow>
+</graph>
+
+</conceptualgraph>
+

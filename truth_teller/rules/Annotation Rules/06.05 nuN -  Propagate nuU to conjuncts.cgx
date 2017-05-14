@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<conceptualgraph editor="CharGer" version="3.6" created="Jul 22, 2012 3:02:53 AM" user="Amnon">
+<graph id="220717716721" owner="0">
+    <type>
+        <label>Proposition</label>
+    </type>
+    <layout>
+        <rectangle x="5.0" y="5.0" width="900.0" height="750.0"/>
+        <color foreground="0,0,175" background="0,0,175"/>
+    </layout>
+    <relation id="283200984178" owner="220717716721">
+        <type>
+            <label>this_must_run_after_the_propagate_nuN_rule:_nuU_takes_precedence_over_nuN</label>
+        </type>
+        <layout>
+            <rectangle x="189.5" y="217.3125" width="619.0" height="77.375"/>
+            <color foreground="0,0,0" background="255,231,100"/>
+        </layout>
+    </relation>
+    <relation id="278018447303" owner="220717716721">
+        <type>
+            <label>Propagate_nu_U_to_conjuncts</label>
+        </type>
+        <layout>
+            <rectangle x="468.5" y="31.1875" width="397.0" height="49.625"/>
+            <color foreground="0,0,0" background="255,231,100"/>
+        </layout>
+    </relation>
+    <concept id="283200987743" owner="220717716721">
+        <type>
+            <label>tag=&quot;*&quot;_nu=&quot;U&quot;</label>
+        </type>
+        <layout>
+            <rectangle x="366.5" y="590.5" width="117.0" height="25.0"/>
+            <color foreground="255,255,255" background="0,0,175"/>
+        </layout>
+    </concept>
+    <concept id="220717717606" owner="220717716721">
+        <type>
+            <label>LHS</label>
+        </type>
+        <layout>
+            <rectangle x="405.0" y="545.0" width="40.0" height="26.0"/>
+            <color foreground="255,255,255" background="0,0,175"/>
+        </layout>
+    </concept>
+    <relation id="278018448828" owner="220717716721">
+        <type>
+            <label>IMPORTANT:_this_rule_must_come_after_the_rule_that_propagates_negation_from_subj_dobj_to_parent!</label>
+        </type>
+        <layout>
+            <rectangle x="21.0" y="96.0" width="752.0" height="94.0"/>
+            <color foreground="0,0,0" background="255,231,100"/>
+        </layout>
+    </relation>
+    <concept id="250367415902" owner="220717716721">
+        <type>
+            <label>ruleType=annotation</label>
+        </type>
+        <layout>
+            <rectangle x="471.5" y="545.0" width="155.0" height="26.0"/>
+            <color foreground="255,255,255" background="0,0,175"/>
+        </layout>
+    </concept>
+    <concept id="283200987758" owner="220717716721">
+        <type>
+            <label>rel=&quot;conj&quot;_tag=&quot;*&quot;_nu=&quot;P\N&quot;</label>
+        </type>
+        <layout>
+            <rectangle x="320.5" y="635.9375" width="209.0" height="26.125"/>
+            <color foreground="255,255,255" background="0,0,175"/>
+        </layout>
+    </concept>
+    <relation id="278018447315" owner="220717716721">
+        <type>
+            <label>Maybe_there_were_apples,_and_there_were{nuN_==&gt;_nuU}_no_bananas_</label>
+        </type>
+        <layout>
+            <rectangle x="362.0" y="310.75" width="708.0" height="88.5"/>
+            <color foreground="0,0,0" background="255,231,100"/>
+        </layout>
+    </relation>
+    <actor id="250611351120" owner="220717716721">
+        <type>
+            <label>copy</label>
+        </type>
+        <layout>
+            <rectangle x="559.0" y="634.7" width="52.0" height="28.6"/>
+            <color foreground="0,0,0" background="255,255,255"/>
+        </layout>
+    </actor>
+    <concept id="283200987772" owner="220717716721">
+        <type>
+            <label>nu=&quot;U&quot;</label>
+        </type>
+        <layout>
+            <rectangle x="643.0" y="636.5" width="60.0" height="25.0"/>
+            <color foreground="255,255,255" background="0,0,175"/>
+        </layout>
+    </concept>
+    <coref id="283200987748" owner="220717716721" label="-" from="220717717606" to="283200987743">
+        <layout>
+            <rectangle x="422.5" y="578.25" width="6.0" height="6.0"/>
+            <color foreground="0,0,175" background="0,0,0"/>
+        </layout>
+    </coref>
+    <coref id="283200987765" owner="220717716721" label="-" from="283200987758" to="283200987743">
+        <layout>
+            <rectangle x="422.5" y="623.21875" width="6.0" height="6.0"/>
+            <color foreground="0,0,175" background="0,0,0"/>
+        </layout>
+    </coref>
+    <arrow id="283200987797" owner="220717716721" label="-" from="250611351120" to="283200987772">
+        <layout>
+            <rectangle x="624.0625" y="646.5" width="6.0" height="6.0"/>
+            <color foreground="0,0,0" background="255,255,255"/>
+        </layout>
+    </arrow>
+    <arrow id="283200987794" owner="220717716721" label="-" from="283200987758" to="250611351120">
+        <layout>
+            <rectangle x="542.125" y="646.5" width="6.0" height="6.0"/>
+            <color foreground="0,0,0" background="255,255,255"/>
+        </layout>
+    </arrow>
+</graph>
+
+</conceptualgraph>
+

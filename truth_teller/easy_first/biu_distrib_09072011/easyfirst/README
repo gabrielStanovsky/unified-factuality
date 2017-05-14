@@ -1,0 +1,104 @@
+What is it:
+============
+This is the code for the Easy-first non-directional dependency parser 
+described in the papers:
+
+   An Efficient Algorithm for Easy-First Non-Directional Dependency Parsing
+   Yoav Goldberg and Michael Elhadad
+   NAACL 2010
+
+   Easy First Dependency Parsing of Modern Hebrew
+   Yoav Goldberg and Michael Elhadad
+   SPMRL 2010 (NAACL Workshop on Statistical Parsing of Morphologically-rich Languages)
+
+
+research quaility code (== crappy). provided without any guarantees.
+
+if you use this for academic research, we'd appreciate if you cite the NAACL-2010 paper.
+
+Requirements:
+=============
+- python 2.5 or above (not compatible with python3)
+- cython and a c compiler for compiling the ml module
+
+Installation:
+=============
+- copy to a folder
+- install cython:
+   easy_install cython
+- compile the ml module:
+   cd ml
+   python setup.py build_ext --inplace
+
+   
+Usage:
+======
+short:
+
+   python train.py -o naaclmodel -f features/engfeatures2.py data/WSJ
+   python parse.py -m naaclmodel.model data/TEST > parsed
+
+longer:
+
+Training a model:
+``````````````````
+
+      python train.py -o model -f features [options] train_file [dev_file]
+
+   for example, assuming data/WSJ contains the WSJ training data in CoNLL 
+   format, training a model with the NAACL-2010 features:
+
+      python train.py -o naaclmodel -f features/engfeatures2.py data/WSJ
+
+   this will produce the files:
+      naaclmodel.model
+      naaclmodel.weights.N  (for N between 1 and 20)
+      naaclmodel.weights.FINAL  
+   
+      the .N files are the weights after the Nth round of training, and 
+      can be deleted if you don't plan on using them.
+
+   if dev_file is supplied, will eval on it whenever weights are saved.
+   
+   options:
+      --help
+
+      --iters N
+         run of N iterations [default 20]
+
+      --every N  
+         save weights every N iterations [default 1]
+
+Parsing with / Testing a trained model:
+```````````````````````````````````````
+      python parse.py -m model [options] input_file
+
+   for example, to parse the data/TEST file with the naaclmodel.model 
+   created above:
+      
+      python parse.py -m naaclmodel.model data/TEST > parsed
+
+   this will parse with the FINAL weights.  
+   Specifying specific iteration weights is also possible:
+
+      python parse.py -m naaclmodel.model --iter 2 data/TEST > parsed
+
+   options:
+      --help
+
+      --eval
+          print accuracy information (assuming input file includes 
+          parents information).  
+
+      --nopunct 
+          ignore punctuation marks (for English) when calculating 
+          the accuracy.
+
+      
+Support:
+========
+email yoavg / cs.bgu.ac.il
+      
+
+
+   

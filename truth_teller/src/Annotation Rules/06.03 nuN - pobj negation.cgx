@@ -1,0 +1,200 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<conceptualgraph editor="CharGer" version="3.6" created="Jul 22, 2012 2:52:09 AM" user="Amnon">
+<graph id="220717716721" owner="0">
+    <type>
+        <label>Proposition</label>
+    </type>
+    <layout>
+        <rectangle x="5.0" y="5.0" width="900.0" height="750.0"/>
+        <color foreground="0,0,175" background="0,0,175"/>
+    </layout>
+    <relation id="286255718010" owner="220717716721">
+        <type>
+            <label>IMPORTANT:_this_rule_must_come_before_the_rule_that_propagates_negation_down_to_conjuncts!</label>
+        </type>
+        <layout>
+            <rectangle x="450.0" y="110.0" width="752.0" height="94.0"/>
+            <color foreground="0,0,0" background="255,231,100"/>
+        </layout>
+    </relation>
+    <relation id="253504196798" owner="220717716721">
+        <type>
+            <label>predicate</label>
+        </type>
+        <layout>
+            <rectangle x="125.5" y="464.0" width="77.0" height="26.0"/>
+            <color foreground="0,0,0" background="255,231,100"/>
+        </layout>
+    </relation>
+    <concept id="250611351062" owner="220717716721">
+        <type>
+            <label>rel=&quot;pobj&quot;_tag=&quot;NOUN\ADJECTIVE&quot;_nu=&quot;N&quot;</label>
+        </type>
+        <layout>
+            <rectangle x="52.0" y="682.375" width="650.0" height="81.25"/>
+            <color foreground="255,255,255" background="0,0,175"/>
+        </layout>
+    </concept>
+    <concept id="250367415902" owner="220717716721">
+        <type>
+            <label>ruleType=annotation</label>
+        </type>
+        <layout>
+            <rectangle x="666.5" y="461.0" width="155.0" height="26.0"/>
+            <color foreground="255,255,255" background="0,0,175"/>
+        </layout>
+    </concept>
+    <relation id="276531165582" owner="220717716721">
+        <type>
+            <label>Under_no_circumstances_will_Wanda_go_out_with_Todd</label>
+        </type>
+        <layout>
+            <rectangle x="28.0" y="200.25" width="412.0" height="51.5"/>
+            <color foreground="0,0,0" background="255,231,100"/>
+        </layout>
+    </relation>
+    <actor id="250367416489" owner="220717716721">
+        <type>
+            <label>copy</label>
+        </type>
+        <layout>
+            <rectangle x="748.0" y="548.7" width="52.0" height="28.6"/>
+            <color foreground="0,0,0" background="255,255,255"/>
+        </layout>
+    </actor>
+    <relation id="250611355727" owner="220717716721">
+        <type>
+            <label>Does_Object_negation_necessarily_negate_the_predicate??_&quot;Wanda_will_go_out_with_Todd,_for_no_aparent_reason_&quot;</label>
+        </type>
+        <layout>
+            <rectangle x="248.5" y="247.1875" width="861.0" height="107.625"/>
+            <color foreground="0,0,0" background="255,231,100"/>
+        </layout>
+    </relation>
+    <concept id="250367416490" owner="220717716721">
+        <type>
+            <label>nu=&quot;N&quot;</label>
+        </type>
+        <layout>
+            <rectangle x="849.5" y="538.3125" width="235.0" height="29.375"/>
+            <color foreground="255,255,255" background="0,0,175"/>
+        </layout>
+    </concept>
+    <concept id="276531165708" owner="220717716721">
+        <type>
+            <label>rel=&quot;prep&quot;_tag=&quot;PREPOSITION&quot;</label>
+        </type>
+        <layout>
+            <rectangle x="256.0" y="612.625" width="230.0" height="28.75"/>
+            <color foreground="255,255,255" background="0,0,175"/>
+        </layout>
+    </concept>
+    <relation id="283200984267" owner="220717716721">
+        <type>
+            <label>change_nuP_to_nuN,_but_not_nuU_to_nuN,_cos_nuU_taks_precedence</label>
+        </type>
+        <layout>
+            <rectangle x="14.0" y="358.625" width="518.0" height="64.75"/>
+            <color foreground="0,0,0" background="255,231,100"/>
+        </layout>
+    </relation>
+    <relation id="278018449104" owner="220717716721">
+        <type>
+            <label>Mark_negated_predicates_as_NEGATED___pobj_negation</label>
+        </type>
+        <layout>
+            <rectangle x="431.5" y="6.4375" width="489.0" height="61.125"/>
+            <color foreground="0,0,0" background="255,231,100"/>
+        </layout>
+    </relation>
+    <concept id="220717717606" owner="220717716721">
+        <type>
+            <label>LHS</label>
+        </type>
+        <layout>
+            <rectangle x="358.0" y="445.0" width="40.0" height="26.0"/>
+            <color foreground="255,255,255" background="0,0,175"/>
+        </layout>
+    </concept>
+    <relation id="276531165818" owner="220717716721">
+        <type>
+            <label>false_positive:_&quot;Jack_manages_the_company_with_no_problems_&quot;</label>
+        </type>
+        <layout>
+            <rectangle x="670.0" y="388.75" width="484.0" height="60.5"/>
+            <color foreground="0,0,0" background="255,231,100"/>
+        </layout>
+    </relation>
+    <relation id="250611355747" owner="220717716721">
+        <type>
+            <label>This_rule_must_run_last_among_the_negation_rules</label>
+        </type>
+        <layout>
+            <rectangle x="786.0" y="196.125" width="382.0" height="47.75"/>
+            <color foreground="0,0,0" background="255,231,100"/>
+        </layout>
+    </relation>
+    <relation id="286255717969" owner="220717716721">
+        <type>
+            <label>IMPORTANT:_this_rule_must_run_after_the_negation_rules_that_create_(not_read)_NU</label>
+        </type>
+        <layout>
+            <rectangle x="6.5" y="60.0625" width="623.0" height="77.875"/>
+            <color foreground="0,0,0" background="255,231,100"/>
+        </layout>
+    </relation>
+    <concept id="246804263650" owner="220717716721">
+        <type>
+            <label>tag=&quot;*&quot;_nu=&quot;P&quot;</label>
+        </type>
+        <layout>
+            <rectangle x="98.0" y="519.75" width="564.0" height="70.5"/>
+            <color foreground="255,255,255" background="0,0,175"/>
+        </layout>
+    </concept>
+    <coref id="276531165717" owner="220717716721" label="-" from="276531165708" to="250611351062">
+        <layout>
+            <rectangle x="370.6797" y="659.375" width="6.0" height="6.0"/>
+            <color foreground="0,0,175" background="0,0,0"/>
+        </layout>
+    </coref>
+    <arrow id="250367416493" owner="220717716721" label="-" from="250367416489" to="250367416490">
+        <layout>
+            <rectangle x="820.8125" y="557.94495" width="6.0" height="6.0"/>
+            <color foreground="0,0,0" background="255,255,255"/>
+        </layout>
+    </arrow>
+    <coref id="276531165714" owner="220717716721" label="-" from="246804263650" to="276531165708">
+        <layout>
+            <rectangle x="371.6953" y="598.9375" width="6.0" height="6.0"/>
+            <color foreground="0,0,175" background="0,0,0"/>
+        </layout>
+    </coref>
+    <arrow id="253504196803" owner="220717716721" label="-" from="253504196798" to="246804263650">
+        <layout>
+            <rectangle x="232.8077" y="500.25" width="6.0" height="6.0"/>
+            <color foreground="0,0,0" background="255,255,255"/>
+        </layout>
+    </arrow>
+    <arrow id="250367416505" owner="220717716721" label="-" from="246804263650" to="250367416489">
+        <layout>
+            <rectangle x="703.30273" y="559.1153" width="6.0" height="6.0"/>
+            <color foreground="0,0,0" background="255,255,255"/>
+        </layout>
+    </arrow>
+    <coref id="246804263695" owner="220717716721" label="-" from="220717717606" to="246804263650">
+        <layout>
+            <rectangle x="376.27063" y="492.875" width="6.0" height="6.0"/>
+            <color foreground="0,0,175" background="0,0,0"/>
+        </layout>
+    </coref>
+    <arrow id="283200984282" owner="220717716721" label="-" from="283200984267" to="246804263650">
+        <layout>
+            <rectangle x="322.62378" y="468.39062" width="6.0" height="6.0"/>
+            <color foreground="0,0,0" background="255,255,255"/>
+        </layout>
+    </arrow>
+</graph>
+
+</conceptualgraph>
+

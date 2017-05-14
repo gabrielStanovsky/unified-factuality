@@ -1,0 +1,4 @@
+- a better feature-set (easyfirst/features/stnfeaturesplus.py)
+- smaller models for labeler and parser (using the sparse perceptron trick)
+
+- added wordnet lemmatizer to output (based on nltk wordnet module)

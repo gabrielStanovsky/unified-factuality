@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<conceptualgraph editor="CharGer" version="3.6" created="08-Aug-2012 18:01:55" user="amnon">
+<graph id="220717716721" owner="0">
+    <type>
+        <label>Proposition</label>
+    </type>
+    <layout>
+        <rectangle x="5.0" y="5.0" width="900.0" height="750.0"/>
+        <color foreground="0,0,175" background="0,0,175"/>
+    </layout>
+    <concept id="220717717604" owner="220717716721">
+        <type>
+            <label>2_1_2__Initialize_by_marking_every_verb_by_default_as_{P_U}_{POSITIVE}</label>
+        </type>
+        <layout>
+            <rectangle x="147.5" y="15.4375" width="1017.0" height="127.125"/>
+            <color foreground="255,255,255" background="0,0,175"/>
+        </layout>
+    </concept>
+    <concept id="220717717606" owner="220717716721">
+        <type>
+            <label>LHS</label>
+        </type>
+        <layout>
+            <rectangle x="342.0" y="324.0" width="40.0" height="26.0"/>
+            <color foreground="255,255,255" background="0,0,175"/>
+        </layout>
+    </concept>
+    <concept id="250367416432" owner="220717716721">
+        <type>
+            <label>sig=&quot;P_U_FinP&quot;_monotonicity=&quot;UP&quot;_nu=&quot;P&quot;_ct=&quot;U&quot;_pt=&quot;U&quot;</label>
+        </type>
+        <layout>
+            <rectangle x="642.5" y="398.9375" width="529.0" height="66.125"/>
+            <color foreground="255,255,255" background="0,0,175"/>
+        </layout>
+    </concept>
+    <relation id="250611356185" owner="220717716721">
+        <type>
+            <label>mark_every_VERB</label>
+        </type>
+        <layout>
+            <rectangle x="491.5" y="272.1875" width="221.0" height="27.625"/>
+            <color foreground="0,0,0" background="255,231,100"/>
+        </layout>
+    </relation>
+    <concept id="250367415902" owner="220717716721">
+        <type>
+            <label>ruleType=annotation</label>
+        </type>
+        <layout>
+            <rectangle x="538.5" y="227.0" width="155.0" height="26.0"/>
+            <color foreground="255,255,255" background="0,0,175"/>
+        </layout>
+    </concept>
+    <concept id="250367415925" owner="220717716721">
+        <type>
+            <label>Ex__He_regrets_quitting_school_?_He_regrets_{RE}_{UP}_quitting_school</label>
+        </type>
+        <layout>
+            <rectangle x="393.0" y="148.625" width="534.0" height="66.75"/>
+            <color foreground="255,255,255" background="0,0,175"/>
+        </layout>
+    </concept>
+    <concept id="246804263650" owner="220717716721">
+        <type>
+            <label>tag=&quot;VERB&quot;</label>
+        </type>
+        <layout>
+            <rectangle x="228.0" y="412.5" width="264.0" height="33.0"/>
+            <color foreground="255,255,255" background="0,0,175"/>
+        </layout>
+    </concept>
+    <actor id="250367416431" owner="220717716721">
+        <type>
+            <label>copy</label>
+        </type>
+        <layout>
+            <rectangle x="566.0" y="415.7" width="52.0" height="28.6"/>
+            <color foreground="0,0,0" background="255,255,255"/>
+        </layout>
+    </actor>
+    <arrow id="250367416439" owner="220717716721" label="-" from="246804263650" to="250367416431">
+        <layout>
+            <rectangle x="526.8594" y="427.22998" width="6.0" height="6.0"/>
+            <color foreground="0,0,0" background="255,255,255"/>
+        </layout>
+    </arrow>
+    <coref id="246804263695" owner="220717716721" label="-" from="220717717606" to="246804263650">
+        <layout>
+            <rectangle x="358.53802" y="378.75" width="6.0" height="6.0"/>
+            <color foreground="0,0,175" background="0,0,0"/>
+        </layout>
+    </coref>
+    <arrow id="250367416435" owner="220717716721" label="-" from="250367416431" to="250367416432">
+        <layout>
+            <rectangle x="627.1699" y="427.7392" width="6.0" height="6.0"/>
+            <color foreground="0,0,0" background="255,255,255"/>
+        </layout>
+    </arrow>
+</graph>
+
+</conceptualgraph>
+

@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<conceptualgraph editor="CharGer" version="3.6" created="Jul 22, 2012 2:08:06 AM" user="Amnon">
+<graph id="220717716721" owner="0">
+    <type>
+        <label>Proposition</label>
+    </type>
+    <layout>
+        <rectangle x="5.0" y="5.0" width="900.0" height="750.0"/>
+        <color foreground="0,0,175" background="0,0,175"/>
+    </layout>
+    <relation id="278018447144" owner="220717716721">
+        <type>
+            <label>nouns_who_were_marked_nuN_(like_in_a_negated_phrasal_verb)_are_not_presupposed</label>
+        </type>
+        <layout>
+            <rectangle x="114.5" y="195.6875" width="725.0" height="90.625"/>
+            <color foreground="0,0,0" background="255,231,100"/>
+        </layout>
+    </relation>
+    <concept id="250611351062" owner="220717716721">
+        <type>
+            <label>rel=&quot;poss&quot;_tag=&quot;*&quot;</label>
+        </type>
+        <layout>
+            <rectangle x="43.0" y="593.375" width="650.0" height="81.25"/>
+            <color foreground="255,255,255" background="0,0,175"/>
+        </layout>
+    </concept>
+    <relation id="278018447183" owner="220717716721">
+        <type>
+            <label>NPs_with_a_possesive_modifier_are_marked_with_positive_clause_truth_{ct+}</label>
+        </type>
+        <layout>
+            <rectangle x="262.5" y="43.6875" width="565.0" height="70.625"/>
+            <color foreground="0,0,0" background="255,231,100"/>
+        </layout>
+    </relation>
+    <concept id="250367415902" owner="220717716721">
+        <type>
+            <label>ruleType=annotation</label>
+        </type>
+        <layout>
+            <rectangle x="561.5" y="333.0" width="155.0" height="26.0"/>
+            <color foreground="255,255,255" background="0,0,175"/>
+        </layout>
+    </concept>
+    <actor id="250367416489" owner="220717716721">
+        <type>
+            <label>copy</label>
+        </type>
+        <layout>
+            <rectangle x="659.0" y="489.7" width="52.0" height="28.6"/>
+            <color foreground="0,0,0" background="255,255,255"/>
+        </layout>
+    </actor>
+    <relation id="278018447997" owner="220717716721">
+        <type>
+            <label>this_in_situ_CT_may_hamper_recursive_CT_computation_in_phrasal_verbs,_like_in_&quot;Gadi_didn&apos;t_meet_his_obligation_to_slow_down&quot;</label>
+        </type>
+        <layout>
+            <rectangle x="112.5" y="698.1875" width="957.0" height="119.625"/>
+            <color foreground="0,0,0" background="255,231,100"/>
+        </layout>
+    </relation>
+    <concept id="250367416490" owner="220717716721">
+        <type>
+            <label>ct=&quot;P&quot;</label>
+        </type>
+        <layout>
+            <rectangle x="746.5" y="485.3125" width="235.0" height="29.375"/>
+            <color foreground="255,255,255" background="0,0,175"/>
+        </layout>
+    </concept>
+    <relation id="278018447169" owner="220717716721">
+        <type>
+            <label>We&apos;re_looking_for_Jeremy&apos;s_man_{P}_who_lost_his_turtle_</label>
+        </type>
+        <layout>
+            <rectangle x="332.0" y="132.375" width="426.0" height="53.25"/>
+            <color foreground="0,0,0" background="255,231,100"/>
+        </layout>
+    </relation>
+    <concept id="220717717606" owner="220717716721">
+        <type>
+            <label>LHS</label>
+        </type>
+        <layout>
+            <rectangle x="350.0" y="389.0" width="40.0" height="26.0"/>
+            <color foreground="255,255,255" background="0,0,175"/>
+        </layout>
+    </concept>
+    <relation id="281026261344" owner="220717716721">
+        <type>
+            <label>important_for_relative_clause_presupposition</label>
+        </type>
+        <layout>
+            <rectangle x="792.0" y="107.0" width="336.0" height="42.0"/>
+            <color foreground="0,0,0" background="255,231,100"/>
+        </layout>
+    </relation>
+    <relation id="281026261252" owner="220717716721">
+        <type>
+            <label>so_the_phrasal_verb_rules_overwrite_out_this_rule</label>
+        </type>
+        <layout>
+            <rectangle x="746.0" y="778.0" width="400.0" height="50.0"/>
+            <color foreground="0,0,0" background="255,231,100"/>
+        </layout>
+    </relation>
+    <concept id="246804263650" owner="220717716721">
+        <type>
+            <label>tag=&quot;NOUN&quot;_nu=&quot;P\U&quot;__ct=&quot;U&quot;</label>
+        </type>
+        <layout>
+            <rectangle x="144.5" y="477.4375" width="457.0" height="57.125"/>
+            <color foreground="255,255,255" background="0,0,175"/>
+        </layout>
+    </concept>
+    <arrow id="250367416493" owner="220717716721" label="-" from="250367416489" to="250367416490">
+        <layout>
+            <rectangle x="725.33594" y="500.5428" width="6.0" height="6.0"/>
+            <color foreground="0,0,0" background="255,255,255"/>
+        </layout>
+    </arrow>
+    <coref id="250611351071" owner="220717716721" label="-" from="246804263650" to="250611351062">
+        <layout>
+            <rectangle x="368.2356" y="561.46875" width="6.0" height="6.0"/>
+            <color foreground="0,0,175" background="0,0,0"/>
+        </layout>
+    </coref>
+    <arrow id="250367416505" owner="220717716721" label="-" from="246804263650" to="250367416489">
+        <layout>
+            <rectangle x="628.14844" y="501.8484" width="6.0" height="6.0"/>
+            <color foreground="0,0,0" background="255,255,255"/>
+        </layout>
+    </arrow>
+    <coref id="246804263695" owner="220717716721" label="-" from="220717717606" to="246804263650">
+        <layout>
+            <rectangle x="368.77554" y="443.71875" width="6.0" height="6.0"/>
+            <color foreground="0,0,175" background="0,0,0"/>
+        </layout>
+    </coref>
+    <arrow id="278018447151" owner="220717716721" label="-" from="278018447144" to="246804263650">
+        <layout>
+            <rectangle x="419.46503" y="378.7334" width="6.0" height="6.0"/>
+            <color foreground="0,0,0" background="255,255,255"/>
+        </layout>
+    </arrow>
+</graph>
+
+</conceptualgraph>
+

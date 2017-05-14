@@ -1,0 +1,22 @@
+1	said	say	VERB	VBD	_	0	ROOT	_	_	+/?Fin	P	P	P
+2	suffered	suffer	VERB	VBD	_	1	ccomp	_	_	+/?Fin	P	P	P
+3	Profit	profit	NOUN	NN	_	2	nsubj	_	_	_	P	_	_
+4	also	also	ADVERB	RB	_	2	advmod	_	_	_	_	_	_
+5	because	because	PREPOSITION	IN	_	2	prep	_	_	_	_	_	_
+6	of	of	PREPOSITION	IN	_	5	pcomp	_	_	_	_	_	_
+7	discounting	discount	VERB	VBG	_	5	pobj	_	_	+/?Fin	P	U	U
+8	"	"	PUNCTUATION	``	_	7	punct	_	_	_	_	_	_
+9	intense	intense	ADJECTIVE	JJ	_	7	amod	_	_	_	P	_	_
+10	"	"	PUNCTUATION	''	_	7	punct	_	_	_	_	_	_
+11	in	in	PREPOSITION	IN	_	7	prep	_	_	_	_	_	_
+12	business	business	NOUN	NN	_	11	pobj	_	_	_	P	P	_
+13	its	its	PRONOUN	PRP$	_	12	poss	_	_	_	_	_	_
+14	haul	haul	NOUN	NN	_	12	nn	_	_	_	P	_	_
+15	long	long	ADJECTIVE	JJ	_	14	amod	_	_	_	P	_	_
+16	-	-	PUNCTUATION	:	_	14	punct	_	_	_	_	_	_
+17	trucking	trucking	NOUN	NN	_	12	nn	_	_	_	P	_	_
+18	,	,	PUNCTUATION	,	_	1	punct	_	_	_	_	_	_
+19	company	company	NOUN	NN	_	1	nsubj	_	_	_	P	_	_
+20	the	the	DETERMINER	DT	_	19	det	_	_	_	_	_	_
+21	.	.	PUNCTUATION	.	_	1	punct	_	_	_	_	_	_
+

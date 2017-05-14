@@ -1,0 +1,24 @@
+I rely on a compiled module for the dot-product.  This means you need to compile the module.
+
+I supply binaries for 32bit linux (out of the box), 64bit windows and 32bit windows (windows one are not tested).
+Should be very easy to build on unix-like machines with a c compiler.
+
+using the presuplied binaries:
+on 32bit linux: 
+   this should be working out of the box. otherwise:
+      cp ml.so.elf32 ml.so 
+
+on Win32:
+   for 64bit machines: copy ml.pyd.win64 ml.pyd
+   for 32bit machines: copy ml.pyd.win32 ml.pyd
+
+compiling the extension module:
+with cython:
+   1/ install cython. (easy_install cython).  then:
+   2/ pythoh setup.py build_ext --inplace
+
+without cython:
+   python setupc.py build
+   then look for a 'build/' directory, inside it locate a file called ml.so or ml.pyd, and copy it to this (ml/) directory.
+
+

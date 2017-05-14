@@ -1,0 +1,21 @@
+EasyFirst parsing to Stanford Dependencies
+
+
+to run:
+
+python sdparser_server.py
+
+
+wait until two models are loaded.
+
+then point your browser to:
+http://localhost:8080/
+
+
+to submit things to be parsed:
+send a "post" request to "parse", with a field named "tagged_text" containing the text to be parsed.
+
+
+Not working?
+if you have a "ImportError: No module named ml" error or similar, check out the binary ml model (see INSTALL under shared/ml)
+otherwise: email me  (yoav.goldberg@gmail.com)

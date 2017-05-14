@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<conceptualgraph editor="CharGer" version="3.6" created="Jul 22, 2012 2:40:26 AM" user="Amnon">
+<graph id="220717716721" owner="0">
+    <type>
+        <label>Proposition</label>
+    </type>
+    <layout>
+        <rectangle x="5.0" y="5.0" width="900.0" height="750.0"/>
+        <color foreground="0,0,175" background="0,0,175"/>
+    </layout>
+    <relation id="282662976574" owner="220717716721">
+        <type>
+            <label>the_sum_they_were_offering_was_significantly_higher_because_of_public_interest_{P}_in_the_case_</label>
+        </type>
+        <layout>
+            <rectangle x="178.5" y="228.4375" width="905.0" height="113.125"/>
+            <color foreground="0,0,0" background="255,231,100"/>
+        </layout>
+    </relation>
+    <concept id="284668963046" owner="220717716721">
+        <type>
+            <label>tag=&quot;PREPOSITION&quot;_lemma=&quot;of&quot;</label>
+        </type>
+        <layout>
+            <rectangle x="245.5" y="516.1875" width="237.0" height="29.625"/>
+            <color foreground="255,255,255" background="0,0,175"/>
+        </layout>
+    </concept>
+    <concept id="250367415902" owner="220717716721">
+        <type>
+            <label>ruleType=annotation</label>
+        </type>
+        <layout>
+            <rectangle x="561.5" y="374.0" width="155.0" height="26.0"/>
+            <color foreground="255,255,255" background="0,0,175"/>
+        </layout>
+    </concept>
+    <concept id="250611352171" owner="220717716721">
+        <type>
+            <label>ct=&quot;P&quot;</label>
+        </type>
+        <layout>
+            <rectangle x="797.5" y="733.0" width="125.0" height="26.0"/>
+            <color foreground="255,255,255" background="0,0,175"/>
+        </layout>
+    </concept>
+    <concept id="220717717606" owner="220717716721">
+        <type>
+            <label>LHS</label>
+        </type>
+        <layout>
+            <rectangle x="350.0" y="430.0" width="40.0" height="26.0"/>
+            <color foreground="255,255,255" background="0,0,175"/>
+        </layout>
+    </concept>
+    <actor id="250611352183" owner="220717716721">
+        <type>
+            <label>copy</label>
+        </type>
+        <layout>
+            <rectangle x="683.0" y="738.7" width="52.0" height="28.6"/>
+            <color foreground="0,0,0" background="255,255,255"/>
+        </layout>
+    </actor>
+    <concept id="284668963064" owner="220717716721">
+        <type>
+            <label>rel=&quot;pobj\pcomp&quot;_tag=&quot;*&quot;</label>
+        </type>
+        <layout>
+            <rectangle x="462.0" y="723.5" width="190.0" height="25.0"/>
+            <color foreground="255,255,255" background="0,0,175"/>
+        </layout>
+    </concept>
+    <concept id="284668963059" owner="220717716721">
+        <type>
+            <label>rel=&quot;mwe&quot;_tag=&quot;PREPOSITION&quot;_lemma=&quot;because&quot;</label>
+        </type>
+        <layout>
+            <rectangle x="92.0" y="607.25" width="364.0" height="45.5"/>
+            <color foreground="255,255,255" background="0,0,175"/>
+        </layout>
+    </concept>
+    <relation id="282662976583" owner="220717716721">
+        <type>
+            <label>Adverbial_clause_presupposition___mark_positive_implicativity_{+}_to_SPNP_phrases_headed_by_certain_expressions___because_of_(mwe)</label>
+        </type>
+        <layout>
+            <rectangle x="119.5" y="46.8125" width="1011.0" height="126.375"/>
+            <color foreground="0,0,0" background="255,231,100"/>
+        </layout>
+    </relation>
+    <coref id="284668963051" owner="220717716721" label="-" from="220717717606" to="284668963046">
+        <layout>
+            <rectangle x="364.56177" y="483.59375" width="6.0" height="6.0"/>
+            <color foreground="0,0,175" background="0,0,0"/>
+        </layout>
+    </coref>
+    <arrow id="284668963078" owner="220717716721" label="-" from="284668963064" to="250611352183">
+        <layout>
+            <rectangle x="667.5156" y="746.1399" width="6.0" height="6.0"/>
+            <color foreground="0,0,0" background="255,255,255"/>
+        </layout>
+    </arrow>
+    <coref id="284668963072" owner="220717716721" label="-" from="284668963046" to="284668963059">
+        <layout>
+            <rectangle x="320.10797" y="574.03125" width="6.0" height="6.0"/>
+            <color foreground="0,0,175" background="0,0,0"/>
+        </layout>
+    </coref>
+    <coref id="284668963069" owner="220717716721" label="-" from="284668963046" to="284668963064">
+        <layout>
+            <rectangle x="459.08856" y="632.15625" width="6.0" height="6.0"/>
+            <color foreground="0,0,175" background="0,0,0"/>
+        </layout>
+    </coref>
+    <arrow id="250611352189" owner="220717716721" label="-" from="250611352183" to="250611352171">
+        <layout>
+            <rectangle x="762.3418" y="747.9113" width="6.0" height="6.0"/>
+            <color foreground="0,0,0" background="255,255,255"/>
+        </layout>
+    </arrow>
+</graph>
+
+</conceptualgraph>
+

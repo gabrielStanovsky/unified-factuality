@@ -30,7 +30,7 @@ The following describes the installtion and format of both of these.
 
 You can find a static aggregated version of the corpus in the [snapshot folder](data/unified/snapshot).
 
-### Downloading manually
+### Manual Download
 
 From ```src```:
 
@@ -47,7 +47,7 @@ From ```src```:
 ./scripts/convert_corpora.sh
 ```
 
-The converted unified corpus should be created in the [unified directory](data/unified).
+The converted unified corpus should be created in the [unified corpus directory](data/unified).
 
 ### Format
 
@@ -59,7 +59,7 @@ TODO
 
 From ```src```, run: <br>
 ```
-./scripts/install_annotator.sh
+sudo -E ./scripts/install_annotator.sh
 ```
 
 ### Running the automatic annotator

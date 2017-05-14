@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<conceptualgraph editor="CharGer" version="3.6" created="Jul 22, 2012 2:08:53 AM" user="Amnon">
+<graph id="220717716721" owner="0">
+    <type>
+        <label>Proposition</label>
+    </type>
+    <layout>
+        <rectangle x="5.0" y="5.0" width="900.0" height="750.0"/>
+        <color foreground="0,0,175" background="0,0,175"/>
+    </layout>
+    <relation id="281026261330" owner="220717716721">
+        <type>
+            <label>important_for_relative_clause_presupposition</label>
+        </type>
+        <layout>
+            <rectangle x="841.0" y="77.0" width="336.0" height="42.0"/>
+            <color foreground="0,0,0" background="255,231,100"/>
+        </layout>
+    </relation>
+    <concept id="250611351062" owner="220717716721">
+        <type>
+            <label>rel=&quot;det&quot;_tag=&quot;DETERMINER&quot;_lemma=&quot;the\that\this\those\these\either\some&quot;</label>
+        </type>
+        <layout>
+            <rectangle x="80.0" y="525.375" width="650.0" height="81.25"/>
+            <color foreground="255,255,255" background="0,0,175"/>
+        </layout>
+    </concept>
+    <concept id="250367415902" owner="220717716721">
+        <type>
+            <label>ruleType=annotation</label>
+        </type>
+        <layout>
+            <rectangle x="597.5" y="256.0" width="155.0" height="26.0"/>
+            <color foreground="255,255,255" background="0,0,175"/>
+        </layout>
+    </concept>
+    <actor id="250367416489" owner="220717716721">
+        <type>
+            <label>copy</label>
+        </type>
+        <layout>
+            <rectangle x="695.0" y="412.7" width="52.0" height="28.6"/>
+            <color foreground="0,0,0" background="255,255,255"/>
+        </layout>
+    </actor>
+    <relation id="278018447049" owner="220717716721">
+        <type>
+            <label>nouns_who_were_marked_as_not_positive_(like_in_a_negated_phrasal_verb)_are_not_presupposed</label>
+        </type>
+        <layout>
+            <rectangle x="369.5" y="152.6875" width="725.0" height="90.625"/>
+            <color foreground="0,0,0" background="255,231,100"/>
+        </layout>
+    </relation>
+    <concept id="250367416490" owner="220717716721">
+        <type>
+            <label>ct=&quot;P&quot;</label>
+        </type>
+        <layout>
+            <rectangle x="782.5" y="408.3125" width="235.0" height="29.375"/>
+            <color foreground="255,255,255" background="0,0,175"/>
+        </layout>
+    </concept>
+    <relation id="278018447086" owner="220717716721">
+        <type>
+            <label>Definite_NPs_are_marked_with_positive_clause_truth_{ct+}</label>
+        </type>
+        <layout>
+            <rectangle x="409.0" y="17.25" width="428.0" height="53.5"/>
+            <color foreground="0,0,0" background="255,231,100"/>
+        </layout>
+    </relation>
+    <concept id="220717717606" owner="220717716721">
+        <type>
+            <label>LHS</label>
+        </type>
+        <layout>
+            <rectangle x="386.0" y="312.0" width="40.0" height="26.0"/>
+            <color foreground="255,255,255" background="0,0,175"/>
+        </layout>
+    </concept>
+    <relation id="281026261273" owner="220717716721">
+        <type>
+            <label>so_the_phrasal_verb_rules_must_cancel_out_this_rule</label>
+        </type>
+        <layout>
+            <rectangle x="703.0" y="777.0" width="400.0" height="50.0"/>
+            <color foreground="0,0,0" background="255,231,100"/>
+        </layout>
+    </relation>
+    <relation id="278018448114" owner="220717716721">
+        <type>
+            <label>this_in_situ_CT_may_hamper_recursive_CT_computation_in_phrasal_verbs,_like_in_&quot;Gadi_didn&apos;t_meet_his_obligation_to_slow_down&quot;</label>
+        </type>
+        <layout>
+            <rectangle x="99.5" y="651.1875" width="957.0" height="119.625"/>
+            <color foreground="0,0,0" background="255,231,100"/>
+        </layout>
+    </relation>
+    <relation id="278018447062" owner="220717716721">
+        <type>
+            <label>Ex__The_cat_sleeps_after__he_eats___&gt;_The_cat_{+}_sleeps_after__he_eats</label>
+        </type>
+        <layout>
+            <rectangle x="194.5" y="76.3125" width="555.0" height="69.375"/>
+            <color foreground="0,0,0" background="255,231,100"/>
+        </layout>
+    </relation>
+    <concept id="246804263650" owner="220717716721">
+        <type>
+            <label>tag=&quot;NOUN&quot;_nu=&quot;P\U&quot;__ct=&quot;U&quot;</label>
+        </type>
+        <layout>
+            <rectangle x="179.5" y="395.4375" width="457.0" height="57.125"/>
+            <color foreground="255,255,255" background="0,0,175"/>
+        </layout>
+    </concept>
+    <arrow id="250367416493" owner="220717716721" label="-" from="250367416489" to="250367416490">
+        <layout>
+            <rectangle x="761.33594" y="423.5428" width="6.0" height="6.0"/>
+            <color foreground="0,0,0" background="255,255,255"/>
+        </layout>
+    </arrow>
+    <arrow id="278018447055" owner="220717716721" label="-" from="278018447049" to="246804263650">
+        <layout>
+            <rectangle x="557.0502" y="315.78906" width="6.0" height="6.0"/>
+            <color foreground="0,0,0" background="255,255,255"/>
+        </layout>
+    </arrow>
+    <coref id="250611351071" owner="220717716721" label="-" from="246804263650" to="250611351062">
+        <layout>
+            <rectangle x="404.1274" y="486.46875" width="6.0" height="6.0"/>
+            <color foreground="0,0,175" background="0,0,0"/>
+        </layout>
+    </coref>
+    <arrow id="250367416505" owner="220717716721" label="-" from="246804263650" to="250367416489">
+        <layout>
+            <rectangle x="663.9121" y="423.9768" width="6.0" height="6.0"/>
+            <color foreground="0,0,0" background="255,255,255"/>
+        </layout>
+    </arrow>
+    <coref id="246804263695" owner="220717716721" label="-" from="220717717606" to="246804263650">
+        <layout>
+            <rectangle x="404.3428" y="364.21875" width="6.0" height="6.0"/>
+            <color foreground="0,0,175" background="0,0,0"/>
+        </layout>
+    </coref>
+</graph>
+
+</conceptualgraph>
+

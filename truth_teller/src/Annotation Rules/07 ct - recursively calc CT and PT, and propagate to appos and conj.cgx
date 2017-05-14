@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<conceptualgraph editor="CharGer" version="3.6" created="Jul 22, 2012 3:05:34 AM" user="Amnon">
+<graph id="220717716721" owner="0">
+    <type>
+        <label>Proposition</label>
+    </type>
+    <layout>
+        <rectangle x="5.0" y="5.0" width="900.0" height="750.0"/>
+        <color foreground="0,0,175" background="0,0,175"/>
+    </layout>
+    <concept id="250611358450" owner="220717716721">
+        <type>
+            <label>ruleType=COMPUTE_RECURSIVE_CT</label>
+        </type>
+        <layout>
+            <rectangle x="357.0" y="245.875" width="354.0" height="44.25"/>
+            <color foreground="255,255,255" background="0,0,175"/>
+        </layout>
+    </concept>
+    <concept id="220717717604" owner="220717716721">
+        <type>
+            <label>3_4__recursively_mark_implicativity_of_direct_SP_GP_arguments_of_implicatives</label>
+        </type>
+        <layout>
+            <rectangle x="149.5" y="15.4375" width="1017.0" height="127.125"/>
+            <color foreground="255,255,255" background="0,0,175"/>
+        </layout>
+    </concept>
+    <concept id="220717717606" owner="220717716721">
+        <type>
+            <label>LHS</label>
+        </type>
+        <layout>
+            <rectangle x="224.0" y="261.0" width="40.0" height="26.0"/>
+            <color foreground="255,255,255" background="0,0,175"/>
+        </layout>
+    </concept>
+    <concept id="283200983053" owner="220717716721">
+        <type>
+            <label>tag=&quot;*&quot;</label>
+        </type>
+        <layout>
+            <rectangle x="200.5" y="404.5" width="59.0" height="25.0"/>
+            <color foreground="255,255,255" background="0,0,175"/>
+        </layout>
+    </concept>
+    <relation id="250611358467" owner="220717716721">
+        <type>
+            <label>run_a_special_function_to_do_the_work</label>
+        </type>
+        <layout>
+            <rectangle x="382.5" y="344.5625" width="295.0" height="36.875"/>
+            <color foreground="0,0,0" background="255,231,100"/>
+        </layout>
+    </relation>
+    <relation id="283200983089" owner="220717716721">
+        <type>
+            <label>this_is_a_dummy_rule_body</label>
+        </type>
+        <layout>
+            <rectangle x="346.5" y="457.0625" width="207.0" height="25.875"/>
+            <color foreground="0,0,0" background="255,231,100"/>
+        </layout>
+    </relation>
+    <arrow id="250611358472" owner="220717716721" label="-" from="250611358467" to="250611358450">
+        <layout>
+            <rectangle x="529.4038" y="315.28516" width="6.0" height="6.0"/>
+            <color foreground="0,0,0" background="255,255,255"/>
+        </layout>
+    </arrow>
+    <arrow id="286255718141" owner="220717716721" label="-" from="283200983089" to="283200983053">
+        <layout>
+            <rectangle x="328.6875" y="438.87698" width="6.0" height="6.0"/>
+            <color foreground="0,0,0" background="255,255,255"/>
+        </layout>
+    </arrow>
+    <coref id="283200983063" owner="220717716721" label="-" from="220717717606" to="283200983053">
+        <layout>
+            <rectangle x="234.47552" y="343.25" width="6.0" height="6.0"/>
+            <color foreground="0,0,175" background="0,0,0"/>
+        </layout>
+    </coref>
+</graph>
+
+</conceptualgraph>
+

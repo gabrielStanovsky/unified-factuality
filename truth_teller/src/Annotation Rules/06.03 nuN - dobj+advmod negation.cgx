@@ -1,0 +1,233 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<conceptualgraph editor="CharGer" version="3.6" created="Jul 22, 2012 2:55:07 AM" user="Amnon">
+<graph id="220717716721" owner="0">
+    <type>
+        <label>Proposition</label>
+    </type>
+    <layout>
+        <rectangle x="5.0" y="5.0" width="900.0" height="750.0"/>
+        <color foreground="0,0,175" background="0,0,175"/>
+    </layout>
+    <relation id="275359425519" owner="220717716721">
+        <type>
+            <label>children_are_allowed_on_no_rides</label>
+        </type>
+        <layout>
+            <rectangle x="119.0" y="255.25" width="284.0" height="35.5"/>
+            <color foreground="0,0,0" background="255,231,100"/>
+        </layout>
+    </relation>
+    <concept id="250611351062" owner="220717716721">
+        <type>
+            <label>rel=&quot;dobj\advmod&quot;_tag=&quot;NOUN\ADJECTIVE\ADVERB&quot;_nu=&quot;N&quot;</label>
+        </type>
+        <layout>
+            <rectangle x="44.0" y="655.375" width="650.0" height="81.25"/>
+            <color foreground="255,255,255" background="0,0,175"/>
+        </layout>
+    </concept>
+    <relation id="278018447787" owner="220717716721">
+        <type>
+            <label>Jack_had__no_ability__to_speak_at_the_rally</label>
+        </type>
+        <layout>
+            <rectangle x="64.0" y="199.5" width="328.0" height="41.0"/>
+            <color foreground="0,0,0" background="255,231,100"/>
+        </layout>
+    </relation>
+    <concept id="250367415902" owner="220717716721">
+        <type>
+            <label>ruleType=ANNOTATION</label>
+        </type>
+        <layout>
+            <rectangle x="636.5" y="460.0" width="207.0" height="26.0"/>
+            <color foreground="255,255,255" background="0,0,175"/>
+        </layout>
+    </concept>
+    <actor id="250367416489" owner="220717716721">
+        <type>
+            <label>copy</label>
+        </type>
+        <layout>
+            <rectangle x="744.0" y="541.7" width="52.0" height="28.6"/>
+            <color foreground="0,0,0" background="255,255,255"/>
+        </layout>
+    </actor>
+    <relation id="250611355727" owner="220717716721">
+        <type>
+            <label>Does_Object_negation_necessarily_negate_the_predicate??_&quot;Joe_only_took_one_apple,_no_worries&quot;</label>
+        </type>
+        <layout>
+            <rectangle x="493.0" y="217.875" width="738.0" height="92.25"/>
+            <color foreground="0,0,0" background="255,231,100"/>
+        </layout>
+    </relation>
+    <concept id="250367416490" owner="220717716721">
+        <type>
+            <label>nu=&quot;N&quot;</label>
+        </type>
+        <layout>
+            <rectangle x="850.5" y="531.3125" width="235.0" height="29.375"/>
+            <color foreground="255,255,255" background="0,0,175"/>
+        </layout>
+    </concept>
+    <relation id="278018448895" owner="220717716721">
+        <type>
+            <label>IMPORTANT:_this_rule_must_come_before_the_rule_that_propagates_negation_down_to_conjuncts!</label>
+        </type>
+        <layout>
+            <rectangle x="460.0" y="125.0" width="752.0" height="94.0"/>
+            <color foreground="0,0,0" background="255,231,100"/>
+        </layout>
+    </relation>
+    <relation id="284668965230" owner="220717716721">
+        <type>
+            <label>he_enjoys_it_no_more_</label>
+        </type>
+        <layout>
+            <rectangle x="725.5" y="365.5" width="177.0" height="25.0"/>
+            <color foreground="0,0,0" background="255,231,100"/>
+        </layout>
+    </relation>
+    <relation id="278018448979" owner="220717716721">
+        <type>
+            <label>IMPORTANT:_this_rule_must_run_after_the_negation_rules_that_create_(not_read)_NU</label>
+        </type>
+        <layout>
+            <rectangle x="0.5" y="66.0625" width="623.0" height="77.875"/>
+            <color foreground="0,0,0" background="255,231,100"/>
+        </layout>
+    </relation>
+    <relation id="286255718039" owner="220717716721">
+        <type>
+            <label>change_nuP_to_nuN,_but_not_nuU_to_nuN,_cos_nuU_taks_precedence</label>
+        </type>
+        <layout>
+            <rectangle x="19.0" y="378.625" width="518.0" height="64.75"/>
+            <color foreground="0,0,0" background="255,231,100"/>
+        </layout>
+    </relation>
+    <concept id="220717717606" owner="220717716721">
+        <type>
+            <label>LHS</label>
+        </type>
+        <layout>
+            <rectangle x="383.0" y="458.0" width="40.0" height="26.0"/>
+            <color foreground="255,255,255" background="0,0,175"/>
+        </layout>
+    </concept>
+    <concept id="250611351115" owner="220717716721">
+        <type>
+            <label>nu=&quot;P&quot;</label>
+        </type>
+        <layout>
+            <rectangle x="902.5" y="682.0" width="125.0" height="26.0"/>
+            <color foreground="255,255,255" background="0,0,175"/>
+        </layout>
+    </concept>
+    <relation id="283200985154" owner="220717716721">
+        <type>
+            <label>Military_men_was_not_seen_at_no_site_</label>
+        </type>
+        <layout>
+            <rectangle x="313.5" y="328.0625" width="303.0" height="37.875"/>
+            <color foreground="0,0,0" background="255,231,100"/>
+        </layout>
+    </relation>
+    <actor id="250611351120" owner="220717716721">
+        <type>
+            <label>copy</label>
+        </type>
+        <layout>
+            <rectangle x="776.0" y="681.7" width="52.0" height="28.6"/>
+            <color foreground="0,0,0" background="255,255,255"/>
+        </layout>
+    </actor>
+    <relation id="278018448923" owner="220717716721">
+        <type>
+            <label>Mark_negated_predicates_as_NEGATED___dobj+advmod_negation</label>
+        </type>
+        <layout>
+            <rectangle x="293.5" y="5.9375" width="497.0" height="62.125"/>
+            <color foreground="0,0,0" background="255,231,100"/>
+        </layout>
+    </relation>
+    <relation id="278018447844" owner="220717716721">
+        <type>
+            <label>for_phrasal_verbs,_it&apos;s_important_to_also_flip_the_noun&apos;s_NU_to_P,_not_just_to_flip_the_predicate&apos;s_NU</label>
+        </type>
+        <layout>
+            <rectangle x="385.0" y="751.875" width="754.0" height="94.25"/>
+            <color foreground="0,0,0" background="255,231,100"/>
+        </layout>
+    </relation>
+    <relation id="284668965028" owner="220717716721">
+        <type>
+            <label>he_enjoys_music_no_more_</label>
+        </type>
+        <layout>
+            <rectangle x="705.5" y="322.9375" width="209.0" height="26.125"/>
+            <color foreground="0,0,0" background="255,231,100"/>
+        </layout>
+    </relation>
+    <concept id="246804263650" owner="220717716721">
+        <type>
+            <label>tag=&quot;*&quot;_nu=&quot;P&quot;</label>
+        </type>
+        <layout>
+            <rectangle x="124.0" y="511.75" width="564.0" height="70.5"/>
+            <color foreground="255,255,255" background="0,0,175"/>
+        </layout>
+    </concept>
+    <arrow id="286255718052" owner="220717716721" label="-" from="286255718039" to="246804263650">
+        <layout>
+            <rectangle x="337.44116" y="474.3125" width="6.0" height="6.0"/>
+            <color foreground="0,0,0" background="255,255,255"/>
+        </layout>
+    </arrow>
+    <arrow id="250367416493" owner="220717716721" label="-" from="250367416489" to="250367416490">
+        <layout>
+            <rectangle x="819.2383" y="550.88696" width="6.0" height="6.0"/>
+            <color foreground="0,0,0" background="255,255,255"/>
+        </layout>
+    </arrow>
+    <coref id="250611351071" owner="220717716721" label="-" from="246804263650" to="250611351062">
+        <layout>
+            <rectangle x="385.66736" y="616.3125" width="6.0" height="6.0"/>
+            <color foreground="0,0,175" background="0,0,0"/>
+        </layout>
+    </coref>
+    <arrow id="250367416505" owner="220717716721" label="-" from="246804263650" to="250367416489">
+        <layout>
+            <rectangle x="714.5586" y="552.19104" width="6.0" height="6.0"/>
+            <color foreground="0,0,0" background="255,255,255"/>
+        </layout>
+    </arrow>
+    <arrow id="250611351126" owner="220717716721" label="-" from="250611351120" to="250611351115">
+        <layout>
+            <rectangle x="862.30273" y="693.11475" width="6.0" height="6.0"/>
+            <color foreground="0,0,0" background="255,255,255"/>
+        </layout>
+    </arrow>
+    <arrow id="250611351123" owner="220717716721" label="-" from="250611351062" to="250611351120">
+        <layout>
+            <rectangle x="732.8916" y="693.5" width="6.0" height="6.0"/>
+            <color foreground="0,0,0" background="255,255,255"/>
+        </layout>
+    </arrow>
+    <arrow id="286147194880" owner="220717716721" label="-" from="278018447844" to="250611351062">
+        <layout>
+            <rectangle x="561.0475" y="744.4883" width="6.0" height="6.0"/>
+            <color foreground="0,0,0" background="255,255,255"/>
+        </layout>
+    </arrow>
+    <coref id="246804263695" owner="220717716721" label="-" from="220717717606" to="246804263650">
+        <layout>
+            <rectangle x="401.56085" y="495.375" width="6.0" height="6.0"/>
+            <color foreground="0,0,175" background="0,0,0"/>
+        </layout>
+    </coref>
+</graph>
+
+</conceptualgraph>
+

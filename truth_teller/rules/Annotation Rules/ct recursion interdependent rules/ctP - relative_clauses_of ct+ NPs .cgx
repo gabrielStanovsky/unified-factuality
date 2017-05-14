@@ -1,0 +1,197 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<conceptualgraph editor="CharGer" version="3.6" created="Jul 17, 2012 11:47:03 PM" user="Amnon">
+<graph id="220717716721" owner="0">
+    <type>
+        <label>Proposition</label>
+    </type>
+    <layout>
+        <rectangle x="5.0" y="5.0" width="900.0" height="750.0"/>
+        <color foreground="0,0,175" background="0,0,175"/>
+    </layout>
+    <relation id="284668966997" owner="220717716721">
+        <type>
+            <label>In_tandem_with_recursive_CT:_Gal_managed_a_building,_which_Ginger_failed__to_sell</label>
+        </type>
+        <layout>
+            <rectangle x="117.5" y="229.6875" width="629.0" height="78.625"/>
+            <color foreground="0,0,0" background="255,231,100"/>
+        </layout>
+    </relation>
+    <relation id="283200989088" owner="220717716721">
+        <type>
+            <label>The_stock_price_which_you_hoped_{P}_for_was_never_reached</label>
+        </type>
+        <layout>
+            <rectangle x="267.5" y="139.8125" width="467.0" height="58.375"/>
+            <color foreground="0,0,0" background="255,231,100"/>
+        </layout>
+    </relation>
+    <concept id="250367415902" owner="220717716721">
+        <type>
+            <label>ruleType=annotation</label>
+        </type>
+        <layout>
+            <rectangle x="571.5" y="407.0" width="155.0" height="26.0"/>
+            <color foreground="255,255,255" background="0,0,175"/>
+        </layout>
+    </concept>
+    <relation id="250611356907" owner="220717716721">
+        <type>
+            <label>a_complementizer_(if_any)_comes_under_here,_but_I&apos;m_guessing_there&apos;s_no_need_to_require_it,_for_sake_of_generality</label>
+        </type>
+        <layout>
+            <rectangle x="49.0" y="780.25" width="876.0" height="109.5"/>
+            <color foreground="0,0,0" background="255,231,100"/>
+        </layout>
+    </relation>
+    <concept id="250611353484" owner="220717716721">
+        <type>
+            <label>rel=&quot;rcmod\csubj&quot;_tag=&quot;*&quot;_ct=&quot;U&quot;</label>
+        </type>
+        <layout>
+            <rectangle x="165.0" y="662.0" width="368.0" height="46.0"/>
+            <color foreground="255,255,255" background="0,0,175"/>
+        </layout>
+    </concept>
+    <concept id="220717717606" owner="220717716721">
+        <type>
+            <label>LHS</label>
+        </type>
+        <layout>
+            <rectangle x="350.0" y="430.0" width="40.0" height="26.0"/>
+            <color foreground="255,255,255" background="0,0,175"/>
+        </layout>
+    </concept>
+    <concept id="250611351115" owner="220717716721">
+        <type>
+            <label>ct=&quot;P&quot;</label>
+        </type>
+        <layout>
+            <rectangle x="913.5" y="665.0" width="125.0" height="26.0"/>
+            <color foreground="255,255,255" background="0,0,175"/>
+        </layout>
+    </concept>
+    <relation id="281026261182" owner="220717716721">
+        <type>
+            <label>depends_on_NP_presupposition_rules_to_mark_this_ct+</label>
+        </type>
+        <layout>
+            <rectangle x="18.5" y="358.3125" width="411.0" height="51.375"/>
+            <color foreground="0,0,0" background="255,231,100"/>
+        </layout>
+    </relation>
+    <actor id="250611351120" owner="220717716721">
+        <type>
+            <label>copy</label>
+        </type>
+        <layout>
+            <rectangle x="729.0" y="666.7" width="52.0" height="28.6"/>
+            <color foreground="0,0,0" background="255,255,255"/>
+        </layout>
+    </actor>
+    <relation id="260976755659" owner="220717716721">
+        <type>
+            <label>a_{P}_modified_NP</label>
+        </type>
+        <layout>
+            <rectangle x="29.0" y="422.0" width="142.0" height="26.0"/>
+            <color foreground="0,0,0" background="255,231,100"/>
+        </layout>
+    </relation>
+    <relation id="285880182812" owner="220717716721">
+        <type>
+            <label>The_place_I_live_is_a_mess</label>
+        </type>
+        <layout>
+            <rectangle x="556.5" y="326.9375" width="209.0" height="26.125"/>
+            <color foreground="0,0,0" background="255,231,100"/>
+        </layout>
+    </relation>
+    <relation id="284668967312" owner="220717716721">
+        <type>
+            <label>FalsePositives:_args_of_NPs:_&quot;I_heard_the_rumours_that_X&quot;</label>
+        </type>
+        <layout>
+            <rectangle x="742.0" y="127.375" width="442.0" height="55.25"/>
+            <color foreground="0,0,0" background="255,231,100"/>
+        </layout>
+    </relation>
+    <relation id="283200989100" owner="220717716721">
+        <type>
+            <label>Mark_positive_implicativity_{+}_to_relative_clauses_of_ct+_NPs</label>
+        </type>
+        <layout>
+            <rectangle x="247.5" y="66.1875" width="493.0" height="61.625"/>
+            <color foreground="0,0,0" background="255,231,100"/>
+        </layout>
+    </relation>
+    <relation id="250611353511" owner="220717716721">
+        <type>
+            <label>the_clause_predicate</label>
+        </type>
+        <layout>
+            <rectangle x="41.0" y="608.0" width="162.0" height="26.0"/>
+            <color foreground="0,0,0" background="255,231,100"/>
+        </layout>
+    </relation>
+    <concept id="246804263650" owner="220717716721">
+        <type>
+            <label>tag=&quot;NOUN&quot;_ct=&quot;P&quot;</label>
+        </type>
+        <layout>
+            <rectangle x="143.5" y="513.4375" width="457.0" height="57.125"/>
+            <color foreground="255,255,255" background="0,0,175"/>
+        </layout>
+    </concept>
+    <arrow id="250611353516" owner="220717716721" label="-" from="250611353511" to="250611353484">
+        <layout>
+            <rectangle x="210.83203" y="644.25" width="6.0" height="6.0"/>
+            <color foreground="0,0,0" background="255,255,255"/>
+        </layout>
+    </arrow>
+    <arrow id="281026261188" owner="220717716721" label="-" from="281026261182" to="246804263650">
+        <layout>
+            <rectangle x="293.50583" y="458.3711" width="6.0" height="6.0"/>
+            <color foreground="0,0,0" background="255,255,255"/>
+        </layout>
+    </arrow>
+    <arrow id="250611356925" owner="220717716721" label="-" from="250611356907" to="250611353484">
+        <layout>
+            <rectangle x="401.47357" y="742.2539" width="6.0" height="6.0"/>
+            <color foreground="0,0,0" background="255,255,255"/>
+        </layout>
+    </arrow>
+    <arrow id="250611351126" owner="220717716721" label="-" from="250611351120" to="250611351115">
+        <layout>
+            <rectangle x="844.1992" y="677.25525" width="6.0" height="6.0"/>
+            <color foreground="0,0,0" background="255,255,255"/>
+        </layout>
+    </arrow>
+    <arrow id="250611353502" owner="220717716721" label="-" from="250611353484" to="250611351120">
+        <layout>
+            <rectangle x="628.916" y="679.7176" width="6.0" height="6.0"/>
+            <color foreground="0,0,0" background="255,255,255"/>
+        </layout>
+    </arrow>
+    <coref id="250611353496" owner="220717716721" label="-" from="246804263650" to="250611353484">
+        <layout>
+            <rectangle x="357.55267" y="613.78125" width="6.0" height="6.0"/>
+            <color foreground="0,0,175" background="0,0,0"/>
+        </layout>
+    </coref>
+    <coref id="246804263695" owner="220717716721" label="-" from="220717717606" to="246804263650">
+        <layout>
+            <rectangle x="368.3428" y="482.21875" width="6.0" height="6.0"/>
+            <color foreground="0,0,175" background="0,0,0"/>
+        </layout>
+    </coref>
+    <arrow id="260976755665" owner="220717716721" label="-" from="260976755659" to="246804263650">
+        <layout>
+            <rectangle x="211.06586" y="477.1748" width="6.0" height="6.0"/>
+            <color foreground="0,0,0" background="255,255,255"/>
+        </layout>
+    </arrow>
+</graph>
+
+</conceptualgraph>
+

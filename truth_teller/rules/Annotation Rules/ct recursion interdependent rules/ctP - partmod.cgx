@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<conceptualgraph editor="CharGer" version="3.6" created="Jul 18, 2012 11:09:12 AM" user="Amnon">
+<graph id="220717716721" owner="0">
+    <type>
+        <label>Proposition</label>
+    </type>
+    <layout>
+        <rectangle x="5.0" y="5.0" width="900.0" height="750.0"/>
+        <color foreground="0,0,175" background="0,0,175"/>
+    </layout>
+    <relation id="259533255552" owner="220717716721">
+        <type>
+            <label>the_participle_clause</label>
+        </type>
+        <layout>
+            <rectangle x="221.5" y="626.0" width="161.0" height="26.0"/>
+            <color foreground="0,0,0" background="255,231,100"/>
+        </layout>
+    </relation>
+    <relation id="259533256022" owner="220717716721">
+        <type>
+            <label>however,_it_errs_on_&quot;I_saw_a_car_painted_in_black_&quot;</label>
+        </type>
+        <layout>
+            <rectangle x="481.0" y="301.125" width="398.0" height="49.75"/>
+            <color foreground="0,0,0" background="255,231,100"/>
+        </layout>
+    </relation>
+    <relation id="283200989265" owner="220717716721">
+        <type>
+            <label>I_stood_and_watched_for_hours,_tucked_away_in_the_closet</label>
+        </type>
+        <layout>
+            <rectangle x="63.5" y="280.1875" width="445.0" height="55.625"/>
+            <color foreground="0,0,0" background="255,231,100"/>
+        </layout>
+    </relation>
+    <concept id="285880183009" owner="220717716721">
+        <type>
+            <label>rel=&quot;partmod&quot;_tag=&quot;*&quot;_ct=&quot;N\U&quot;</label>
+        </type>
+        <layout>
+            <rectangle x="443.5" y="535.4375" width="233.0" height="29.125"/>
+            <color foreground="255,255,255" background="0,0,175"/>
+        </layout>
+    </concept>
+    <relation id="259533255610" owner="220717716721">
+        <type>
+            <label>any_presupposed_verb_or_noun</label>
+        </type>
+        <layout>
+            <rectangle x="209.0" y="444.75" width="244.0" height="30.5"/>
+            <color foreground="0,0,0" background="255,231,100"/>
+        </layout>
+    </relation>
+    <concept id="283200989341" owner="220717716721">
+        <type>
+            <label>ct=&quot;P&quot;</label>
+        </type>
+        <layout>
+            <rectangle x="783.0" y="537.5" width="54.0" height="25.0"/>
+            <color foreground="255,255,255" background="0,0,175"/>
+        </layout>
+    </concept>
+    <relation id="283200990671" owner="220717716721">
+        <type>
+            <label>Mark_positive_implicativity_{+}_to_partmod</label>
+        </type>
+        <layout>
+            <rectangle x="424.5" y="46.3125" width="315.0" height="39.375"/>
+            <color foreground="0,0,0" background="255,231,100"/>
+        </layout>
+    </relation>
+    <relation id="259533255657" owner="220717716721">
+        <type>
+            <label>this_rule_should_cover_the_presupposition_of_most_depictives,_resultatives_and_some_subjects</label>
+        </type>
+        <layout>
+            <rectangle x="303.5" y="207.4375" width="713.0" height="89.125"/>
+            <color foreground="0,0,0" background="255,231,100"/>
+        </layout>
+    </relation>
+    <relation id="259533256002" owner="220717716721">
+        <type>
+            <label>Finishing_in_first_place_shocked_him____&gt;_Finishing_{+}_in_first_place_shocked_him_</label>
+        </type>
+        <layout>
+            <rectangle x="328.0" y="154.625" width="630.0" height="78.75"/>
+            <color foreground="0,0,0" background="255,231,100"/>
+        </layout>
+    </relation>
+    <concept id="259533255542" owner="220717716721">
+        <type>
+            <label>ruleType=annotation</label>
+        </type>
+        <layout>
+            <rectangle x="620.5" y="447.0" width="155.0" height="26.0"/>
+            <color foreground="255,255,255" background="0,0,175"/>
+        </layout>
+    </concept>
+    <actor id="259533255550" owner="220717716721">
+        <type>
+            <label>copy</label>
+        </type>
+        <layout>
+            <rectangle x="714.0" y="535.7" width="52.0" height="28.6"/>
+            <color foreground="0,0,0" background="255,255,255"/>
+        </layout>
+    </actor>
+    <concept id="283200989314" owner="220717716721">
+        <type>
+            <label>tag=&quot;*&quot;_ct=&quot;P&quot;</label>
+        </type>
+        <layout>
+            <rectangle x="525.5" y="493.5" width="111.0" height="25.0"/>
+            <color foreground="255,255,255" background="0,0,175"/>
+        </layout>
+    </concept>
+    <concept id="259533255548" owner="220717716721">
+        <type>
+            <label>LHS</label>
+        </type>
+        <layout>
+            <rectangle x="561.0" y="447.0" width="40.0" height="26.0"/>
+            <color foreground="255,255,255" background="0,0,175"/>
+        </layout>
+    </concept>
+    <arrow id="285880183147" owner="220717716721" label="-" from="259533255610" to="283200989314">
+        <layout>
+            <rectangle x="458.9414" y="481.50122" width="6.0" height="6.0"/>
+            <color foreground="0,0,0" background="255,255,255"/>
+        </layout>
+    </arrow>
+    <coref id="283200989352" owner="220717716721" label="-" from="259533255548" to="283200989314">
+        <layout>
+            <rectangle x="578.5" y="480.75" width="6.0" height="6.0"/>
+            <color foreground="0,0,175" background="0,0,0"/>
+        </layout>
+    </coref>
+    <arrow id="285880183142" owner="220717716721" label="-" from="259533255552" to="285880183009">
+        <layout>
+            <rectangle x="423.07593" y="593.8711" width="6.0" height="6.0"/>
+            <color foreground="0,0,0" background="255,255,255"/>
+        </layout>
+    </arrow>
+    <coref id="285880183038" owner="220717716721" label="-" from="285880183009" to="283200989314">
+        <layout>
+            <rectangle x="568.4922" y="524.46875" width="6.0" height="6.0"/>
+            <color foreground="0,0,175" background="0,0,0"/>
+        </layout>
+    </coref>
+    <arrow id="285880183035" owner="220717716721" label="-" from="285880183009" to="259533255550">
+        <layout>
+            <rectangle x="693.2422" y="547.5" width="6.0" height="6.0"/>
+            <color foreground="0,0,0" background="255,255,255"/>
+        </layout>
+    </arrow>
+    <arrow id="283200989361" owner="220717716721" label="-" from="259533255550" to="283200989341">
+        <layout>
+            <rectangle x="771.625" y="547.5" width="6.0" height="6.0"/>
+            <color foreground="0,0,0" background="255,255,255"/>
+        </layout>
+    </arrow>
+</graph>
+
+</conceptualgraph>
+

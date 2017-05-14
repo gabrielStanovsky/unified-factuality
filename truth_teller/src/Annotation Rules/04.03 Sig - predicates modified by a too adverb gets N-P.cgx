@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<conceptualgraph editor="CharGer" version="3.6" created="Jul 17, 2012 7:46:06 PM" user="Amnon">
+<graph id="220717716721" owner="0">
+    <type>
+        <label>Proposition</label>
+    </type>
+    <layout>
+        <rectangle x="5.0" y="5.0" width="900.0" height="750.0"/>
+        <color foreground="0,0,175" background="0,0,175"/>
+    </layout>
+    <relation id="282662976661" owner="220717716721">
+        <type>
+            <label>Mark_{FA}_PredPs_modified_by_a_too_adverb_as_{I4}</label>
+        </type>
+        <layout>
+            <rectangle x="405.5" y="13.5625" width="391.0" height="48.875"/>
+            <color foreground="0,0,0" background="255,231,100"/>
+        </layout>
+    </relation>
+    <concept id="250367415902" owner="220717716721">
+        <type>
+            <label>ruleType=annotation</label>
+        </type>
+        <layout>
+            <rectangle x="456.5" y="245.0" width="155.0" height="26.0"/>
+            <color foreground="255,255,255" background="0,0,175"/>
+        </layout>
+    </concept>
+    <actor id="250367416489" owner="220717716721">
+        <type>
+            <label>copy</label>
+        </type>
+        <layout>
+            <rectangle x="508.0" y="287.7" width="52.0" height="28.6"/>
+            <color foreground="0,0,0" background="255,255,255"/>
+        </layout>
+    </actor>
+    <concept id="285880181841" owner="220717716721">
+        <type>
+            <label>tag=&quot;*&quot;_sig=&quot;P_P_FinP\P_P&quot;</label>
+        </type>
+        <layout>
+            <rectangle x="278.5" y="289.1875" width="205.0" height="25.625"/>
+            <color foreground="255,255,255" background="0,0,175"/>
+        </layout>
+    </concept>
+    <concept id="285880181797" owner="220717716721">
+        <type>
+            <label>rel=&quot;advmod&quot;_tag=&quot;ADVERB&quot;_lemma=&quot;too\excessively&quot;</label>
+        </type>
+        <layout>
+            <rectangle x="192.5" y="340.9375" width="401.0" height="50.125"/>
+            <color foreground="255,255,255" background="0,0,175"/>
+        </layout>
+    </concept>
+    <concept id="220717717606" owner="220717716721">
+        <type>
+            <label>LHS</label>
+        </type>
+        <layout>
+            <rectangle x="380.0" y="245.0" width="40.0" height="26.0"/>
+            <color foreground="255,255,255" background="0,0,175"/>
+        </layout>
+    </concept>
+    <concept id="285880181830" owner="220717716721">
+        <type>
+            <label>sig=&quot;P_P_FinP_N_P_InfP&quot;</label>
+        </type>
+        <layout>
+            <rectangle x="604.0" y="290.5" width="188.0" height="25.0"/>
+            <color foreground="255,255,255" background="0,0,175"/>
+        </layout>
+    </concept>
+    <relation id="282662976671" owner="220717716721">
+        <type>
+            <label>John_was_too_clever_{FA}_to_leave_early_===&gt;_John_was_too_clever_{I4}_to_leave_early</label>
+        </type>
+        <layout>
+            <rectangle x="263.0" y="71.125" width="654.0" height="81.75"/>
+            <color foreground="0,0,0" background="255,231,100"/>
+        </layout>
+    </relation>
+    <coref id="285880181852" owner="220717716721" label="-" from="285880181841" to="285880181797">
+        <layout>
+            <rectangle x="383.35156" y="325.375" width="6.0" height="6.0"/>
+            <color foreground="0,0,175" background="0,0,0"/>
+        </layout>
+    </coref>
+    <arrow id="285880181855" owner="220717716721" label="-" from="285880181841" to="250367416489">
+        <layout>
+            <rectangle x="493.60156" y="299.5" width="6.0" height="6.0"/>
+            <color foreground="0,0,0" background="255,255,255"/>
+        </layout>
+    </arrow>
+    <coref id="285880181849" owner="220717716721" label="-" from="220717717606" to="285880181841">
+        <layout>
+            <rectangle x="387.95953" y="277.59375" width="6.0" height="6.0"/>
+            <color foreground="0,0,175" background="0,0,0"/>
+        </layout>
+    </coref>
+    <arrow id="285880181858" owner="220717716721" label="-" from="250367416489" to="285880181830">
+        <layout>
+            <rectangle x="579.1328" y="299.79047" width="6.0" height="6.0"/>
+            <color foreground="0,0,0" background="255,255,255"/>
+        </layout>
+    </arrow>
+</graph>
+
+</conceptualgraph>
+

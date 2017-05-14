@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<conceptualgraph editor="CharGer" version="3.6" created="Aug 6, 2012 7:56:08 PM" user="Amnon">
+<graph id="220717716721" owner="0">
+    <type>
+        <label>Proposition</label>
+    </type>
+    <layout>
+        <rectangle x="5.0" y="5.0" width="900.0" height="750.0"/>
+        <color foreground="0,0,175" background="0,0,175"/>
+    </layout>
+    <concept id="250367415902" owner="220717716721">
+        <type>
+            <label>ruleType=annotation</label>
+        </type>
+        <layout>
+            <rectangle x="519.5" y="334.0" width="155.0" height="26.0"/>
+            <color foreground="255,255,255" background="0,0,175"/>
+        </layout>
+    </concept>
+    <relation id="284668962227" owner="220717716721">
+        <type>
+            <label>Initialize_by_marking_every_PredP_by_default_as_U_U,_NU+,_CT?,_UP</label>
+        </type>
+        <layout>
+            <rectangle x="309.5" y="31.4375" width="505.0" height="63.125"/>
+            <color foreground="0,0,0" background="255,231,100"/>
+        </layout>
+    </relation>
+    <actor id="250367416372" owner="220717716721">
+        <type>
+            <label>copy</label>
+        </type>
+        <layout>
+            <rectangle x="570.0" y="428.7" width="52.0" height="28.6"/>
+            <color foreground="0,0,0" background="255,255,255"/>
+        </layout>
+    </actor>
+    <concept id="246804263798" owner="220717716721">
+        <type>
+            <label>rel=&quot;nsubj\nsubjpass\csubj\csubjpass\cop\aux\dobj\prep\advmod\comp\ccomp\complm\obj\infmod\rcmod\npadvmod\partmod&quot;_tag=&quot;*&quot;</label>
+        </type>
+        <layout>
+            <rectangle x="28.5" y="485.0625" width="959.0" height="119.875"/>
+            <color foreground="255,255,255" background="0,0,175"/>
+        </layout>
+    </concept>
+    <concept id="250367416368" owner="220717716721">
+        <type>
+            <label>sig=&quot;P_U_FinP&quot;_monotonicity=&quot;UP&quot;_nu=&quot;P&quot;_ct=&quot;U&quot;_pt=&quot;U&quot;</label>
+        </type>
+        <layout>
+            <rectangle x="654.5" y="402.9375" width="529.0" height="66.125"/>
+            <color foreground="255,255,255" background="0,0,175"/>
+        </layout>
+    </concept>
+    <concept id="220717717606" owner="220717716721">
+        <type>
+            <label>LHS</label>
+        </type>
+        <layout>
+            <rectangle x="350.0" y="344.0" width="40.0" height="26.0"/>
+            <color foreground="255,255,255" background="0,0,175"/>
+        </layout>
+    </concept>
+    <relation id="284668962247" owner="220717716721">
+        <type>
+            <label>He_regrets_quitting_school_?_He_regrets_{RE}_{UP}_quitting_school</label>
+        </type>
+        <layout>
+            <rectangle x="339.5" y="139.6875" width="501.0" height="62.625"/>
+            <color foreground="0,0,0" background="255,231,100"/>
+        </layout>
+    </relation>
+    <relation id="284668965126" owner="220717716721">
+        <type>
+            <label>anything_with_a_complement_modifier</label>
+        </type>
+        <layout>
+            <rectangle x="564.5" y="657.3125" width="283.0" height="35.375"/>
+            <color foreground="0,0,0" background="255,231,100"/>
+        </layout>
+    </relation>
+    <concept id="246804263650" owner="220717716721">
+        <type>
+            <label>tag=&quot;*&quot;</label>
+        </type>
+        <layout>
+            <rectangle x="246.0" y="417.5" width="264.0" height="33.0"/>
+            <color foreground="255,255,255" background="0,0,175"/>
+        </layout>
+    </concept>
+    <arrow id="250367416383" owner="220717716721" label="-" from="246804263650" to="250367416372">
+        <layout>
+            <rectangle x="538.65234" y="438.23566" width="6.0" height="6.0"/>
+            <color foreground="0,0,0" background="255,255,255"/>
+        </layout>
+    </arrow>
+    <arrow id="284668965134" owner="220717716721" label="-" from="284668965126" to="246804263798">
+        <layout>
+            <rectangle x="637.3711" y="629.08203" width="6.0" height="6.0"/>
+            <color foreground="0,0,0" background="255,255,255"/>
+        </layout>
+    </arrow>
+    <coref id="246804263801" owner="220717716721" label="-" from="246804263650" to="246804263798">
+        <layout>
+            <rectangle x="415.06363" y="465.28125" width="6.0" height="6.0"/>
+            <color foreground="0,0,175" background="0,0,0"/>
+        </layout>
+    </coref>
+    <arrow id="250367416386" owner="220717716721" label="-" from="250367416372" to="250367416368">
+        <layout>
+            <rectangle x="634.8672" y="439.60352" width="6.0" height="6.0"/>
+            <color foreground="0,0,0" background="255,255,255"/>
+        </layout>
+    </arrow>
+    <coref id="246804263695" owner="220717716721" label="-" from="220717717606" to="246804263650">
+        <layout>
+            <rectangle x="371.31818" y="391.25" width="6.0" height="6.0"/>
+            <color foreground="0,0,175" background="0,0,0"/>
+        </layout>
+    </coref>
+</graph>
+
+</conceptualgraph>
+

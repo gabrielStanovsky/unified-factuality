@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<conceptualgraph editor="CharGer" version="3.6" created="Jul 9, 2012 4:18:09 PM" user="Amnon">
+<graph id="220717716721" owner="0">
+    <type>
+        <label>Proposition</label>
+    </type>
+    <layout>
+        <rectangle x="5.0" y="5.0" width="900.0" height="750.0"/>
+        <color foreground="0,0,175" background="0,0,175"/>
+    </layout>
+    <relation id="283200991147" owner="220717716721">
+        <type>
+            <label>This_rule_helps_annotate:_Jack_likes{NU+,_PT+}_almost_nobody_in_the_world</label>
+        </type>
+        <layout>
+            <rectangle x="343.5" y="204.5625" width="583.0" height="72.875"/>
+            <color foreground="0,0,0" background="255,231,100"/>
+        </layout>
+    </relation>
+    <relation id="250611355747" owner="220717716721">
+        <type>
+            <label>This_rule_must_run_before_the_argument_NU_propagation_rules</label>
+        </type>
+        <layout>
+            <rectangle x="499.0" y="79.25" width="572.0" height="71.5"/>
+            <color foreground="0,0,0" background="255,231,100"/>
+        </layout>
+    </relation>
+    <concept id="220717717606" owner="220717716721">
+        <type>
+            <label>LHS</label>
+        </type>
+        <layout>
+            <rectangle x="354.0" y="363.0" width="40.0" height="26.0"/>
+            <color foreground="255,255,255" background="0,0,175"/>
+        </layout>
+    </concept>
+    <relation id="278018449104" owner="220717716721">
+        <type>
+            <label>Mark_negative_nouns_as_NEGATED___nobody_nowhere</label>
+        </type>
+        <layout>
+            <rectangle x="431.5" y="21.4375" width="489.0" height="61.125"/>
+            <color foreground="0,0,0" background="255,231,100"/>
+        </layout>
+    </relation>
+    <relation id="283200984379" owner="220717716721">
+        <type>
+            <label>??They__were_talking_to_nobody_that_we_know??</label>
+        </type>
+        <layout>
+            <rectangle x="28.5" y="119.5625" width="375.0" height="46.875"/>
+            <color foreground="0,0,0" background="255,231,100"/>
+        </layout>
+    </relation>
+    <concept id="250611351115" owner="220717716721">
+        <type>
+            <label>nu=&quot;flip&quot;</label>
+        </type>
+        <layout>
+            <rectangle x="868.5" y="434.0" width="125.0" height="26.0"/>
+            <color foreground="255,255,255" background="0,0,175"/>
+        </layout>
+    </concept>
+    <concept id="250367415902" owner="220717716721">
+        <type>
+            <label>ruleType=annotation</label>
+        </type>
+        <layout>
+            <rectangle x="648.0" y="379.0" width="184.0" height="26.0"/>
+            <color foreground="255,255,255" background="0,0,175"/>
+        </layout>
+    </concept>
+    <concept id="250611351062" owner="220717716721">
+        <type>
+            <label>tag=&quot;NOUN&quot;_lemma=&quot;none\neither\nobody\nothing\nowhere&quot;</label>
+        </type>
+        <layout>
+            <rectangle x="59.0" y="421.375" width="650.0" height="81.25"/>
+            <color foreground="255,255,255" background="0,0,175"/>
+        </layout>
+    </concept>
+    <actor id="250611351120" owner="220717716721">
+        <type>
+            <label>copy</label>
+        </type>
+        <layout>
+            <rectangle x="781.0" y="432.7" width="52.0" height="28.6"/>
+            <color foreground="0,0,0" background="255,255,255"/>
+        </layout>
+    </actor>
+    <relation id="283200984349" owner="220717716721">
+        <type>
+            <label>They__hoped_for_neither_of_the_aces_</label>
+        </type>
+        <layout>
+            <rectangle x="57.5" y="77.6875" width="293.0" height="36.625"/>
+            <color foreground="0,0,0" background="255,231,100"/>
+        </layout>
+    </relation>
+    <coref id="283200991118" owner="220717716721" label="-" from="220717717606" to="250611351062">
+        <layout>
+            <rectangle x="374.8939" y="402.6875" width="6.0" height="6.0"/>
+            <color foreground="0,0,175" background="0,0,0"/>
+        </layout>
+    </coref>
+    <arrow id="250611351126" owner="220717716721" label="-" from="250611351120" to="250611351115">
+        <layout>
+            <rectangle x="847.8281" y="444.5" width="6.0" height="6.0"/>
+            <color foreground="0,0,0" background="255,255,255"/>
+        </layout>
+    </arrow>
+    <arrow id="250611351123" owner="220717716721" label="-" from="250611351062" to="250611351120">
+        <layout>
+            <rectangle x="743.6074" y="446.6593" width="6.0" height="6.0"/>
+            <color foreground="0,0,0" background="255,255,255"/>
+        </layout>
+    </arrow>
+</graph>
+
+</conceptualgraph>
+

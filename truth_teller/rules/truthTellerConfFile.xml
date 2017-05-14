@@ -1,0 +1,29 @@
+<configuration>
+	<module name="TruthTeller">
+		<param name = "annotation_rules_file">serializedAnnotationRules.ser</param>
+		<param name = "do_annotations">true</param>	
+		<param name = "conll_format_output_directory">annotatedSentences</param>		
+	</module>
+
+	<module name="RuleCompilation">
+		<!-- 
+			rule compilation	
+		-->
+		
+		<!-- directory holding CGX files of annotation rules -->
+		<param name = "annotation_rules_directory">Annotation Rules</param>
+		<param name = "recursive_ct_rules_directory">Annotation Rules/ct recursion interdependent rules</param>
+
+		<param name = "rule_file_suffix">.cgx</param>
+		
+		<!-- the expanded single word predicate lexicon, used by AnnotationRuleCompiler - is a properties file	-->
+		<param name = "predicateLexiconFile">expandedPredicateList.properties</param>
+		
+		<!-- 
+			phrasas verb lexicon related properties	
+		-->
+		<param name = "phrasalVerbFamiliesFile">PhrasalVerbFamilies.properties</param>
+		<param name = "phrasalNounFamiliesFile">PhrasalNounFamilies.properties</param>
+		<param name = "phrasalImplicativeTemplatesFile">PhrasalImplicativeTemplates.properties</param>
+	</module>
+</configuration>

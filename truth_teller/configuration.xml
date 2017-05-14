@@ -1,0 +1,10 @@
+<configuration>
+	<module name="TruthTeller">
+		<param name = "annotation_rules_file">serializedAnnotationRules.ser</param>
+		<param name = "do_annotations">true</param>
+		<param name = "conll_format_output_directory">annotatedSentences</param>
+		<param name = "easyfirst_stanford_pos_tagger">left3words-wsj-0-18.tagger</param>
+		<param name = "easyfirst_host">localhost</param>
+		<param name = "easyfirst_port">10345</param>
+	</module>
+</configuration>

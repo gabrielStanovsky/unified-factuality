@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<conceptualgraph editor="CharGer" version="3.6" created="Aug 9, 2012 2:51:17 PM" user="Amnon">
+<graph id="220717716721" owner="0">
+    <type>
+        <label>Proposition</label>
+    </type>
+    <layout>
+        <rectangle x="5.0" y="5.0" width="900.0" height="750.0"/>
+        <color foreground="0,0,175" background="0,0,175"/>
+    </layout>
+    <concept id="220717717604" owner="220717716721">
+        <type>
+            <label>01_Initialize___every_noun_and_adjective_gets_nuP</label>
+        </type>
+        <layout>
+            <rectangle x="147.5" y="15.4375" width="1017.0" height="127.125"/>
+            <color foreground="255,255,255" background="0,0,175"/>
+        </layout>
+    </concept>
+    <concept id="220717717606" owner="220717716721">
+        <type>
+            <label>LHS</label>
+        </type>
+        <layout>
+            <rectangle x="342.0" y="409.0" width="40.0" height="26.0"/>
+            <color foreground="255,255,255" background="0,0,175"/>
+        </layout>
+    </concept>
+    <concept id="250367416432" owner="220717716721">
+        <type>
+            <label>nu=&quot;P&quot;</label>
+        </type>
+        <layout>
+            <rectangle x="643.5" y="480.9375" width="529.0" height="66.125"/>
+            <color foreground="255,255,255" background="0,0,175"/>
+        </layout>
+    </concept>
+    <concept id="250367415902" owner="220717716721">
+        <type>
+            <label>ruleType=annotation</label>
+        </type>
+        <layout>
+            <rectangle x="538.5" y="227.0" width="155.0" height="26.0"/>
+            <color foreground="255,255,255" background="0,0,175"/>
+        </layout>
+    </concept>
+    <concept id="250367415925" owner="220717716721">
+        <type>
+            <label>Ex__He_regrets_quitting_school_?_He_regrets_{RE}_{UP}_quitting_school</label>
+        </type>
+        <layout>
+            <rectangle x="393.0" y="148.625" width="534.0" height="66.75"/>
+            <color foreground="255,255,255" background="0,0,175"/>
+        </layout>
+    </concept>
+    <relation id="287930032761" owner="220717716721">
+        <type>
+            <label>It&apos;s_important_for_the_negation_propagation_rules_that_every_arg_(even_if_not_a_pred)_has_NU</label>
+        </type>
+        <layout>
+            <rectangle x="197.5" y="259.9375" width="705.0" height="88.125"/>
+            <color foreground="0,0,0" background="255,231,100"/>
+        </layout>
+    </relation>
+    <concept id="246804263650" owner="220717716721">
+        <type>
+            <label>tag=&quot;NOUN\ADJECTIVE&quot;</label>
+        </type>
+        <layout>
+            <rectangle x="228.0" y="497.5" width="264.0" height="33.0"/>
+            <color foreground="255,255,255" background="0,0,175"/>
+        </layout>
+    </concept>
+    <actor id="250367416431" owner="220717716721">
+        <type>
+            <label>copy</label>
+        </type>
+        <layout>
+            <rectangle x="566.0" y="500.7" width="52.0" height="28.6"/>
+            <color foreground="0,0,0" background="255,255,255"/>
+        </layout>
+    </actor>
+    <arrow id="250367416439" owner="220717716721" label="-" from="246804263650" to="250367416431">
+        <layout>
+            <rectangle x="526.8594" y="512.23" width="6.0" height="6.0"/>
+            <color foreground="0,0,0" background="255,255,255"/>
+        </layout>
+    </arrow>
+    <coref id="246804263695" owner="220717716721" label="-" from="220717717606" to="246804263650">
+        <layout>
+            <rectangle x="358.53802" y="463.75" width="6.0" height="6.0"/>
+            <color foreground="0,0,175" background="0,0,0"/>
+        </layout>
+    </coref>
+    <arrow id="250367416435" owner="220717716721" label="-" from="250367416431" to="250367416432">
+        <layout>
+            <rectangle x="627.71094" y="512.3791" width="6.0" height="6.0"/>
+            <color foreground="0,0,0" background="255,255,255"/>
+        </layout>
+    </arrow>
+</graph>
+
+</conceptualgraph>
+

@@ -1,0 +1,3 @@
+#!/bin/bash
+#python easy_first/biu_distrib_09072011/sdparser_server.py 10345
+easy_first/linux_python/bin/python2.7 easy_first/biu_distrib_09072011/sdparser_server.py 10345
