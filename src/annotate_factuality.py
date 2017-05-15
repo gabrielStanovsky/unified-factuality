@@ -1,5 +1,5 @@
 """ Usage:
-    annotate_factuality --truthteller=PATH_TO_TT --props=PATH_TO_PROPS --default=DEFAULT_VALUE
+    annotate_factuality --truthteller=PATH_TO_TT --default=DEFAULT_VALUE
 
 Annotate raw sentences from STDIN with factulity and print to STDOUT.
 
@@ -52,7 +52,6 @@ if __name__ == "__main__":
 
     # Parse arguments
     tt_path = args["--truthteller"]
-    props_path = args["--props"]
     default_val = args["--default"]
 
     # Initialize TruthTeller
