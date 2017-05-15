@@ -66,24 +66,17 @@ sudo -E ./scripts/install_annotator.sh
 
 1. Start servers:
 
-    1. In a new terminal, start the spaCy server:
-
+    1. In a new terminal, start the spaCy server:<br>
     Run ```./scripts/run_spacy_server.sh``` <br>
     Wait for the the ```ENGINE Bus STARTED``` message to appear.
 
-    2. In a new terminal, start the PropS server:
-
+    2. In a new terminal, start the PropS server:<br>
     Run ```./scripts/run_props_server.sh``
 
-2. Run client application:
-
-``` ./scripts/annotate_factuality.sh ```
-
+2. Run client application:<br>
+``` ./scripts/annotate_factuality.sh ``` <br>
 This will wait for output on STDIN and will output sentences with CoNLL factuality annotations 
 to STDOUT.
-
-
-
 
 ## OLD:
 
