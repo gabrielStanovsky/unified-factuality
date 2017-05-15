@@ -66,7 +66,7 @@ sudo -E ./scripts/install_annotator.sh
 
 1. Start servers:
 
-    1. In a new terminal, start the spaCy server:<br>
+    1. Start the spaCy server:<br>
     Run ```./scripts/run_spacy_server.sh``` <br>
     Wait for the the ```ENGINE Bus STARTED``` message to appear.
 
