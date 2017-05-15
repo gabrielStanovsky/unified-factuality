@@ -58,13 +58,6 @@ if __name__ == "__main__":
     # Initialize TruthTeller
     tt_annotator = Truth_teller_factuality_annotator(Truth_teller_wrapper(tt_path))
 
-    # # Initialize PropS
-    sys.path.insert(0, props_path)
-    # After adding the props path we can import its packages
-#    from props.applications.run import load_berkeley
-#    from props.applications.run import parseSentences
-    # load_berkeley(path_to_berkeley = os.path.join(props_path, 'props/berkeleyparser/'))
-
     logging.info("Reading sentences from STDIN (hit Ctrl-D to finish)")
     for line in sys.stdin.readlines():
         sent = line.strip()
