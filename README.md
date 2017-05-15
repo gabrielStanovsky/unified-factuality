@@ -53,7 +53,7 @@ The converted unified corpus should be created in the [unified corpus directory]
 
 TODO
 
-## Automatic annotator:
+## Automatic annotator
 
 ### Installation
 
@@ -68,15 +68,23 @@ sudo -E ./scripts/install_annotator.sh
 
     1. Start the spaCy server:<br>
     Run ```./scripts/run_spacy_server.sh``` <br>
-    Wait for the the ```ENGINE Bus STARTED``` message to appear.
+    Wait for the the ```ENGINE Bus STARTED``` message to appear, indicating that the server is up.
 
     2. In a new terminal, start the PropS server:<br>
-    Run ```./scripts/run_props_server.sh```
+    Run ```./scripts/run_props_server.sh```<br>
+    Wait for the ```Listening on http://:8081/``` message to appear, indicating that the server is up.
 
 2. Run client application:<br>
 ``` ./scripts/annotate_factuality.sh ``` <br>
 This will wait for output on STDIN and will output sentences with CoNLL factuality annotations 
 to STDOUT.
+
+#### Usage examples
+
+``` echo "John refused to go" | ./scripts/annotate_factuality.sh ```
+
+``` ./scripts/annotate_factuality.sh < input_file > output_file ```
+
 
 ## OLD:
 
