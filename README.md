@@ -71,7 +71,7 @@ sudo -E ./scripts/install_annotator.sh
     Wait for the the ```ENGINE Bus STARTED``` message to appear.
 
     2. In a new terminal, start the PropS server:<br>
-    Run ```./scripts/run_props_server.sh``
+    Run ```./scripts/run_props_server.sh```
 
 2. Run client application:<br>
 ``` ./scripts/annotate_factuality.sh ``` <br>
