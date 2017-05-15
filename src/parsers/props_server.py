@@ -15,7 +15,21 @@ import os.path
 import codecs
 from docopt import docopt
 import logging
+import requests
 logging.basicConfig(level = logging.DEBUG)
+
+
+PROPS_PORT = 8081
+
+def post_to_props(sent, hostname = 'http://127.0.0.1', port = PROPS_PORT):
+    """
+    Send a sentence to parse with props
+    """
+    request_ = '{}:{}/tparse'.format(hostname, port)
+    logging.debug(request_)
+    return requests.get(request_,
+                        params = {'text': sent})
+
 
 def is_single_word_predicate(node):
     """

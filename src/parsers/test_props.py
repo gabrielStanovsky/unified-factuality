@@ -1,4 +1,8 @@
-from factuality_server import Factuality_server as fs
+"""
+  Check if props server is up at the default port
+"""
+
+from props_server import post_to_props
 import logging
 logging.basicConfig(level = logging.DEBUG)
-print fs.post_to_props("John refused to run").text
+post_to_props("John refused to run")
