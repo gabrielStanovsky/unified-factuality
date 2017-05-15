@@ -20,6 +20,7 @@ import os
 logging.basicConfig(level = logging.INFO)
 from truth_teller_factuality_annotator import Truth_teller_factuality_annotator
 from truth_teller_wrapper import Truth_teller_wrapper
+from parsers.factuality_server import Factuality_server as fs
 
 def is_single_word_predicate(node):
     """
@@ -57,20 +58,18 @@ if __name__ == "__main__":
     # Initialize TruthTeller
     tt_annotator = Truth_teller_factuality_annotator(Truth_teller_wrapper(tt_path))
 
-    # Initialize PropS
+    # # Initialize PropS
     sys.path.insert(0, props_path)
     # After adding the props path we can import its packages
-    from props.applications.run import load_berkeley
-    from props.applications.run import parseSentences
-    load_berkeley(path_to_berkeley = os.path.join(props_path, 'props/berkeleyparser/'))
+#    from props.applications.run import load_berkeley
+#    from props.applications.run import parseSentences
+    # load_berkeley(path_to_berkeley = os.path.join(props_path, 'props/berkeleyparser/'))
 
     logging.info("Reading sentences from STDIN (hit Ctrl-D to finish)")
     for line in sys.stdin.readlines():
         sent = line.strip()
         logging.info("Parsing: {}".format(sent))
-        graph = single_sentence_props(sent)
-        predicate_indices = [node.text[0].index - 1
-                             for node in graph.nodes()
-                             if is_single_word_predicate(node)]
+        predicate_indices = map(int,
+                                fs.post_to_props("John refused to run").text.split(','))
         print ('\n'.join([ent_to_str(list(ent), default_val) for
                           ent in tt_annotator.annotate_sentence(sent, predicate_indices)]))
