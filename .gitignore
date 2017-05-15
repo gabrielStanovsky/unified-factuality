@@ -95,3 +95,6 @@ gdrive
 data/unified
 data/external_annotations/
 props-master
+props
+*.tmp
+*.cnt
