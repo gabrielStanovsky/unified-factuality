@@ -20,7 +20,7 @@ import os
 logging.basicConfig(level = logging.INFO)
 from truth_teller_factuality_annotator import Truth_teller_factuality_annotator
 from truth_teller_wrapper import Truth_teller_wrapper
-from parsers.factuality_server import Factuality_server as fs
+from parsers.props_server import post_to_props
 
 def is_single_word_predicate(node):
     """
@@ -62,6 +62,6 @@ if __name__ == "__main__":
         sent = line.strip()
         logging.info("Parsing: {}".format(sent))
         predicate_indices = map(int,
-                                fs.post_to_props("John refused to run").text.split(','))
+                                post_to_props(sent).text.split(','))
         print ('\n'.join([ent_to_str(list(ent), default_val) for
                           ent in tt_annotator.annotate_sentence(sent, predicate_indices)]))
