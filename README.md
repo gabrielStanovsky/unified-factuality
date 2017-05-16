@@ -66,12 +66,20 @@ TODO
 Automatic annotator
 -------------------
 
+Pre-requsities
+--------------
+```
+python 2.7
+setuptools
+easy_install
+```
+
 Installation
 ------------
 
 From ```src```, run: <br>
 ```
-sudo -E ./scripts/install_annotator.sh
+./scripts/install_annotator.sh
 ```
 Running the automatic annotator
 -------------------------------
