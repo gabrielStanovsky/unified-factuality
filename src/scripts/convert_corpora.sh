@@ -6,6 +6,9 @@ MEANTIME_OUTPUT_DIR="../data/unified/meantime"
 FACTBANK_OUTPUT_DIR="../data/unified/factbank_v1"
 GLOBAL_OUTPUT_DIR="../data/unified/"
 
+# Install python requirements
+pip install -r ./scripts/corpurs_requirements.txt
+
 # Convert all raw annotations
 echo "Converting UW.."
 ./scripts/convert_uw.sh
