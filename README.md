@@ -1,3 +1,8 @@
+Unified Factuality Representation - Corpus and code
+===================================================
+
+Introduction
+============
 
 Code and data for testing different factuality models across different testsets.<br>
 If you use this resource, please cite the  following [paper](https://gabrielstanovsky.github.io/assets/papers/acl17/paper.pdf):
@@ -13,9 +18,11 @@ address   = {Vancouver, Canada}
 }
 ```
 
-## Online Demo
+Online Demo
+===========
 
-## Local Installation
+Local Installation
+==================
 
 This repository provides:
 
@@ -26,11 +33,13 @@ This repository provides:
 The following describes the installtion and format of both of these.
 
 
-### Unified dataset
+Unified dataset
+---------------
 
 You can find a static aggregated version of the corpus in the [snapshot folder](data/unified/snapshot).
 
-### Manual Download
+Manual Download
+---------------
 
 From ```src```:
 
@@ -49,20 +58,23 @@ From ```src```:
 
 The converted unified corpus should be created in the [unified corpus directory](data/unified).
 
-### Format
+Format
+------
 
 TODO
 
-## Automatic annotator
+Automatic annotator
+-------------------
 
-### Installation
+Installation
+------------
 
 From ```src```, run: <br>
 ```
 sudo -E ./scripts/install_annotator.sh
 ```
-
-### Running the automatic annotator
+Running the automatic annotator
+-------------------------------
 
 1. Start servers:
 
@@ -79,7 +91,8 @@ sudo -E ./scripts/install_annotator.sh
 This will wait for output on STDIN and will output sentences with CoNLL factuality annotations 
 to STDOUT.
 
-#### Usage examples
+Usage examples
+--------------
 
 ``` echo "John refused to go" | ./scripts/annotate_factuality.sh ```
 
