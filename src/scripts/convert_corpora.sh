@@ -7,7 +7,10 @@ FACTBANK_OUTPUT_DIR="../data/unified/factbank_v1"
 GLOBAL_OUTPUT_DIR="../data/unified/"
 
 # Install python requirements
-pip install -r ./scripts/corpurs_requirements.txt
+pip install -r ./scripts/corpus_requirements.txt
+# Install spacy
+python -m spacy download en
+
 
 # Convert all raw annotations
 echo "Converting UW.."
