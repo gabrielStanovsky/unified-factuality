@@ -1,5 +1,5 @@
-
-# Introduction
+Introduction
+============
 
 Code and data for testing different factuality models across different testsets.<br>
 If you use this resource, please cite the  following [paper](https://gabrielstanovsky.github.io/assets/papers/acl17/paper.pdf):
