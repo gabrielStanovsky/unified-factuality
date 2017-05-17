@@ -69,12 +69,12 @@ Automatic annotator
 Pre-requsities
 --------------
 1. python 2.7
-2. setuptools
-3. easy_install
-4. Java openjdk-8
-5. libxml
-6. libxslt
-7. pip 9.x
+2. Java openjdk-8
+3. setuptools
+4. easy_install
+5. pip 9.x
+6. libxml
+7. libxslt
 8. NLTK with wordnet corpus<br>
 ```python
 
