@@ -80,8 +80,8 @@ Pre-requsities
 6. libxml
 7. libxslt
 8. NLTK with wordnet corpus<br>
-```python
-
+```
+python -c "import nltk;nltk.download('wordnet')"
 ```
 9. spaCy with English models
 ```
