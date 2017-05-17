@@ -50,8 +50,12 @@ From ```src```:
 
 **NOTE**: FactBank should be downloaded separately. Please login to LDC, [download the corpus](https://catalog.ldc.upenn.edu/ldc2009t23), and place it in the directory ```factbank_v1``` under ```/data/external_annotations/```.
 
+2. Install converter
+```
+./scripts/install_converter.sh
+```
 
-2. Convert to a unified representation:<br>
+3. Convert to a unified representation:<br>
 ```
 ./scripts/convert_corpora.sh
 ```
@@ -75,13 +79,15 @@ Pre-requsities
 5. pip 9.x
 6. libxml
 7. libxslt
-8. NLTK with wordnet corpus<br>
-```python
-
+8. NLTK with the WordNet corpus<br>
+After installing NLTK, run:
 ```
-9. spaCy with English models
+python -c "import nltk;nltk.download('wordnet')"
 ```
-> python -m spacy download en
+9. spaCy with English models<br>
+After installing spaCy, run:
+```
+python -m spacy download en
 ```
 
  
@@ -100,16 +106,21 @@ Running the automatic annotator
 
     1. Start the spaCy server:<br>
     Run ```./scripts/run_spacy_server.sh``` <br>
+    This will open a server listening on port 8081 by default. <br>
     Wait for the the ```ENGINE Bus STARTED``` message to appear, indicating that the server is up.
+    
 
     2. In a new terminal, start the PropS server:<br>
     Run ```./scripts/run_props_server.sh```<br>
+    This will open a server listening on port 10345. <br>
     Wait for the ```Listening on http://:8081/``` message to appear, indicating that the server is up.
-
+  
 2. Run client application:<br>
 ``` ./scripts/annotate_factuality.sh ``` <br>
 This will wait for output on STDIN and will output sentences with CoNLL factuality annotations 
 to STDOUT.
+
+**NOTE**: You can also run these scripts using different hosts and ports. See the scripts above for instructions on how to do this.
 
 Usage examples
 --------------
