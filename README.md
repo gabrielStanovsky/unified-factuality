@@ -39,13 +39,13 @@ E.g., JAVA_HOME = /usr/lib/jvm/java-8-openjdk-amd64/
 6. libxml
 7. libxslt
 8. NLTK with the WordNet corpus<br>
-After installing NLTK, run:
 ```
+After installing NLTK, run:
  python -c "import nltk;nltk.download('wordnet')"
 ```
 9. spaCy with English models<br>
-After installing spaCy, run:
 ```
+After installing spaCy, run:
 python -m spacy download en
 ```
 
