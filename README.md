@@ -120,7 +120,7 @@ Running the automatic annotator
 This will wait for output on STDIN and will output sentences with CoNLL factuality annotations 
 to STDOUT.
 
-*** NOTE *** You can also run these scripts using different hosts and ports. See the scripts above for instructions on how to do this.
+**NOTE** You can also run these scripts using different hosts and ports. See the scripts above for instructions on how to do this.
 
 Usage examples
 --------------
