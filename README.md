@@ -21,17 +21,29 @@ address   = {Vancouver, Canada}
 Online Demo
 ===========
 
+
 Local Installation
 ==================
 
-This repository provides:
-
-1. A unified factuality dataset
-
-2. Automatic factuality annotator
-
-The following describes the installtion and format of both of these.
-
+Pre-requsities
+--------------
+1. python 2.7
+2. Java openjdk-8
+3. setuptools
+4. easy_install
+5. pip 9.x
+6. libxml
+7. libxslt python -c "import nltk;nltk.download('wordnet')"
+8. NLTK with the WordNet corpus<br>
+After installing NLTK, run:
+```
+ python -c "import nltk;nltk.download('wordnet')"
+```
+9. spaCy with English models<br>
+After installing spaCy, run:
+```
+python -m spacy download en
+```
 
 Unified dataset
 ---------------
@@ -69,28 +81,6 @@ TODO
 
 Automatic annotator
 -------------------
-
-Pre-requsities
---------------
-1. python 2.7
-2. Java openjdk-8
-3. setuptools
-4. easy_install
-5. pip 9.x
-6. libxml
-7. libxslt
-8. NLTK with the WordNet corpus<br>
-After installing NLTK, run:
-```
-python -c "import nltk;nltk.download('wordnet')"
-```
-9. spaCy with English models<br>
-After installing spaCy, run:
-```
-python -m spacy download en
-```
-
- 
 
 Installation
 ------------
