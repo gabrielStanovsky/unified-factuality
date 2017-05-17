@@ -98,3 +98,4 @@ props-master
 props
 *.tmp
 *.cnt
+*~
