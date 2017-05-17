@@ -13,7 +13,3 @@ popd
 # Install python packages
 echo "Installing requirements"
 pip install -r ./scripts/requirements.txt
-
-# Install spacy
-python -c "from spacy import __main__; __main__.cli_download('en')"
-#python -m spacy download en
