@@ -68,11 +68,19 @@ Automatic annotator
 
 Pre-requsities
 --------------
+1. python 2.7
+2. setuptools
+3. easy_install
+4. Java openjdk-8
+5. libxml
+6. libxslt
+7. NLTK with wordnet corpus<br>
+```python
 ```
-python 2.7
-setuptools
-easy_install
+8. spaCy with English models
+```python
 ```
+ 
 
 Installation
 ------------
