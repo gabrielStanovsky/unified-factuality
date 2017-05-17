@@ -79,13 +79,15 @@ Pre-requsities
 5. pip 9.x
 6. libxml
 7. libxslt
-8. NLTK with wordnet corpus<br>
+8. NLTK with the WordNet corpus<br>
+After installing NLTK, run:
 ```
 python -c "import nltk;nltk.download('wordnet')"
 ```
-9. spaCy with English models
+9. spaCy with English models<br>
+After installing spaCy, run:
 ```
-> python -m spacy download en
+python -m spacy download en
 ```
 
  
