@@ -6,13 +6,6 @@ MEANTIME_OUTPUT_DIR="../data/unified/meantime"
 FACTBANK_OUTPUT_DIR="../data/unified/factbank_v1"
 GLOBAL_OUTPUT_DIR="../data/unified/"
 
-# Install python requirements
-pip install -r ./scripts/corpus_requirements.txt
-# Install spacy
-python -c "from spacy import __main__; __main__.cli_download('en')"
-#python -m spacy download en
-
-
 # Convert all raw annotations
 echo "Converting UW.."
 ./scripts/convert_uw.sh
