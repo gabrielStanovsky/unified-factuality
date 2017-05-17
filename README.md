@@ -74,12 +74,16 @@ Pre-requsities
 4. Java openjdk-8
 5. libxml
 6. libxslt
-7. NLTK with wordnet corpus<br>
+7. pip 9.x
+8. NLTK with wordnet corpus<br>
 ```python
+
 ```
-8. spaCy with English models
-```python
+9. spaCy with English models
 ```
+> python -m spacy download en
+```
+
  
 
 Installation
