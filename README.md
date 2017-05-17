@@ -33,7 +33,7 @@ Pre-requsities
 4. easy_install
 5. pip 9.x
 6. libxml
-7. libxslt python -c "import nltk;nltk.download('wordnet')"
+7. libxslt
 8. NLTK with the WordNet corpus<br>
 After installing NLTK, run:
 ```
