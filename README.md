@@ -29,6 +29,10 @@ Pre-requsities
 --------------
 1. python 2.7
 2. Java openjdk-8
+```
+Make sure that the JAVA_HOME variable is set accordingly.
+E.g., JAVA_HOME = /usr/lib/jvm/java-8-openjdk-amd64/
+```
 3. setuptools
 4. easy_install
 5. pip 9.x
