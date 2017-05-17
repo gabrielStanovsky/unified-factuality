@@ -1,5 +1,5 @@
 """ Usage:
-    annotate_factuality --truthteller=PATH_TO_TT --default=DEFAULT_VALUE
+annotate_factuality --truthteller=PATH_TO_TT --default=DEFAULT_VALUE  --props_hostname=PROPS_HOSTNAME --props_port=PROPS_PORT --spacy_hostname=SPACY_HOSTNAME --spacy_port=SPACY_PORT
 
 Annotate raw sentences from STDIN with factulity and print to STDOUT.
 
@@ -53,6 +53,10 @@ if __name__ == "__main__":
     # Parse arguments
     tt_path = args["--truthteller"]
     default_val = args["--default"]
+    props_hostname = args["--props_hostname"]
+    props_port = int(args["--props_port"])
+    spacy_hostname = args["--spacy_hostname"]
+    spacy_port = int(args["--spacy_port"])
 
     # Initialize TruthTeller
     tt_annotator = Truth_teller_factuality_annotator(Truth_teller_wrapper(tt_path))
@@ -61,7 +65,11 @@ if __name__ == "__main__":
     for line in sys.stdin.readlines():
         sent = line.strip()
         logging.info("Parsing: {}".format(sent))
-        predicate_indices = map(int,
-                                post_to_props(sent).text.split(','))
+        predicate_indices = [int(x) 
+                             for x in 
+                             post_to_props(sent, hostname = props_hostname, port = props_port).text.split(',')
+                             if x]
+        
         print ('\n'.join([ent_to_str(list(ent), default_val) for
-                          ent in tt_annotator.annotate_sentence(sent, predicate_indices)]))
+                          ent in tt_annotator.annotate_sentence(sent, predicate_indices, hostname = spacy_hostname, 
+                                                                port = spacy_port)]))

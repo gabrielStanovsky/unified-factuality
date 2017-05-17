@@ -30,7 +30,7 @@ class Truth_teller_factuality_annotator:
             ret *= 0.5
         return ret
 
-    def annotate_sentence(self, sent, predicate_indexes):
+    def annotate_sentence(self, sent, predicate_indexes, hostname, port):
         """
         Given a sentence and a list of indexes, returns a list of
         (word index, word, factuality value)
@@ -40,7 +40,7 @@ class Truth_teller_factuality_annotator:
                  self.tt_annot_to_fact(*tt_output) if (ind in predicate_indexes) else '_') +
                 tt_output # add TT annotations as features
                 for ind, (word, tt_output) in
-                enumerate(self.truth_teller.annotate(sent))]
+                enumerate(self.truth_teller.annotate(sent, hostname, port))]
 
 
 if __name__ == '__main__':

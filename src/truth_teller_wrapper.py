@@ -22,14 +22,14 @@ class Truth_teller_wrapper:
         """
         self.path_to_tt = path_to_tt
 
-    def annotate(self, sent):
+    def annotate(self, sent, hostname, port):
         """
         Run truthteller on a single sentence.
         Returns a list of (word, truth annotation = (sig, nu, ct, pt))
         """
         from parsers.spacy_server import Spacy_server
         # Cache parse in spacy and run truthteller
-        cache_response = Spacy_server.post_to_cache(sent)
+        cache_response = Spacy_server.post_to_cache(sent, hostname = hostname, port = port)
         assert cache_response.status_code == 200, "error in reponse {}".format(cache_response)
         cache_response = cache_response.text.split('\t')
 
