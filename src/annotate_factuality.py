@@ -47,6 +47,20 @@ def ent_to_str(ent, default):
               else default)
     return '\t'.join(map(str,ent))
 
+def parse_sent(sent):
+    """
+    Annotate a single sentence with factuality
+    Returns a conll string
+    """
+    predicate_indices = [int(x)
+                         for x in
+                         post_to_props(sent, hostname = props_hostname, port = props_port).text.split(',')
+                         if x]
+
+    return '\n'.join([ent_to_str(list(ent), default_val) for
+                      ent in tt_annotator.annotate_sentence(sent, predicate_indices, hostname = spacy_hostname,
+                                                            port = spacy_port)])
+
 if __name__ == "__main__":
     args = docopt(__doc__)
 
@@ -65,11 +79,4 @@ if __name__ == "__main__":
     for line in sys.stdin.readlines():
         sent = line.strip()
         logging.info("Parsing: {}".format(sent))
-        predicate_indices = [int(x) 
-                             for x in 
-                             post_to_props(sent, hostname = props_hostname, port = props_port).text.split(',')
-                             if x]
-        
-        print ('\n'.join([ent_to_str(list(ent), default_val) for
-                          ent in tt_annotator.annotate_sentence(sent, predicate_indices, hostname = spacy_hostname, 
-                                                                port = spacy_port)]))
+        print(parse_sent(sent))
