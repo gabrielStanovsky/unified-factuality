@@ -40,13 +40,13 @@ E.g., JAVA_HOME = /usr/lib/jvm/java-8-openjdk-amd64/
 7. libxslt
 8. NLTK with the WordNet corpus<br>
 ```
-After installing NLTK, run:
-> python -c "import nltk;nltk.download('wordnet')"
+pip install nltk
+python -c "import nltk;nltk.download('wordnet')"
 ```
 9. spaCy with English models<br>
 ```
-After installing spaCy, run:
-> python -m spacy download en
+pip install spacy
+python -m spacy download en
 ```
 
 Unified dataset
