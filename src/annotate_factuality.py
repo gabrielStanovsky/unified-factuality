@@ -52,7 +52,7 @@ def parse_sent(tt_annotator, sent,
                props_port = 8081,
                spacy_hostname = "http://127.0.0.1",
                spacy_port = 10345,
-               default_val = 3):
+               default_val = 3.0):
     """
     Annotate a single sentence with factuality
     Given an initialized tt_annotator
