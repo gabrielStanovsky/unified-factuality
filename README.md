@@ -101,7 +101,7 @@ Running the automatic annotator
     1. Start the spaCy server:<br>
     Run ```./scripts/run_spacy_server.sh``` <br>
     This will open a server listening on port 8081 by default. <br>
-    Wait for the the ```ENGINE Bus STARTED``` message to appear, indicating that the server is up.
+    Wait for the ```ENGINE Bus STARTED``` message to appear, indicating that the server is up.
     
 
     2. In a new terminal, start the PropS server:<br>
