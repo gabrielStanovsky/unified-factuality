@@ -47,9 +47,15 @@ def ent_to_str(ent, default):
               else default)
     return '\t'.join(map(str,ent))
 
-def parse_sent(sent):
+def parse_sent(tt_annotator, sent,
+               props_hostname = "http://127.0.0.1",
+               props_port = 8081,
+               spacy_hostname = "http://127.0.0.1",
+               spacy_port = 10345,
+               default_val = 3):
     """
     Annotate a single sentence with factuality
+    Given an initialized tt_annotator
     Returns a conll string
     """
     predicate_indices = [int(x)
@@ -79,4 +85,11 @@ if __name__ == "__main__":
     for line in sys.stdin.readlines():
         sent = line.strip()
         logging.info("Parsing: {}".format(sent))
-        print(parse_sent(sent))
+        print(parse_sent(tt_annotator,
+                         sent,
+                         props_hostname = props_hostname,
+                         props_port = props_port,
+                         spacy_hostname = spacy_hostname,
+                         spacy_port = spacy_port,
+                         default_val = default_val
+        ))
