@@ -21,6 +21,8 @@ address   = {Vancouver, Canada}
 Online Demo
 ===========
 
+Try live demonstration by heading over to our [Online Demo Page](http://u.cs.biu.ac.il/~stanovg/factuality.html)
+
 
 Local Installation
 ==================
