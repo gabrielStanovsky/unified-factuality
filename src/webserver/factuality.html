@@ -1,0 +1,523 @@
+
+<!DOCTYPE html>  
+<html lang="en">  
+  <!-- NEW VERSION -->
+  <head>
+    <title>Unified Factuality Annotator - Online Demo</title>  
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="css/bootstrap.min.css" rel="stylesheet" media="screen">
+
+
+    <link href="css/bootstrap.css" rel="stylesheet">
+    <link href="css/bootstrap-switch.css" rel="stylesheet">
+    <script src="js/jquery.js"></script>
+    <script src="js/bootstrap-switch.js"></script>
+
+    <script>
+      toogleValue = true;
+    </script>
+
+    <script language="javascript" type="text/javascript">
+      function resizeIframe(obj) {
+      obj.style.height = obj.contentWindow.document.body.scrollHeight + 'px';
+      }
+    </script>
+
+    <style>
+
+      .pub {
+      display: block;
+      padding-bottom: 7px;
+      display: 
+      }
+
+      .pubauthor {
+      font-style:italic;
+      margin-left: 30px;
+      display: block;
+      }
+
+      OA.pubmisc {
+      margin-left: 30px;
+      display:block;
+      text-transform: uppercase;
+      font-size: 80%;
+      }
+
+      .session_type {
+      font-variant:small-caps;
+      text-transform: lowercase;
+      }
+
+      .session_author {
+      font-style: italic;
+      margin-left: 30px;
+      }
+
+      body { padding-top: 70px; }
+
+
+    </style>
+
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Turn checkboxes and radio buttons into toggle switches.">
+    <meta name="author" content="Mattia Larentis, Emanuele Marchi and Peter Stein">
+    <title>Bootstrap Switch · Turn checkboxes and radio buttons into toggle switches</title>
+    <link href="docs/css/bootstrap.min.css" rel="stylesheet">
+    <link href="docs/css/highlight.css" rel="stylesheet">
+    <link href="dist/css/bootstrap3/bootstrap-switch.css" rel="stylesheet">
+    <link href="http://getbootstrap.com/assets/css/docs.min.css" rel="stylesheet">
+    <link href="docs/css/main.css" rel="stylesheet">
+    <script>
+      var _gaq = _gaq || [];
+      _gaq.push(['_setAccount', 'UA-43092768-1']);
+      _gaq.push(['_trackPageview']);
+      (function () {
+      var ga = document.createElement('script');
+      ga.type = 'text/javascript';
+      ga.async = true;
+      ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+      var s = document.getElementsByTagName('script')[0];
+      s.parentNode.insertBefore(ga, s);
+      })();
+    </script>
+
+
+
+  </head>
+
+  <body data-spy="scroll" data-target="#navbar" data-offset="70" onload="load()">
+    <div class="container">
+
+      <div id="navbar" class="navbar navbar-default navbar-fixed-top" role="navigation">
+	<div class="container-fluid">
+	  <!-- Brand and toggle get grouped for better mobile display -->
+	  <div class="navbar-header">
+	    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+              <span class="sr-only">Toggle navigation</span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+	    </button>
+	    <a class="navbar-brand" href="#">PropS</a>
+	  </div>
+
+	  <!-- Collect the nav links, forms, and other content for toggling -->
+	  <div class="collapse navbar-collapse navbar-scrollspy" id="bs-example-navbar-collapse-1">
+	    <ul class="nav navbar-nav">
+	      <li style="display:none;"><a href="#top">Top</a></li>
+              <li><a href="#download">Download</a></li>
+              <li><a href="#online">Online Demo</a></li>
+              <li><a href="#publications">Publications</a></li>
+	      <li><a href="#contact">Contact</a></li>
+	    </ul>
+	  </div><!-- /.navbar-collapse -->
+	</div><!-- /.container-fluid -->
+      </div>
+
+
+      <h1 id="top">PropS: Syntax Based Proposition Extraction</h1>
+
+
+      <p>Semantic NLP applications often rely on dependency trees to recognize major elements of the proposition structure of sentences. Yet, while much semantic structure is indeed expressed by syntax, many phenomena are not easily read out of dependency trees, often leading to further ad-hoc heuristic post-processing or to information loss. To directly address the needs of semantic applications, we present PropS - an output representation designed to explicitly and uniformly express much of the proposition structure which
+	is implied from syntax, and an associated tool for extracting it from dependency trees.
+	Props currently supports both English and German versions.
+      </p>
+      
+
+      <a name="download" ></a>
+      <h2 id="download">Download</h2>
+      <p>Download the latest version from github:
+	<ul>
+	  <li><a href="https://github.com/gabrielStanovsky/props" target = "_blank">English</a>
+	  <li><a href="https://github.com/UKPLab/props-de" target = "_blank">German</a>
+	</ul>
+	
+      </p>
+
+      <a name="online" ></a>
+      <h2 id="online">Online Demo</h2>
+      <!--Language:  <input id="switch-state" type="checkbox" name="my-checkbox" data-size="mini" data-on-text="EN" data-off-text="DE" data-off-color="warning"  checked>  -->
+      <small>Language:</small>
+
+      <br><br>
+
+      <p>Enter a sentence below to try PropS online <label id = "ascii" ></label>:<br>
+
+	<form method="get" name="exampleForm" action="http://u.cs.biu.ac.il/~stanovg/eparse" target="B">
+          <textarea name="text" style="position: relative; width: 100%;" id='inputForm'></textarea>
+          <input type="submit" value="submit">
+
+	</form>
+	<br>
+
+	<iframe name="B" src="blank.html" style="position: relative; width: 100%;" height="200" id="iframe1" marginheight="0" frameborder="0"  onload="resizeIframe(this)"></iframe>
+	<h3>Examples</h3>
+	<br>
+	<ul>
+	  <li>
+	    <a id = "link_ex_0" target = "B">
+	      <b><label id = "lbl_ex_0" ></label></b></a>
+	    
+	    (<a style="cursor:pointer;" onclick="$('#ex0').toggle();"><span class="session_title">details</a>)
+	    
+	    
+	    <div style="max-width: 600px; display: none;" class="well well-sm" id="ex0">
+	      <ul>
+		<li>PropS </li>
+		<ul>
+		  <li> Two types of nodes: predicates (marked with blue background) and non-predicates (arguments or modifiers, marked with white background) </li>
+		  <li> Each node consists of an arbitrary number of words (e.g., <i>Barack Obama</i>) and features (<i>elect</i> in past tense and passive voice). </li>
+		  <li> Words in the graph don't have to come from the sentence (for example: <b>SameAs</b>, indicating apposition). </li>
+		  <li> Not all words from the sentence participate in the graph - for example <i>the</i>, which is delegated as a <b>definite</b> feature on  <i>candidate</i>. </li>
+		  <li> Each predicate node heads its direct arguments, this can break the tree structure, e.g, the multiple heads for <i>Barack Obama</i> </li>
+		</ul>
+		
+		<li> OIE-like tuples </li>
+		<ul>
+		  <li>These are obtained by simple traversal from all the predicate nodes in the graph, omitting inner structure of their arguments.</li>
+
+		</ul>
+	      </ul>
+	      
+	    </div>
+	    
+	    
+	  </li>
+	  
+	  <li>
+
+      	    <a id = "link_ex_1" target = "B">
+	      <b><label id = "lbl_ex_1" ></label></b></a>
+	    
+	    (<a style="cursor:pointer;" onclick="$('#ex1').toggle();"><span class="session_title">details</a>)
+	    
+	    <div style="max-width: 600px; display: none;" class="well well-sm" id="ex1">
+	      <ul>
+		<li> Dependency trees are great for verbal predications, as each verb directly heads its arguments. This doesn't hold for other types of predicates. 
+		  We rearrange the tree structure so that this is true for other types of predications.
+		</li>
+		<li> <i>tall</i> (adjectival modifier) directly heads <i>boy</i> and marked as a predicate. </li>
+	      </ul>
+	      
+	    </div>
+	    
+	  </li>
+	  
+	  <li> 
+	    <a id="link_ex_2" href = "" target="B">
+	      <b><label id = "lbl_ex_2"></label></b></a>
+	    
+	    (<a style="cursor:pointer;" onclick="$('#ex2').toggle();"><span class="session_title">details</a>)
+	    
+	    <div style="max-width: 600px; display: none;" class="well well-sm" id="ex2">
+	      <ul>
+		<li> For conditionals, we consider the marker word (e.g, <i>because</i>, <i>although</i>, <i>unless</i>, etc.) as a predicate, taking as argument both clauses, using the <b>condition</b> and <b>outcome</b> labels, as it introduces the logical relation between them.
+		</li>
+		<li> Dependency, on the other hand, marks <i>come</i> as root, on which <i>build</i> is dependent, which, finding the conditional only as a daughter node of <i>build</i>, which requires the application to perform a multiple passes over the tree to recover the logical relation between the two clauses.  </li>
+	      </ul>
+	      
+	    </div>
+	    
+	  </li>
+	  
+	  <li> 
+	    <a id="link_ex_3" href = "" target="B">
+	      <b><label id = "lbl_ex_3"></label></b></a>
+
+	    
+	    (<a style="cursor:pointer;" onclick="$('#ex3').toggle();"><span class="session_title">details</a>)
+	    
+	    <div style="max-width: 600px; display: none;" class="well well-sm" id="ex3">
+	      <ul>
+		<li> 
+		  Different syntactic realizations may evoke the same proposition structure (e.g., passive versus active voice). We aim to present a unified proposition structure when applicable.
+		</li>
+		<li> 
+		  For example, note that this and the following example receive identical PropS structure, while the dependency trees diverge significantly
+		</li>
+	      </ul>
+	      
+	  </li>
+	  
+	  <li> 
+	    <a id="link_ex_4" href = "" target="B">
+	      <b><label id = "lbl_ex_4"></label></b></a>
+
+	    
+	    (<a style="cursor:pointer;" onclick="$('#ex4').toggle();"><span class="session_title">details</a>)
+	    
+	    <div style="max-width: 600px; display: none;" class="well well-sm" id="ex4">
+	      <ul>
+		<li> 
+		  Different syntactic realizations may evoke the same proposition structure (e.g., passive versus active voice). We aim to present a unified proposition structure when applicable.
+		</li>
+		<li> 
+		  For example, note that this and the previous example receive identical PropS structure, while the dependency trees diverge significantly
+		</li>
+	      </ul>
+	      
+	      
+	  </li>
+	  
+	  <li> 
+	    <a id="link_ex_5" href = "" target="B">
+	      <b><label id = "lbl_ex_5"></label></b></a>
+
+	    
+	    (<a style="cursor:pointer;" onclick="$('#ex5').toggle();"><span class="session_title">details</a>)
+	    
+	    <div style="max-width: 600px; display: none;" class="well well-sm" id="ex5">
+	      <ul>
+		<li>
+		  Similarly to the previous examples, cases of raising-to-subject (you looked impatient) which we represent similarly to the semantically similar adjectival predication (you are impatient). Demoting the verbs (look, seem, etc.) to modifier status.
+		</li>
+	      </ul>
+	      
+	  </li>
+	  
+	  <li> 
+	    <a id="link_ex_6" href = "" target="B">
+	      <b><label id = "lbl_ex_6"></label></b></a>
+
+	    
+	    (<a style="cursor:pointer;" onclick="$('#ex6').toggle();"><span class="session_title">details</a>)
+	    
+	    <div style="max-width: 600px; display: none;" class="well well-sm" id="ex6">
+	      <ul>
+		<li> 
+		  Similarly to the previous examples, cases of raising-to-subject (you looked impatient) which we represent similarly to the semantically similar adjectival predication (you are impatient). Demoting the verbs (look, seem, etc.) to modifier status.
+		</li>
+	      </ul>
+	      
+	  </li>
+	  
+	  <li> 
+	    <a id="link_ex_7" href = "" target="B">
+	      <b><label id = "lbl_ex_7"></label></b></a>
+	    (<a style="cursor:pointer;" onclick="$('#ex7').toggle();"><span class="session_title">details</a>)
+	    
+	    <div style="max-width: 600px; display: none;" class="well well-sm" id="ex7">
+	      <ul>
+		<li> 
+		  We take special care in minimizing arguments scope where possible. This creates more salient entities, which can then be more easily used in various semantic tasks (OIE, knowledge base population, entailment, etc.).
+		</li>
+	      </ul>
+	      
+	      
+	  </li>
+	  
+	  <li> 
+	    <a id="link_ex_8" href = "" target="B">
+	      <b><label id = "lbl_ex_8"></label></b></a>
+
+	    
+	    (<a style="cursor:pointer;" onclick="$('#ex8').toggle();"><span class="session_title">details</a>)
+	    
+	    <div style="max-width: 600px; display: none;" class="well well-sm" id="ex8">
+	      <ul>
+		<li> 
+		  We take special care in minimizing arguments scope where possible. This creates more salient entities, which can then be more easily used in various semantic tasks (OIE, knowledge base population, entailment, etc.).
+		</li>
+	      </ul>
+	      
+	      
+	  </li>
+	  
+	  <li> 
+	    <a id="link_ex_9" href = "" target="B">
+	      <b><label id = "lbl_ex_9"></label></b></a>
+
+	    
+	    (<a style="cursor:pointer;" onclick="$('#ex9').toggle();"><span class="session_title">details</a>)
+	  </li>
+	  
+	  <div style="max-width: 600px; display: none;" class="well well-sm" id="ex9">
+	    <ul>
+	      <li> 
+		Dependency introduces a special <i>appos</i> node from <i>Obama</i> to comma, which require delicate handling - identifying the two entities which stand in the apposition relation, and propagating the relations.
+	      </li>
+	      <li> 
+		In PropS this is trivially extractable from the structure (as can be seen in the OIE clauses below), without introducing new types of edges.  
+	      </li>
+	    </ul>
+	    
+	  </div>
+
+	  
+	</ul>
+      </p> 
+
+      <a name="publications" ></a>
+      <h2 id="publications">Publications</h2>
+      <ul>
+	<li> <a href = "http://arxiv.org/abs/1603.01648"> Getting more out of syntax with PropS </a>, Gabriel Stanovsky, Jessica Ficler, Ido Dagan, Yoav Goldberg, arXiv preprint 2016
+	<li> <a href = "https://www.ukp.tu-darmstadt.de/publications/details/?no_cache=1&tx_bibtex_pi1%5Bpub_id%5D=TUD-CS-2016-0181"> Porting an Open Information Extraction System from English to German </a>, Tobias Falke, Gabriel Stanovsky, Iryna Gurevych and Ido Dagan, EMNLP 2016
+      </ul>
+
+
+      <a name="contact" ></a>
+      <h2 id="contact">Contact</h2>
+      <ul>
+	<li> gabriel (dot) satanovsky (at) gmail (dot) com
+	<li> falke (at) aiphes (dot) tu-darmstadt (dot) de
+      </ul>
+
+
+
+
+
+      <hr>
+
+      <br/>
+
+
+      <br/>
+      <br/>
+      <br/>
+      <br/>
+
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+      <script src="js/bootstrap.min.js"></script>
+      <script src="dist/js/bootstrap-switch.js"></script>
+      <script>
+
+	var shiftWindow = function() { scrollBy(0, -50) };
+	window.addEventListener("hashchange", shiftWindow);
+	function load() {if (location.hash) shiftWindow();}
+
+      </script>
+
+      <script>
+	var lang = "EN";
+
+	var english_examples = ["Barack Obama, the young candidate, was elected president", "She said that the boy is tall", "If you build it, they will come","John, who is a nice man", "John is a nice man", "You are impatient", "You looked very impatient", 'The director who edited "Rear Window" released Psycho', 'Hitchcock, who edited "Rear Window", released Psycho', "Barack Obama, the US president, lives in Washington"]
+	
+	var english_long_example = "Mr Pratt, head of marketing, thinks that lower wine prices have come about because producers don't like to see a hit wine increase in price.";
+
+	var old_deutsch_examples = ["Barack Obama, der junge Kandidat, wurde zum Prasidenten gewahlt.", "Sie sagte, dass der Junge groß ist.", "Wenn du es baust, werden sie kommen.",
+	"John, der ein netter Mann ist",
+	"John ist ein netter Mann.",
+	"Du bist ungeduldig.",
+	"Du siehst sehr ungeduldig aus.",
+	"Der Regisseur, der Rear Window drehte, brachte Psycho heraus.",
+	"Hitchcock, der Rear Window drehte, brachte Psycho heraus.",
+	"Barack Obama, der US-Präsident, lebt in Washington."]
+
+
+	var deutsch_examples = ["Barack Obama, der junge Kandidat, wurde zum Präsidenten gewählt.",
+	"Sie sagte, dass der Junge groß ist.",
+	"Wenn du es baust, werden sie kommen.",
+	"John, der ein netter Mann ist",
+	"John ist ein netter Mann.",
+	"Du bist ungeduldig.",
+	"Du siehst sehr ungeduldig aus.",
+	"Der Regisseur, der Rear Window drehte, brachte Psycho heraus.",
+	"Hitchcock, der Rear Window drehte, brachte Psycho heraus.",
+	"Barack Obama, der US-Präsident, lebt in Washington"]
+
+
+
+	var deutsch_long_example = "Sehenswert sind die Orte San Jose und San Andres, die an der nördlichen Küste des Petén-Itzá-Sees liegen.";
+	function set_sent(ind){
+
+	var sent = "";
+	var act = ""
+	
+	if (lang == "EN") {
+	sent = english_examples[ind];
+	act = "eparse";
+	document.getElementById('ascii').innerHTML = " <small>(avoid non-ascii characters)</small> ";
+	} else if (lang == "DE") {
+	sent = deutsch_examples[ind];
+	act = "gparse";
+	document.getElementById('ascii').innerHTML = "";
+	}
+	document.getElementById('lbl_ex_' + ind).innerHTML = sent;
+
+	document.getElementById('link_ex_' + ind).onclick = function () {
+	document.getElementById('inputForm').value = sent;
+	$('#ex' + ind).toggle();
+	};
+
+	document.getElementById('link_ex_' + ind).href = 'http://u.cs.biu.ac.il/~stanovg/' + act + '?text='+ encodeURI(sent);
+	
+
+
+	}
+
+	function set_sents(){
+
+	if (lang == "EN") {
+	document.getElementById('inputForm').value = english_long_example;
+	} else if (lang == "DE") {
+	document.getElementById('inputForm').value = deutsch_long_example;
+	}
+
+
+
+
+	for (i = 0; i < english_examples.length; i++) {
+			set_sent(i);
+			}
+			}
+
+			
+			
+			function get_example(ind) {
+			if (lang == "EN") {
+			return english_examples[ind];
+			} else if (lang == "DE") {
+			return deutsch_examples[ind];
+			}
+			
+			}
+
+			set_sents();
+
+			function changeLang() {
+			if (document.getElementById("lang-select").value == "EN"){
+			lang = "EN";
+			$("[name='exampleForm']").attr('action', 'http://u.cs.biu.ac.il/~stanovg/eparse');
+			}
+			else{
+			lang = "DE";
+			$("[name='exampleForm']").attr('action', 'http://u.cs.biu.ac.il/~stanovg/gparse');
+
+
+			}
+			set_sents();
+			}
+
+			
+			
+			$("[name='my-checkbox']").bootstrapSwitch();
+			$("[name='my-checkbox']").on('switchChange.bootstrapSwitch', function(event, state) {
+			if (state){
+			lang = "EN";
+			$("[name='exampleForm']").attr('action', 'http://u.cs.biu.ac.il/~stanovg/eparse');
+
+			} else {
+			lang = "DE";
+			$("[name='exampleForm']").attr('action', 'http://u.cs.biu.ac.il/~stanovg/gparse');
+			}
+			set_sents();
+			});
+
+
+			
+			(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+			(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+			m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+			})(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+			ga('create', 'UA-45796726-1', 'sp14.ws');
+			ga('send', 'pageview');
+
+			</script>
+
+  </body>  
+</html>  
