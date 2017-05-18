@@ -1,5 +1,4 @@
 import json
-import networkx as nx
 from cgi import escape
 import logging
 logging.basicConfig(level = logging.DEBUG)
