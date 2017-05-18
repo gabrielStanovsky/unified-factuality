@@ -125,15 +125,15 @@ class Brat:
     html_template = """
     <html>
  <head>
-   <link rel="stylesheet" type="text/css" href="./brat/style-vis.css"/>
-   <script type="text/javascript" src="./brat/client/lib/head.load.min.js"></script>
+   <link rel="stylesheet" type="text/css" href="http://u.cs.biu.ac.il/~stanovg/brat/style-vis.css"/>
+   <script type="text/javascript" src="http://u.cs.biu.ac.il/~stanovg/brat/client/lib/head.load.min.js"></script>
 </head>
 <body>
 
 
     <script language="javascript">
 
-    var bratLocation = './brat';
+    var bratLocation = 'http://u.cs.biu.ac.il/~stanovg/brat';
 head.js(
     // External libraries
     bratLocation + '/client/lib/jquery.min.js',
