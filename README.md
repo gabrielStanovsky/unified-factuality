@@ -31,7 +31,7 @@ Pre-requsities
 2. Java openjdk-8
 ```
 Make sure that the JAVA_HOME variable is set accordingly.
-E.g., JAVA_HOME = /usr/lib/jvm/java-8-openjdk-amd64/
+E.g., JAVA_HOME=/usr/lib/jvm/java-8-openjdk-amd64/
 ```
 3. setuptools
 4. easy_install
