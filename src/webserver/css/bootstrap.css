@@ -1288,8 +1288,14 @@ h6,
   font-size: 12px;
 }
 p {
-  margin: 0 0 10px;
+    margin: 0 0 10px;
+    font-size: 17px;
 }
+
+.bigFont li{
+    font-size:17px;
+}
+
 .lead {
   margin-bottom: 20px;
   font-size: 16px;
