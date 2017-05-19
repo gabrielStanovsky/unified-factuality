@@ -113,7 +113,7 @@ Running the automatic annotator
   
 2. Run client application:<br>
 ``` ./scripts/annotate_factuality.sh ``` <br>
-This will wait for output on STDIN and will output sentences with CoNLL factuality annotations 
+This will wait for input on STDIN and will output sentences with CoNLL factuality annotations 
 to STDOUT.
 
 **NOTE**: You can also run these scripts using different hosts and ports. See the scripts above for instructions on how to do this.
