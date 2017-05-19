@@ -1,4 +1,4 @@
-Unified Factuality Representation - Corpus and code
+Unified Factuality Representation - Corpus and Code
 ===================================================
 
 Introduction
@@ -21,7 +21,7 @@ address   = {Vancouver, Canada}
 Online Demo
 ===========
 
-Try live demonstration by heading over to our [Online Demo Page](http://u.cs.biu.ac.il/~stanovg/factuality.html)
+Try a live demonstration by heading over to our [Online Demo Page](http://u.cs.biu.ac.il/~stanovg/factuality.html)
 
 
 Local Installation
@@ -51,7 +51,7 @@ pip install spacy
 python -m spacy download en
 ```
 
-Unified dataset
+Unified Dataset
 ---------------
 
 You can find a static aggregated version of the corpus in the [snapshot folder](data/unified/snapshot).
@@ -85,7 +85,7 @@ Format
 
 TODO
 
-Automatic annotator
+Automatic Annotator
 -------------------
 
 Installation
@@ -95,7 +95,7 @@ From ```src```, run: <br>
 ```
 ./scripts/install_annotator.sh
 ```
-Running the automatic annotator
+Running the Automatic Annotator
 -------------------------------
 
 1. Start servers:
@@ -118,7 +118,7 @@ to STDOUT.
 
 **NOTE**: You can also run these scripts using different hosts and ports. See the scripts above for instructions on how to do this.
 
-Usage examples
+Usage Examples
 --------------
 
 ``` echo "John refused to go" | ./scripts/annotate_factuality.sh ```
