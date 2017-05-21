@@ -105,8 +105,17 @@ The converted unified corpus should be created in the [unified corpus directory]
 
 #### Format
 
+Each line corresponds to a word in the sentence, where the following values appear tab separated:
 
-TODO
+1. Word index
+2. Surface form
+3. Factuality value (in [-3, +3])
+
+An empty line separates between sentences.<br>
+Additional values may appear in tabs, depending on the input format
+For example, the unified corpus contains dependency parsing, and the automatic tools appends TruthTeller 
+features (see [Interactive Usage Examples](#interactive)).
+
 
 ### Automatic Annotator
 
