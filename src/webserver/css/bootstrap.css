@@ -116,6 +116,7 @@ textarea {
   margin: 0;
   font: inherit;
   color: inherit;
+  font-size: 17px;
 }
 button {
   overflow: visible;
@@ -174,7 +175,8 @@ legend {
   border: 0;
 }
 textarea {
-  overflow: auto;
+    overflow: auto;
+      font-size: 17px;
 }
 optgroup {
   font-weight: bold;
@@ -1093,8 +1095,9 @@ button,
 select,
 textarea {
   font-family: inherit;
-  font-size: inherit;
+  /* font-size: inherit; */
   line-height: inherit;
+  font-size: 17px;
 }
 a {
   color: #337ab7;
