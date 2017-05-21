@@ -9,6 +9,7 @@
     - [Pre-requsities](#pre-requsities)
     - [Unified Dataset](#unified-dataset)
       - [Manual Download](#manual-download)
+      - [Format](#format)
     - [Automatic Annotator](#automatic-annotator)
       - [Installation](#installation)
       - [Running the Automatic Annotator](#running-the-automatic-annotator)
@@ -98,7 +99,7 @@ From ```src```:
 
 The converted unified corpus should be created in the [unified corpus directory](data/unified).
 
-Format
+#### Format
 
 
 TODO
