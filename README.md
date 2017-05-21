@@ -14,6 +14,8 @@
       - [Installation](#installation)
       - [Running the Automatic Annotator](#running-the-automatic-annotator)
       - [Usage Examples](#usage-examples)
+      - [Interactive](#interactive)
+      - [From files](#from-files)
 
 <!-- END doctoc generated TOC please keep comment here to allow auto update -->
 
