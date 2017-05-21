@@ -157,7 +157,7 @@ echo "John refused to go" | ./scripts/annotate_factuality.sh
 cat ../examples/example_sentences.txt | ./scripts/annotate_factuality.sh > ../examples/example_sentences.fact.conll
 ```
 
-Output can be seen in [CoNLL file](examples/example_sentences.fact.conll).
+Output can be seen in the [CoNLL file](examples/example_sentences.fact.conll).
 
 
 
