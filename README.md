@@ -14,8 +14,8 @@
       - [Installation](#installation)
       - [Running the Automatic Annotator](#running-the-automatic-annotator)
       - [Usage Examples](#usage-examples)
-      - [Interactive](#interactive)
-      - [From files](#from-files)
+        - [Interactive](#interactive)
+        - [From files](#from-files)
 
 <!-- END doctoc generated TOC please keep comment here to allow auto update -->
 
@@ -144,7 +144,7 @@ to STDOUT.
 #### Usage Examples
 
 
-#### Interactive
+##### Interactive
 ```bash
 echo "John refused to go" | ./scripts/annotate_factuality.sh 
 ```
@@ -154,7 +154,7 @@ echo "John refused to go" | ./scripts/annotate_factuality.sh
     2       to      _       _       _       _       _
     3       go      -3.0    +/-NoF  P       N       N
 
-#### From files
+##### From files
 ```bash
 cat ../examples/example_sentences.txt | ./scripts/annotate_factuality.sh > ../examples/example_sentences.fact.conll
 ```
