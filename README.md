@@ -3,25 +3,24 @@
 **Table of Contents**  *generated with [DocToc](https://github.com/thlorenz/doctoc)*
 
 - [Unified Factuality Representation - Corpus and Code](#unified-factuality-representation---corpus-and-code)
-- [Introduction](#introduction)
-- [Online Demo](#online-demo)
-- [Local Installation](#local-installation)
-  - [Pre-requsities](#pre-requsities)
-  - [Unified Dataset](#unified-dataset)
-  - [Manual Download](#manual-download)
-  - [Format](#format)
-  - [Automatic Annotator](#automatic-annotator)
-  - [Installation](#installation)
-  - [Running the Automatic Annotator](#running-the-automatic-annotator)
-  - [Usage Examples](#usage-examples)
+  - [Introduction](#introduction)
+  - [Online Demo](#online-demo)
+  - [Local Installation](#local-installation)
+    - [Pre-requsities](#pre-requsities)
+    - [Unified Dataset](#unified-dataset)
+      - [Manual Download](#manual-download)
+    - [Automatic Annotator](#automatic-annotator)
+      - [Installation](#installation)
+      - [Running the Automatic Annotator](#running-the-automatic-annotator)
+      - [Usage Examples](#usage-examples)
 
 <!-- END doctoc generated TOC please keep comment here to allow auto update -->
 
-Unified Factuality Representation - Corpus and Code
-===================================================
+# Unified Factuality Representation - Corpus and Code
 
-Introduction
-============
+
+## Introduction
+
 
 Code and data for testing different factuality models across different testsets.<br>
 If you use this resource, please cite the  following [paper](https://gabrielstanovsky.github.io/assets/papers/acl17/paper.pdf):
@@ -37,17 +36,17 @@ address   = {Vancouver, Canada}
 }
 ```
 
-Online Demo
-===========
+## Online Demo
+
 
 Try a live demonstration by heading over to our [Online Demo Page](http://u.cs.biu.ac.il/~stanovg/factuality.html)
 
 
-Local Installation
-==================
+## Local Installation
 
-Pre-requsities
---------------
+
+### Pre-requsities
+
 1. python 2.7
 2. Java openjdk-8
 ```
@@ -70,13 +69,13 @@ pip install spacy
 python -m spacy download en
 ```
 
-Unified Dataset
----------------
+### Unified Dataset
+
 
 You can find a static aggregated version of the corpus in the [snapshot folder](data/unified/snapshot).
 
-Manual Download
----------------
+#### Manual Download
+
 
 From ```src```:
 
@@ -100,22 +99,22 @@ From ```src```:
 The converted unified corpus should be created in the [unified corpus directory](data/unified).
 
 Format
-------
+
 
 TODO
 
-Automatic Annotator
--------------------
+### Automatic Annotator
 
-Installation
-------------
+
+#### Installation
+
 
 From ```src```, run: <br>
 ```
 ./scripts/install_annotator.sh
 ```
-Running the Automatic Annotator
--------------------------------
+#### Running the Automatic Annotator
+
 
 1. Start servers:
 
@@ -137,8 +136,8 @@ to STDOUT.
 
 **NOTE**: You can also run these scripts using different hosts and ports. See the scripts above for instructions on how to do this.
 
-Usage Examples
---------------
+#### Usage Examples
+
 
 ``` echo "John refused to go" | ./scripts/annotate_factuality.sh ```
 
