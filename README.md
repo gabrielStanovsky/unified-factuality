@@ -142,6 +142,7 @@ to STDOUT.
 #### Usage Examples
 
 
+#### Interactive
 ```bash
 echo "John refused to go" | ./scripts/annotate_factuality.sh 
 ```
@@ -151,10 +152,13 @@ echo "John refused to go" | ./scripts/annotate_factuality.sh
     2       to      _       _       _       _       _
     3       go      -3.0    +/-NoF  P       N       N
 
-
+#### From files
 ```bash
 cat ../examples/example_sentences.txt | ./scripts/annotate_factuality.sh > ../examples/example_sentences.fact.conll
 ```
+
+Output can be seen in [CoNLL file](examples/example_sentences.fact.conll).
+
 
 
 <!-- ## OLD: -->
