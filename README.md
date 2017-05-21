@@ -1,3 +1,22 @@
+<!-- START doctoc generated TOC please keep comment here to allow auto update -->
+<!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
+**Table of Contents**  *generated with [DocToc](https://github.com/thlorenz/doctoc)*
+
+- [Unified Factuality Representation - Corpus and Code](#unified-factuality-representation---corpus-and-code)
+- [Introduction](#introduction)
+- [Online Demo](#online-demo)
+- [Local Installation](#local-installation)
+  - [Pre-requsities](#pre-requsities)
+  - [Unified Dataset](#unified-dataset)
+  - [Manual Download](#manual-download)
+  - [Format](#format)
+  - [Automatic Annotator](#automatic-annotator)
+  - [Installation](#installation)
+  - [Running the Automatic Annotator](#running-the-automatic-annotator)
+  - [Usage Examples](#usage-examples)
+
+<!-- END doctoc generated TOC please keep comment here to allow auto update -->
+
 Unified Factuality Representation - Corpus and Code
 ===================================================
 
