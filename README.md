@@ -142,9 +142,19 @@ to STDOUT.
 #### Usage Examples
 
 
-``` echo "John refused to go" | ./scripts/annotate_factuality.sh ```
+```bash
+echo "John refused to go" | ./scripts/annotate_factuality.sh 
+```
 
-``` ./scripts/annotate_factuality.sh < input_file > output_file ```
+    0       John    _       _       P       _       _
+    1       refused 3.0     -/?NoF  P       P       P
+    2       to      _       _       _       _       _
+    3       go      -3.0    +/-NoF  P       N       N
+
+
+```bash
+cat ../examples/example_sentences.txt | ./scripts/annotate_factuality.sh > ../examples/example_sentences.fact.conll
+```
 
 
 <!-- ## OLD: -->
