@@ -22,8 +22,10 @@
 
 ## Introduction
 
+Previous models for the assessment of commitment towards a predicate in a sentence (also known as factuality prediction) were trained and tested against a specific annotated dataset, subsequently limiting the generality of their results. In this work we propose an intuitive method for mapping three previously annotated corpora onto a single factuality scale, thereby enabling models to be tested across these corpora. In addition, we design a novel model for factuality prediction by first extending a previous rule-based factuality prediction system and applying it over an abstraction of dependency trees, and then using the output of this system in a supervised classifier.
 
-Code and data for testing different factuality models across different testsets.<br>
+In this repository you'll find both the converted corpus, as well as our factuality prediction model.
+
 If you use this resource, please cite the  following [paper](https://gabrielstanovsky.github.io/assets/papers/acl17/paper.pdf):
 
 ```
