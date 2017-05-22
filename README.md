@@ -1,6 +1,6 @@
 <!-- START doctoc generated TOC please keep comment here to allow auto update -->
 <!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
-**Table of Contents**  *generated with [DocToc](https://github.com/thlorenz/doctoc)*
+Unified Factuality Representation - Corpus and Code
 
 - [Unified Factuality Representation - Corpus and Code](#unified-factuality-representation---corpus-and-code)
   - [Introduction](#introduction)
@@ -18,9 +18,6 @@
         - [From files](#from-files)
 
 <!-- END doctoc generated TOC please keep comment here to allow auto update -->
-
-# Unified Factuality Representation - Corpus and Code
-
 
 ## Introduction
 
