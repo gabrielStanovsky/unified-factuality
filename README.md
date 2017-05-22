@@ -15,6 +15,7 @@
     - [Usage Examples](#usage-examples)
       - [Interactive](#interactive)
       - [From files](#from-files)
+- [Contact](#contact)
 
 <!-- END doctoc generated TOC please keep comment here to allow auto update -->
 
@@ -72,8 +73,6 @@ python -m spacy download en
 
 ### Unified Dataset
 
-
-You can find a static aggregated version of the corpus in the [snapshot folder](data/unified/snapshot).
 
 #### Manual Download
 
@@ -166,6 +165,10 @@ cat ../examples/example_sentences.txt | ./scripts/annotate_factuality.sh > ../ex
 
 Output can be seen in the [CoNLL file](examples/example_sentences.fact.conll).
 
+
+## Contact
+
+gabriel (dot) satanovsky (at) gmail (dot) com
 
 
 <!-- ## OLD: -->
