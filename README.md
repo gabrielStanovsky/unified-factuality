@@ -7,6 +7,7 @@
 - [Local Installation](#local-installation)
   - [Prerequisites](#prerequisites)
   - [Unified Dataset](#unified-dataset)
+    - [Manual Download](#manual-download)
     - [Format](#format)
   - [Automatic Annotator](#automatic-annotator)
     - [Installation](#installation)
@@ -71,6 +72,10 @@ python -m spacy download en
 ```
 
 ### Unified Dataset
+
+For obtaining a snapshot of the unified dataset, please [contact us](#contact).
+
+#### Manual Download
 
 From ```src```:
 
