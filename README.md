@@ -6,7 +6,7 @@
   - [Introduction](#introduction)
   - [Online Demo](#online-demo)
   - [Local Installation](#local-installation)
-    - [Pre-requsities](#pre-requsities)
+    - [Prerequisites](#prerequisites)
     - [Unified Dataset](#unified-dataset)
       - [Manual Download](#manual-download)
       - [Format](#format)
@@ -50,13 +50,13 @@ Try a live demonstration by heading over to our [Online Demo Page](http://u.cs.b
 ## Local Installation
 
 
-### Pre-requsities
+### Prerequisites
 
 1. python 2.7
 2. Java openjdk-8
 ```
 Make sure that the JAVA_HOME variable is set accordingly.
-E.g., JAVA_HOME=/usr/lib/jvm/java-8-openjdk-amd64/
+    E.g., JAVA_HOME=/usr/lib/jvm/java-8-openjdk-amd64/
 ```
 3. python-setuptools
 4. easy_install
